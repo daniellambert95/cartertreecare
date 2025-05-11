@@ -277,7 +277,7 @@ const Services = () => {
           viewport={{ once: true }}
         >
           <Link 
-            href="/services" 
+            href="/leistungen" 
             className="inline-flex items-center px-6 py-3 border border-primary text-base font-medium rounded-md shadow-sm text-primary hover:bg-primary/10 transition-colors duration-300"
           >
             Alle Leistungen anzeigen
