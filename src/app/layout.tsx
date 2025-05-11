@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "DerBaumchirurg | Professionelle Baumpflege",
   description: "Professionelle Baumpflege und Fällarbeiten mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben.",
   icons: {
-    icon: "/logo.svg",
+    icon: "/favicon.ico",
   },
 };
 
