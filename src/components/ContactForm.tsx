@@ -112,7 +112,7 @@ const ContactForm = () => {
         consent: false
       });
       
-    } catch (_) {
+    } catch (error) {
       // Error
       setSubmitStatus({
         success: false,

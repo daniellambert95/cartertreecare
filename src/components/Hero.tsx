@@ -7,7 +7,6 @@ import Link from 'next/link';
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const abseilingRef = useRef<HTMLDivElement>(null);
-  const [imageLoaded, setImageLoaded] = useState(true); // Set to true by default
 
   // Configuration for the abseiling animation - adjusted for better visibility
   const abseilingConfig = {
@@ -64,7 +63,13 @@ const Hero = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []); // No dependency on imageLoaded anymore
+  }, [
+    abseilingConfig.speedFactor,
+    abseilingConfig.startingOffset,
+    abseilingConfig.swingFrequency,
+    abseilingConfig.swingIntensity,
+    abseilingConfig.rotationAmount
+  ]); // Add all dependencies
 
   return (
     <section className="relative flex items-center justify-center overflow-hidden h-screen w-screen">
@@ -103,7 +108,6 @@ const Hero = () => {
             priority
             onLoad={() => {
               console.log('Image loaded successfully');
-              setImageLoaded(true);
             }}
             onError={(e) => {
               console.error('Image failed to load:', e);
