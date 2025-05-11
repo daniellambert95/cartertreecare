@@ -78,7 +78,7 @@ const Hero = () => {
         ref={heroRef}
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url(/images/hero-tree.jpg)',
+          backgroundImage: 'url(/images/hero-tree.webp)',
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-neutral/70 to-primary/30"></div>

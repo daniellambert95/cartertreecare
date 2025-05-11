@@ -269,7 +269,7 @@ const AllServices = () => {
       {/* Background Image Element */}
       <div className="absolute right-0 top-1/4 w-40 h-40 opacity-5 hidden lg:block">
         <Image 
-          src="/images/tree-action.png" 
+          src="/images/tree-action.webp" 
           alt="" 
           fill
           style={{ objectFit: 'contain' }}
@@ -341,7 +341,7 @@ const AllServices = () => {
               <div className="hidden md:block relative h-64">
                 <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg">
                   <Image 
-                    src="/images/tree-action.png" 
+                    src="/images/tree-action.webp" 
                     alt="Baumpflege in Aktion" 
                     fill
                     style={{ objectFit: 'cover', objectPosition: 'center' }}

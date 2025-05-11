@@ -99,7 +99,7 @@ export default function ContactPage() {
               <div className="hidden md:block relative h-80">
                 <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg">
                   <Image 
-                    src="/images/tree-action2.png" 
+                    src="/images/tree-action2.webp" 
                     alt="Kontakt Der Baumchirurg" 
                     fill
                     style={{ objectFit: 'cover', objectPosition: 'center' }}

@@ -98,7 +98,7 @@ export default function AboutPage() {
               <div className="hidden md:block relative h-80">
                 <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg">
                   <Image 
-                    src="/images/tree-action.png" 
+                    src="/images/tree-action.webp" 
                     alt="Der Baumchirurg Team" 
                     fill
                     style={{ objectFit: 'cover', objectPosition: 'center' }}
