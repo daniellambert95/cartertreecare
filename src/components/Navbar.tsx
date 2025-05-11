@@ -78,31 +78,31 @@ const Navbar = () => {
 
       {/* Mobile menu, show/hide based on menu state */}
       <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-neutral/50 shadow-lg">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
           <Link 
             href="/leistungen" 
-            className="block px-3 py-2 rounded-md text-base font-semibold text-white hover:text-primary-dark hover:bg-secondary-light"
+            className="block px-3 py-2 rounded-md text-base font-semibold text-gray-800 hover:text-primary-dark hover:bg-secondary-light"
             onClick={() => setIsMenuOpen(false)}
           >
             Leistungen
           </Link>
           <Link 
             href="/blog" 
-            className="block px-3 py-2 rounded-md text-base font-semibold text-white hover:text-primary-dark hover:bg-secondary-light"
+            className="block px-3 py-2 rounded-md text-base font-semibold text-gray-800 hover:text-primary-dark hover:bg-secondary-light"
             onClick={() => setIsMenuOpen(false)}
           >
             Blog
           </Link>
           <Link 
             href="/ueber-uns" 
-            className="block px-3 py-2 rounded-md text-base font-semibold text-white hover:text-primary-dark hover:bg-secondary-light"
+            className="block px-3 py-2 rounded-md text-base font-semibold text-gray-800 hover:text-primary-dark hover:bg-secondary-light"
             onClick={() => setIsMenuOpen(false)}
           >
             Über uns
           </Link>
           <Link 
             href="/kontakt" 
-            className="block px-3 py-2 rounded-md text-base font-semibold text-white hover:text-primary-dark hover:bg-secondary-light"
+            className="block px-3 py-2 rounded-md text-base font-semibold text-gray-800 hover:text-primary-dark hover:bg-secondary-light"
             onClick={() => setIsMenuOpen(false)}
           >
             Kontakt
