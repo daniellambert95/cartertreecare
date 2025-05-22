@@ -5,24 +5,64 @@ import FAQItem from './FAQItem';
 
 const faqData = [
   {
-    question: "Wie schnell können Sie einen Termin anbieten?",
-    answer: "In der Regel können wir innerhalb von 1-2 Wochen einen Termin für eine Beratung oder Besichtigung anbieten. Bei Notfällen versuchen wir, so schnell wie möglich zu reagieren und bieten einen Notfallservice an."
+    question: "Wie berechnen Sie Ihre Dienstleistungen? Welche Faktoren beeinflussen die Kosten?",
+    answer: "Wir berücksichtigen alle Faktoren: Zeit, Anzahl der benötigten Mitarbeiter, Werkzeuge, Transport, Erfahrung, Entsorgung und vor allem das Risiko."
   },
   {
-    question: "Bieten Sie kostenlose Beratungen an?",
-    answer: "Ja, wir bieten eine kostenlose Erstberatung an, bei der wir Ihre Bäume begutachten und Ihnen Empfehlungen geben können. Für detaillierte Analysen oder Gutachten fallen jedoch Kosten an, die wir Ihnen transparent mitteilen."
+    question: "Wie weit im Voraus sollten Kunden verschiedene Dienstleistungen buchen?",
+    answer: "Wir empfehlen eine Buchung 2-4 Wochen im Voraus."
   },
   {
-    question: "Wie werden die Kosten berechnet?",
-    answer: "Die Kosten hängen von verschiedenen Faktoren ab, wie der Art der Dienstleistung, der Größe und Anzahl der Bäume sowie der Zugänglichkeit. Nach einer Besichtigung erstellen wir Ihnen ein detailliertes und transparentes Angebot ohne versteckte Kosten."
+    question: "Bieten Sie Notfalldienste für Bäume an? Wie schnell können Sie reagieren?",
+    answer: "Ja, wir können innerhalb von 48 Stunden reagieren."
   },
   {
-    question: "Welche Qualifikationen haben Ihre Mitarbeiter?",
-    answer: "Unsere Mitarbeiter sind ausgebildete Baumpfleger mit langjähriger Erfahrung und regelmäßigen Weiterbildungen. Wir arbeiten nach den neuesten Sicherheitsstandards und verwenden moderne Techniken und Geräte."
+    question: "Welchen Versicherungsschutz haben Sie?",
+    answer: "Wir verfügen über einen vollständigen erstklassigen Versicherungsschutz für Baumarbeiten weltweit."
   },
   {
-    question: "In welchem Umkreis sind Sie tätig?",
-    answer: "Wir sind hauptsächlich im Umkreis von 50 km um Waldstadt tätig. Bei größeren Projekten oder speziellen Anforderungen sind wir aber auch bereit, weitere Strecken zurückzulegen. Sprechen Sie uns gerne an."
+    question: "Wie lange dauern typische Dienstleistungen (Baumfällung, Beschneidung usw.)?",
+    answer: "Dies hängt vollständig vom Baum und möglichen Hindernissen, der Entfernung von der Straße usw. ab."
+  },
+  {
+    question: "Was passiert mit dem Holz/Abfall nach der Baumarbeit?",
+    answer: "Es wird zu einem Recyclingzentrum gebracht und zu Kompost verarbeitet."
+  },
+  {
+    question: "Welche Sicherheitsmaßnahmen setzen Sie während der Baumarbeit um?",
+    answer: "Alle persönlichen Schutzausrüstungen werden von den Mitarbeitern getragen und es werden niemals unnötige Risiken eingegangen. Bei Bedarf werden Abspanntechniken eingesetzt."
+  },
+  {
+    question: "Wie können Hausbesitzer ihr Grundstück vorbereiten, bevor Sie eintreffen?",
+    answer: "Entfernen Sie alle wertvollen Gegenstände, die Sie aus dem Arbeitsbereich entfernen können."
+  },
+  {
+    question: "Welche Nachsorge ist nach Ihren Dienstleistungen erforderlich?",
+    answer: "Achten Sie auf mögliche Krankheiten im Baum oder Totholz/gebrochene Äste, die entfernt werden müssen. Auch müssen Bäume an der Straße nach Vorschrift beschnitten werden - 2,5 m hoch vom Gehweg, 4 m hoch von der Straße."
+  },
+  {
+    question: "Was sind Anzeichen dafür, dass ein Baum professionelle Aufmerksamkeit benötigt?",
+    answer: "Totholz, gebrochene Äste, schräg stehende Bäume, erkrankte Bäume."
+  },
+  {
+    question: "Bieten Sie kostenlose Beratungen oder Schätzungen an?",
+    answer: "Ja."
+  },
+  {
+    question: "Welche Zahlungsmethoden akzeptieren Sie?",
+    answer: "Banküberweisung und Bargeld."
+  },
+  {
+    question: "Bieten Sie Garantien oder Gewährleistungen für Ihre Arbeit an?",
+    answer: "Wir garantieren, dass die Arbeit auf die sicherste Art und Weise durchgeführt wird."
+  },
+  {
+    question: "Was unterscheidet Ihre Dienstleistungen von anderen Baumpflegern?",
+    answer: "Wir führen hochwertige Schnitte zu erschwinglichen Preisen durch. Die saubersten und präzisesten Schnitte, die für die Gesundheit und Sicherheit Ihres Baumes für die Zukunft am besten sind."
+  },
+  {
+    question: "Müssen Kunden während der Arbeit anwesend sein?",
+    answer: "Nein, sobald der Arbeitsbereich vollständig zugänglich ist."
   }
 ];
 

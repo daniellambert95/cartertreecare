@@ -34,9 +34,9 @@ export default function ServicesPage() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="py-16 md:py-24">
+          <div className="py-12 md:py-24">
             {/* Breadcrumb */}
-            <nav className="flex mb-6" aria-label="Breadcrumb">
+            <nav className="flex mb-4 md:mb-6" aria-label="Breadcrumb">
               <ol className="flex items-center space-x-2">
                 <li>
                   <Link 
@@ -59,39 +59,39 @@ export default function ServicesPage() {
             </nav>
             
             {/* Title and Description */}
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
               <div>
-                <h1 className="text-4xl md:text-5xl font-bold text-neutral mb-6 leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral mb-4 md:mb-6 leading-tight">
                   Unsere <span className="text-primary">Leistungen</span> für Ihre Bäume
                 </h1>
-                <p className="text-lg text-neutral/80 mb-6 max-w-xl">
+                <p className="text-base sm:text-lg text-neutral/80 mb-6 max-w-xl">
                   Entdecken Sie unser umfassendes Angebot an Baumpflege- und Gartenarbeitsleistungen. 
                   Mit über 2000 Bäumen Erfahrung bieten wir Ihnen professionelle Lösungen für alle Ihre Baum- und Gartenanforderungen.
                 </p>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3 md:gap-4">
                   <div className="flex items-center">
-                    <div className="h-10 w-10 rounded-full bg-primary/15 flex items-center justify-center text-primary mr-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-primary/15 flex items-center justify-center text-primary mr-2 sm:mr-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-neutral font-medium">Zertifizierte Experten</span>
+                    <span className="text-sm sm:text-base text-neutral font-medium">Zertifizierte Experten</span>
                   </div>
                   <div className="flex items-center">
-                    <div className="h-10 w-10 rounded-full bg-primary/15 flex items-center justify-center text-primary mr-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-primary/15 flex items-center justify-center text-primary mr-2 sm:mr-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-neutral font-medium">Höchste Sicherheitsstandards</span>
+                    <span className="text-sm sm:text-base text-neutral font-medium">Höchste Sicherheitsstandards</span>
                   </div>
                   <div className="flex items-center">
-                    <div className="h-10 w-10 rounded-full bg-primary/15 flex items-center justify-center text-primary mr-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-primary/15 flex items-center justify-center text-primary mr-2 sm:mr-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-neutral font-medium">Umweltfreundliche Methoden</span>
+                    <span className="text-sm sm:text-base text-neutral font-medium">Umweltfreundliche Methoden</span>
                   </div>
                 </div>
               </div>
