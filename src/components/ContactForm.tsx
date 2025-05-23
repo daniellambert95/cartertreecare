@@ -82,41 +82,57 @@ const ContactForm = () => {
     
     setIsSubmitting(true);
     
-    // Simulate form submission
     try {
-      // In a real application, you would send the data to your backend
-      // await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(formData),
-      // });
-      
-      // Simulate network delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Success
-      setSubmitStatus({
-        success: true,
-        message: 'Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.'
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject || "Kontaktanfrage von der Website",
+          message: formData.message,
+          from_name: "Der Baumchirurg Website",
+          to_name: "Der Baumchirurg Team",
+        }),
       });
       
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
-        consent: false
-      });
+      const result = await response.json();
       
-    } catch {
-      // Error
+      if (result.success) {
+        // Success
+        setSubmitStatus({
+          success: true,
+          message: 'Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.'
+        });
+        
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: '',
+          consent: false
+        });
+      } else {
+        // Web3Forms returned an error
+        setSubmitStatus({
+          success: false,
+          message: 'Es ist ein Fehler beim Senden aufgetreten. Bitte versuchen Sie es später noch einmal.'
+        });
+      }
+      
+    } catch (error) {
+      // Network or other error
+      console.error('Form submission error:', error);
       setSubmitStatus({
         success: false,
-        message: 'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.'
+        message: 'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal oder kontaktieren Sie uns direkt.'
       });
     } finally {
       setIsSubmitting(false);

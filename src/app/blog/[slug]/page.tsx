@@ -1,115 +1,59 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import { getPostBySlug, getAllPosts, getRelatedPosts } from '@/lib/blog';
+import { notFound } from 'next/navigation';
+import TableOfContents from '@/components/TableOfContents';
 
 // Import components
 const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: true });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 
-export const metadata = {
-  title: 'Baumschnitt im Winter: Die ideale Zeit für gesunde Bäume | Baumpflege Berlin-Brandenburg',
-  description: 'Erfahren Sie, warum der Winter die optimale Zeit ist, um Ihre Bäume zu schneiden und wie dies das Wachstum im Frühjahr fördert. Expertentipps von Baumpflege Berlin-Brandenburg.',
-  keywords: 'baumschnitt winter, baumpflege berlin, winterschnitt bäume, baumschnitt brandenburg, professionelle baumpflege',
-  alternates: {
-    canonical: 'https://baumpflegeberlin-brandenburg.de/blog/baumschnitt-winter',
-  },
-  openGraph: {
-    title: 'Baumschnitt im Winter: Die ideale Zeit für gesunde Bäume',
-    description: 'Erfahren Sie, warum der Winter die optimale Zeit ist, um Ihre Bäume zu schneiden und wie dies das Wachstum im Frühjahr fördert.',
-    images: ['/images/blog/winter-tree-pruning.webp'],
-    type: 'article',
-  },
-};
+// Generate static params for all blog posts
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
 
-// Article data - in a real app this would come from CMS/database
-const article = {
-  id: 'baumschnitt-winter',
-  title: 'Baumschnitt im Winter: Die ideale Zeit für gesunde Bäume',
-  excerpt: 'Erfahren Sie, warum der Winter die optimale Zeit ist, um Ihre Bäume zu schneiden und wie dies das Wachstum im Frühjahr fördert.',
-  date: '2023-12-15',
-  author: 'Der Baumchirurg Team',
-  category: 'Baumpflege',
-  image: '/images/blog/winter-tree-pruning.webp',
-  readTime: '5 min',
-  content: `
-    <p>Der Winter ist oft eine vernachlässigte Zeit im Garten, aber für die Baumpflege bietet er einzigartige Vorteile. Während die Bäume in ihrer Ruhephase sind, ist dies der ideale Zeitpunkt für einen professionellen Baumschnitt.</p>
-
-    <h2>Warum ist der Winter ideal für den Baumschnitt?</h2>
-    
-    <p>Während der Wintermonate befinden sich Laubbäume in ihrer Dormanzphase. Das bedeutet, dass der Saftfluss minimal ist und die Bäume weniger Stress durch Schnittmaßnahmen erfahren. Diese natürliche Ruhezeit macht den Winter zur optimalen Jahreszeit für umfangreiche Schnittarbeiten.</p>
-
-    <h3>Vorteile des Winterschnitts:</h3>
-    <ul>
-      <li><strong>Geringerer Stress für den Baum:</strong> Da sich der Baum in der Ruhephase befindet, kann er seine Energie für die Heilung der Schnittstellen verwenden.</li>
-      <li><strong>Bessere Sicht auf die Struktur:</strong> Ohne Laub ist die natürliche Form und Struktur des Baumes deutlich erkennbar.</li>
-      <li><strong>Reduziertes Infektionsrisiko:</strong> Viele Pilze und Bakterien sind im Winter weniger aktiv.</li>
-      <li><strong>Stärkeres Wachstum im Frühjahr:</strong> Geschnittene Bäume treiben im Frühjahr kräftiger aus.</li>
-    </ul>
-
-    <h2>Welche Bäume sollten im Winter geschnitten werden?</h2>
-
-    <p>Nicht alle Baumarten profitieren gleichermaßen vom Winterschnitt. Während die meisten Laubbäume wie Ahorn, Eiche, Buche und Linde ideal im Winter geschnitten werden können, gibt es Ausnahmen.</p>
-
-    <h3>Geeignete Baumarten für den Winterschnitt:</h3>
-    <ul>
-      <li>Obstbäume (Apfel, Birne, Kirsche)</li>
-      <li>Laubbäume (Ahorn, Eiche, Buche, Linde)</li>
-      <li>Zierbäume wie Akazien und Platanen</li>
-    </ul>
-
-    <h3>Ausnahmen - Diese Bäume besser nicht im Winter schneiden:</h3>
-    <ul>
-      <li><strong>Birken und Ahorne:</strong> Diese "bluten" stark, wenn sie bei Temperaturen über dem Gefrierpunkt geschnitten werden.</li>
-      <li><strong>Walnussbäume:</strong> Sollten erst nach dem Laubaustrieb geschnitten werden.</li>
-      <li><strong>Immergrüne Nadelbäume:</strong> Benötigen einen anderen Schnittrhythmus.</li>
-    </ul>
-
-    <h2>Professionelle Durchführung ist entscheidend</h2>
-
-    <p>Ein fachgerechter Winterschnitt erfordert Expertise und die richtige Ausrüstung. Falsche Schnitte können zu dauerhaften Schäden führen und die Gesundheit des Baumes gefährden.</p>
-
-    <blockquote>
-      "Ein professioneller Baumschnitt im Winter kann die Lebensdauer Ihrer Bäume um Jahre verlängern und deren Gesundheit nachhaltig verbessern." - Der Baumchirurg Team
-    </blockquote>
-
-    <h3>Was macht einen professionellen Winterschnitt aus?</h3>
-    <ul>
-      <li>Fachgerechte Schnittführung an der richtigen Stelle</li>
-      <li>Verwendung von sauberen, scharfen Werkzeugen</li>
-      <li>Berücksichtigung der natürlichen Wuchsform</li>
-      <li>Entfernung von kranken und toten Ästen</li>
-      <li>Auslichtung für bessere Luftzirkulation</li>
-    </ul>
-
-    <h2>Wann ist der beste Zeitpunkt?</h2>
-
-    <p>In der Region Berlin-Brandenburg ist die beste Zeit für den Winterschnitt zwischen Dezember und Februar, solange die Temperaturen über -5°C liegen. An frostfreien Tagen können die Arbeiten optimal durchgeführt werden.</p>
-
-    <h2>Fazit</h2>
-
-    <p>Der Winterschnitt ist eine Investition in die Zukunft Ihrer Bäume. Mit der richtigen Technik und zum optimalen Zeitpunkt durchgeführt, fördert er nicht nur das gesunde Wachstum, sondern kann auch die Sicherheit in Ihrem Garten erhöhen.</p>
-
-    <p>Vertrauen Sie auf die Expertise von professionellen Baumpflegern, um Ihre Bäume optimal auf das kommende Frühjahr vorzubereiten.</p>
-  `
-};
-
-// Related articles
-const relatedArticles = [
-  {
-    id: 'sturmsichere-baeume',
-    title: 'So machen Sie Ihre Bäume sturmsicher',
-    category: 'Sicherheit',
-    readTime: '4 min'
-  },
-  {
-    id: 'baumkrankheiten-erkennen',
-    title: 'Baumkrankheiten frühzeitig erkennen',
-    category: 'Baumgesundheit',
-    readTime: '7 min'
+// Generate metadata for each post
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
+  
+  if (!post) {
+    return {
+      title: 'Post Not Found',
+    };
   }
-];
 
-export default function ArticlePage() {
+  return {
+    title: `${post.title} | Baumpflege Berlin-Brandenburg`,
+    description: post.excerpt,
+    keywords: post.keywords || '',
+    alternates: {
+      canonical: `https://baumpflegeberlin-brandenburg.de/blog/${post.slug}`,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+      type: 'article',
+    },
+  };
+}
+
+export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const article = await getPostBySlug(slug);
+
+  if (!article) {
+    notFound();
+  }
+
+  const relatedArticles = getRelatedPosts(article.slug, article.category);
+
   return (
     <main className="min-h-screen flex flex-col bg-white">
       <Navbar />
@@ -220,7 +164,7 @@ export default function ArticlePage() {
             {/* Main Content */}
             <div className="lg:col-span-8">
               <div 
-                className="text-neutral/80"
+                className="prose prose-lg max-w-none text-neutral/80"
                 dangerouslySetInnerHTML={{ __html: article.content }}
               />
               
@@ -264,23 +208,7 @@ export default function ArticlePage() {
             {/* Sidebar */}
             <div className="lg:col-span-4 mt-12 lg:mt-0">
               {/* Table of Contents */}
-              <div className="bg-secondary rounded-xl p-6 mb-8 sticky top-32">
-                <h3 className="text-lg font-bold text-neutral mb-4">Inhaltsverzeichnis</h3>
-                <nav className="space-y-2">
-                  <a href="#warum-winter" className="block text-sm text-neutral/70 hover:text-primary transition-colors">
-                    Warum ist der Winter ideal?
-                  </a>
-                  <a href="#welche-baeume" className="block text-sm text-neutral/70 hover:text-primary transition-colors">
-                    Welche Bäume schneiden?
-                  </a>
-                  <a href="#professionell" className="block text-sm text-neutral/70 hover:text-primary transition-colors">
-                    Professionelle Durchführung
-                  </a>
-                  <a href="#zeitpunkt" className="block text-sm text-neutral/70 hover:text-primary transition-colors">
-                    Bester Zeitpunkt
-                  </a>
-                </nav>
-              </div>
+              <TableOfContents headings={article.headings} />
 
               {/* Contact CTA */}
               <div className="bg-primary rounded-xl p-6 text-white mb-8">
@@ -299,56 +227,58 @@ export default function ArticlePage() {
       </article>
 
       {/* Related Articles */}
-      <section className="py-16 bg-secondary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral mb-4">Ähnliche Artikel</h2>
-            <p className="text-lg text-neutral/70">
-              Entdecken Sie weitere hilfreiche Tipps zur Baumpflege
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {relatedArticles.map((relatedArticle) => (
-              <article key={relatedArticle.id} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <Link href={`/blog/${relatedArticle.id}`} className="block">
-                  <div className="relative h-48 overflow-hidden">
-                    <div className="bg-secondary-dark h-full w-full flex items-center justify-center">
-                      <svg className="h-16 w-16 text-primary/30" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+      {relatedArticles.length > 0 && (
+        <section className="py-16 bg-secondary">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-neutral mb-4">Ähnliche Artikel</h2>
+              <p className="text-lg text-neutral/70">
+                Entdecken Sie weitere hilfreiche Tipps zur Baumpflege
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {relatedArticles.map((relatedArticle) => (
+                <article key={relatedArticle.slug} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <Link href={`/blog/${relatedArticle.slug}`} className="block">
+                    <div className="relative h-48 overflow-hidden">
+                      <div className="bg-secondary-dark h-full w-full flex items-center justify-center">
+                        <svg className="h-16 w-16 text-primary/30" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div className="absolute top-4 left-4">
+                        <span className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
+                          {relatedArticle.category}
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                  <div className="p-6">
+                    <div className="flex items-center text-sm text-neutral/60 mb-2">
+                      <span>{relatedArticle.readTime} Lesezeit</span>
+                    </div>
+                    <Link href={`/blog/${relatedArticle.slug}`} className="block">
+                      <h3 className="text-xl font-bold text-neutral mb-3 hover:text-primary transition-colors">
+                        {relatedArticle.title}
+                      </h3>
+                    </Link>
+                    <Link 
+                      href={`/blog/${relatedArticle.slug}`}
+                      className="inline-flex items-center text-primary font-medium hover:text-primary-dark transition-colors"
+                    >
+                      Weiterlesen
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>
-                    </div>
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
-                        {relatedArticle.category}
-                      </span>
-                    </div>
+                    </Link>
                   </div>
-                </Link>
-                <div className="p-6">
-                  <div className="flex items-center text-sm text-neutral/60 mb-2">
-                    <span>{relatedArticle.readTime} Lesezeit</span>
-                  </div>
-                  <Link href={`/blog/${relatedArticle.id}`} className="block">
-                    <h3 className="text-xl font-bold text-neutral mb-3 hover:text-primary transition-colors">
-                      {relatedArticle.title}
-                    </h3>
-                  </Link>
-                  <Link 
-                    href={`/blog/${relatedArticle.id}`}
-                    className="inline-flex items-center text-primary font-medium hover:text-primary-dark transition-colors"
-                  >
-                    Weiterlesen
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </Link>
-                </div>
-              </article>
-            ))}
+                </article>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Newsletter Section */}
       <section className="bg-primary/5 py-16">

@@ -1,6 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import dynamic from "next/dynamic";
 import "./globals.css";
+
+// Import cookie components wrapper (client component)
+const CookieComponents = dynamic(() => import('@/components/CookieComponents'));
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,6 +20,12 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,6 +35,9 @@ export default function RootLayout({
     <html lang="de" className={`${inter.variable} scroll-smooth`}>
       <body className="font-sans antialiased">
         {children}
+        
+        {/* Cookie Consent Management */}
+        <CookieComponents />
       </body>
     </html>
   );
