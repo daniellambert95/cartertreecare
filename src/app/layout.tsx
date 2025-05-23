@@ -16,7 +16,19 @@ export const metadata: Metadata = {
   title: "DerBaumchirurg | Professionelle Baumpflege",
   description: "Professionelle Baumpflege und Fällarbeiten mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben.",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      {
+        url: "/favicon.ico",
+        sizes: "any",
+      },
+      {
+        url: "/icon-192-2.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/icon-192-2.png",
   },
 };
 
@@ -33,6 +45,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className={`${inter.variable} scroll-smooth`}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
       <body className="font-sans antialiased">
         {children}
         

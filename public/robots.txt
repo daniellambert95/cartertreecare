@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.baumpflegeberlin-brandenburg.de/sitemap.xml 
