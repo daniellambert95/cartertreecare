@@ -38,8 +38,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/og-image.png',
-        width: 1200,
-        height: 630,
+        width: 1000,
+        height: 1000,
         alt: 'DerBaumchirurg - Professionelle Baumpflege Berlin-Brandenburg',
       }
     ],
