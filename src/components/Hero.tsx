@@ -86,7 +86,7 @@ const Hero = () => {
 
       {/* Abseiling container - positioned more visibly */}
       <div 
-        className="absolute z-0 top-0 left-1/3 sm:right-1/3 h-screen pointer-events-none"
+        className="absolute z-0 top-0 left-1/3 sm:left-1/2 md:left-2/3 lg:left-3/4 h-screen pointer-events-none"
         style={{ overflow: 'visible' }}
       >
         {/* Abseiling man */}
