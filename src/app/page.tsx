@@ -4,7 +4,6 @@ import dynamic from 'next/dynamic';
 const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: true });
 const Hero = dynamic(() => import('@/components/Hero'), { ssr: true });
 const Services = dynamic(() => import('@/components/Services'), { ssr: true });
-const Reviews = dynamic(() => import('@/components/Reviews'), { ssr: true });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 
 export default function Home() {
