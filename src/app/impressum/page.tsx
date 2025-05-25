@@ -89,7 +89,7 @@ export default function ImpressumPage() {
             <h2 className="text-2xl font-bold text-neutral mb-6">Angaben gemäß § 5 TMG</h2>
             
             <div className="bg-white border border-neutral/10 rounded-xl p-6 shadow-sm">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-6">
                 <div>
                   <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
                     <span className="text-primary mr-2">🏢</span>
@@ -97,8 +97,8 @@ export default function ImpressumPage() {
                   </h3>
                   <div className="space-y-2 text-neutral/80">
                     <div><strong>Firmenname:</strong> Der Baumchirurg</div>
-                    <div><strong>Geschäftsführer:</strong> <span className="text-red-600">[BITTE ERGÄNZEN]</span></div>
-                    <div><strong>Rechtsform:</strong> <span className="text-red-600">[z.B. Einzelunternehmen, GbR, GmbH]</span></div>
+                    <div><strong>Inhaber:</strong> James Carter</div>
+                    <div><strong>Rechtsform:</strong> Einzelunternehmen</div>
                   </div>
                 </div>
                 
@@ -108,33 +108,18 @@ export default function ImpressumPage() {
                     Anschrift
                   </h3>
                   <div className="space-y-2 text-neutral/80">
-                    <div><strong>Straße:</strong> <span className="text-red-600">[VOLLSTÄNDIGE ADRESSE]</span></div>
-                    <div><strong>PLZ/Ort:</strong> <span className="text-red-600">[POSTLEITZAHL UND ORT]</span></div>
+                    <div><strong>Straße:</strong> Sorauer Str. 12</div>
+                    <div><strong>PLZ/Ort:</strong> 10997 Berlin</div>
                     <div><strong>Land:</strong> Deutschland</div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          {/* Contact Information */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-neutral mb-6">Kontakt</h2>
-            
-            <div className="bg-white border border-neutral/10 rounded-xl p-6 shadow-sm">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
-                    <span className="text-primary mr-2">📞</span>
-                    Telefon & E-Mail
+                    <span className="text-primary mr-2">📧</span>
+                    Kontakt
                   </h3>
                   <div className="space-y-2 text-neutral/80">
-                    <div className="flex items-center">
-                      <strong className="mr-2">Telefon:</strong>
-                      <a href="tel:+491745225935" className="text-primary hover:underline">
-                        +49 174 522 5935
-                      </a>
-                    </div>
                     <div className="flex items-center">
                       <strong className="mr-2">E-Mail:</strong>
                       <a href="mailto:derbaumchirurg@gmail.com" className="text-primary hover:underline">
@@ -143,128 +128,52 @@ export default function ImpressumPage() {
                     </div>
                   </div>
                 </div>
-                
-                <div>
-                  <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
-                    <span className="text-primary mr-2">🌐</span>
-                    Online
-                  </h3>
-                  <div className="space-y-2 text-neutral/80">
-                    <div><strong>Website:</strong> <span className="text-red-600">[IHRE DOMAIN]</span></div>
-                    <div><strong>Verfügbarkeit:</strong> Mo-Fr, 8:00-18:00 Uhr</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
 
-          {/* Business Registration */}
+          {/* Legal Disclaimer */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-neutral mb-6">Behördliche Angaben</h2>
+            <h2 className="text-2xl font-bold text-neutral mb-6">Haftungsausschluss</h2>
             
-            <div className="bg-neutral/5 rounded-xl p-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
-                    <span className="text-primary mr-2">📋</span>
-                    Registrierung
-                  </h3>
-                  <div className="space-y-2 text-neutral/80 text-sm">
-                    <div><strong>Handelsregister:</strong> <span className="text-red-600">[Falls vorhanden: HRB-Nummer]</span></div>
-                    <div><strong>Registergericht:</strong> <span className="text-red-600">[Falls vorhanden: z.B. Amtsgericht München]</span></div>
-                    <div><strong>Steuernummer:</strong> <span className="text-red-600">[IHRE STEUERNUMMER]</span></div>
-                    <div><strong>USt-IdNr.:</strong> <span className="text-red-600">[Falls vorhanden: DE123456789]</span></div>
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
-                    <span className="text-primary mr-2">🛡️</span>
-                    Versicherung
-                  </h3>
-                  <div className="space-y-2 text-neutral/80 text-sm">
-                    <div><strong>Betriebshaftpflicht:</strong> <span className="text-red-600">[VERSICHERUNGSNAME]</span></div>
-                    <div><strong>Versicherungsraum:</strong> <span className="text-red-600">[z.B. Deutschland/Europa]</span></div>
-                    <div><strong>Berufsgenossenschaft:</strong> <span className="text-red-600">[z.B. BG BAU]</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Professional Information */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-neutral mb-6">Berufsspezifische Angaben</h2>
-            
-            <div className="bg-white border border-neutral/10 rounded-xl p-6 shadow-sm">
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-lg font-semibold text-neutral mb-3 flex items-center">
-                    <span className="text-primary mr-2">🌳</span>
-                    Tätigkeitsbereich
-                  </h3>
-                  <div className="text-neutral/80">
-                    <p className="mb-2"><strong>Haupttätigkeit:</strong> Professionelle Baumpflege und Fällarbeiten</p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                      <div>
-                        <strong>Leistungen:</strong>
-                        <div className="mt-1 space-y-1">
-                          <div className="flex items-start">
-                            <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span>Baumfällung</span>
-                          </div>
-                          <div className="flex items-start">
-                            <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span>Baumpflege</span>
-                          </div>
-                          <div className="flex items-start">
-                            <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span>Baumschnitt</span>
-                          </div>
-                          <div className="flex items-start">
-                            <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span>Sturmschadenbeseitigung</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <strong>Qualifikationen:</strong>
-                        <div className="mt-1 text-red-600 text-sm">
-                          [z.B. Zertifizierter Baumpfleger, FLL-Zertifikat, etc.]
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Legal Notes */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-neutral mb-6">Rechtliche Hinweise</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white border border-neutral/10 rounded-lg p-6">
-                <h3 className="font-semibold text-neutral mb-3 flex items-center">
-                  <span className="text-primary mr-2">⚖️</span>
-                  Haftungsausschluss
+            <div className="space-y-8">
+              {/* Content Liability */}
+              <div className="bg-white border border-neutral/10 rounded-xl p-6 shadow-sm">
+                <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
+                  <span className="text-primary mr-2">📄</span>
+                  Haftung für Inhalte
                 </h3>
-                <p className="text-sm text-neutral/70">
-                  Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. 
-                  Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
-                </p>
+                <div className="text-neutral/80 leading-relaxed">
+                  <p>
+                    Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                  </p>
+                </div>
               </div>
-              
-              <div className="bg-white border border-neutral/10 rounded-lg p-6">
-                <h3 className="font-semibold text-neutral mb-3 flex items-center">
+
+              {/* Links Liability */}
+              <div className="bg-white border border-neutral/10 rounded-xl p-6 shadow-sm">
+                <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
+                  <span className="text-primary mr-2">🔗</span>
+                  Haftung für Links
+                </h3>
+                <div className="text-neutral/80 leading-relaxed">
+                  <p>
+                    Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                  </p>
+                </div>
+              </div>
+
+              {/* Copyright */}
+              <div className="bg-white border border-neutral/10 rounded-xl p-6 shadow-sm">
+                <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
                   <span className="text-primary mr-2">©</span>
                   Urheberrecht
                 </h3>
-                <p className="text-sm text-neutral/70">
-                  Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. 
-                  Vervielfältigung und Verwendung bedürfen der schriftlichen Zustimmung.
-                </p>
+                <div className="text-neutral/80 leading-relaxed">
+                  <p>
+                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -288,23 +197,6 @@ export default function ImpressumPage() {
               >
                 <span className="text-primary">Datenschutzerklärung</span>
               </Link>
-            </div>
-          </div>
-
-          {/* Important Note */}
-          <div className="mt-8 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-            <div className="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-600 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z" />
-              </svg>
-              <div>
-                <h4 className="text-sm font-semibold text-yellow-800 mb-1">Wichtiger Hinweis</h4>
-                <p className="text-xs text-yellow-700">
-                  Bitte ergänzen Sie alle rot markierten Platzhalter mit Ihren korrekten Geschäftsdaten. 
-                  Ein unvollständiges oder fehlerhaftes Impressum kann zu Abmahnungen führen. 
-                  Bei Unsicherheiten konsultieren Sie einen Rechtsanwalt.
-                </p>
-              </div>
             </div>
           </div>
 
