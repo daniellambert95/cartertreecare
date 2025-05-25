@@ -76,6 +76,26 @@ const Services = () => {
       category: 'tree-care'
     },
     {
+      title: 'Baumprüfung',
+      description: 'Fachkundige Beurteilung der Gesundheit und Sicherheit Ihrer Bäume durch zertifizierte Experten.',
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      category: 'tree-care'
+    },
+    {
+      title: 'Kroneneinkürzung',
+      description: 'Fachgerechte Reduzierung der Baumkrone zur Größenkontrolle und Verbesserung der Stabilität.',
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4a1 1 0 011-1h4m5 0h4a1 1 0 011 1v4m0 5v4a1 1 0 01-1 1h-4m-5 0H5a1 1 0 01-1-1v-4" />
+        </svg>
+      ),
+      category: 'tree-care'
+    },
+    {
       title: 'Baumfällungen',
       description: 'Sichere und kontrollierte Baumfällung durch erfahrene Experten mit Rücksicht auf die Umgebung.',
       icon: (
