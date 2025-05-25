@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     siteName: 'DerBaumchirurg',
     images: [
       {
-        url: '/og-image.png',
-        width: 1000,
-        height: 1000,
+        url: '/social-image.webp',
+        width: 1200,
+        height: 630,
         alt: 'DerBaumchirurg - Professionelle Baumpflege Berlin-Brandenburg',
       }
     ],
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "DerBaumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
     description: "Professionelle Baumpflege und Fällarbeiten mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben.",
-    images: ['/twitter-image.png'],
+    images: ['/twitter-image.webp'],
     creator: '@derbaumchirurg',
   },
   robots: {
