@@ -110,6 +110,28 @@ const AllServices = () => {
       category: 'tree-care'
     },
     {
+      title: 'Baumprüfung',
+      description: 'Fachkundige Beurteilung der Gesundheit und Sicherheit Ihrer Bäume durch zertifizierte Experten.',
+      longDescription: 'Unsere zertifizierten Baumgutachter führen umfassende Baumprüfungen durch, um die Verkehrssicherheit zu gewährleisten und den Gesundheitszustand Ihrer Bäume zu bewerten. Mit modernsten Diagnoseverfahren erkennen wir frühzeitig potenzielle Probleme und entwickeln gezielte Pflegemaßnahmen.',
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      category: 'tree-care'
+    },
+    {
+      title: 'Kroneneinkürzung',
+      description: 'Fachgerechte Reduzierung der Baumkrone zur Größenkontrolle und Verbesserung der Stabilität.',
+      longDescription: 'Durch professionelle Kroneneinkürzung reduzieren wir die Größe und das Gewicht der Baumkrone, um die Stabilität zu verbessern und das Risiko von Astbrüchen zu minimieren. Diese Technik ist besonders wichtig für Bäume in beengten Räumen oder in der Nähe von Gebäuden und Stromleitungen.',
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4a1 1 0 011-1h4m5 0h4a1 1 0 011 1v4m0 5v4a1 1 0 01-1 1h-4m-5 0H5a1 1 0 01-1-1v-4" />
+        </svg>
+      ),
+      category: 'tree-care'
+    },
+    {
       title: 'Baumfällungen',
       description: 'Sichere und kontrollierte Baumfällung durch erfahrene Experten mit Rücksicht auf die Umgebung.',
       longDescription: 'Wenn ein Baum krank, beschädigt oder gefährlich geworden ist, bieten wir professionelle Fällungsdienste an. Unsere erfahrenen Arboristen führen kontrollierte Fällungen durch, wobei die Sicherheit und der Schutz umliegender Strukturen und Vegetation oberste Priorität haben.',
