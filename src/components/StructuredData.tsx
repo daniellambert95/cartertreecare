@@ -27,7 +27,7 @@ export default function StructuredData({ type = 'organization', data }: Structur
         "@type": "LocalBusiness",
         "name": "DerBaumchirurg",
         "alternateName": "Der Baumchirurg",
-        "description": "Professionelle Baumpflege und Fällarbeiten mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
+        "description": "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
         "url": "https://baumpflegeberlin-brandenburg.de",
         "logo": "https://baumpflegeberlin-brandenburg.de/og-image.png",
         "image": "https://baumpflegeberlin-brandenburg.de/og-image.png",
