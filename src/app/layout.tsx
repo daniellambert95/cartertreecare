@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import dynamic from "next/dynamic";
+import Script from "next/script";
 import "./globals.css";
 
 // Import cookie components wrapper (client component)
@@ -104,21 +105,22 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
-        
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FPQEXY5YE0"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-FPQEXY5YE0');
-            `,
-          }}
-        />
       </head>
       <body className="font-sans antialiased">
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-FPQEXY5YE0"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FPQEXY5YE0');
+          `}
+        </Script>
+
         {children}
         
         {/* Structured Data for SEO */}
