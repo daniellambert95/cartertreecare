@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const images = [
   {
@@ -81,11 +82,13 @@ export default function ImageGallery() {
             >
               {images.map((image, index) => (
                 <div key={index} className="w-full h-full flex-shrink-0 relative">
-                  <img
+                  <Image
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover"
-                    loading={index === 0 ? 'eager' : 'lazy'}
+                    fill
+                    className="object-cover"
+                    priority={index === 0}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
                   />
                   {/* Image Overlay with Title */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
@@ -159,16 +162,18 @@ export default function ImageGallery() {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`flex-shrink-0 w-20 h-16 rounded-lg overflow-hidden transition-all duration-300 ${
+                className={`flex-shrink-0 w-20 h-16 rounded-lg overflow-hidden transition-all duration-300 relative ${
                   index === currentIndex 
                     ? 'ring-4 ring-primary scale-105' 
                     : 'opacity-60 hover:opacity-100'
                 }`}
               >
-                <img
+                <Image
                   src={image.src}
                   alt={`Thumbnail ${index + 1}`}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="80px"
                 />
               </button>
             ))}

@@ -1,8 +1,17 @@
 import Script from 'next/script';
 
+interface ArticleData {
+  title: string;
+  description: string;
+  image: string;
+  datePublished: string;
+  dateModified?: string;
+  url: string;
+}
+
 interface StructuredDataProps {
   type?: 'organization' | 'localBusiness' | 'article';
-  data?: any;
+  data?: ArticleData;
 }
 
 export default function StructuredData({ type = 'organization', data }: StructuredDataProps) {
