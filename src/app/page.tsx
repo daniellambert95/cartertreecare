@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: true });
 const Hero = dynamic(() => import('@/components/Hero'), { ssr: true });
 const Services = dynamic(() => import('@/components/Services'), { ssr: true });
+const ImageGallery = dynamic(() => import('@/components/ImageGallery'), { ssr: true });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
+      <ImageGallery />
       {/* <Reviews /> */}
       <Footer />
     </main>

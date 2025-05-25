@@ -144,9 +144,9 @@ const AllServices = () => {
       category: 'safety'
     },
     {
-      title: 'Baumprüfung',
-      description: 'Fachkundige Beurteilung der Gesundheit und Sicherheit Ihrer Bäume durch zertifizierte Experten.',
-      longDescription: 'Unsere zertifizierten Baumexperten führen gründliche Inspektionen durch, um die Gesundheit, Stabilität und potenzielle Risiken Ihrer Bäume zu bewerten. Diese regelmäßigen Prüfungen können Probleme frühzeitig erkennen und teure Schäden oder Unfälle verhindern.',
+      title: 'Baumfällung',
+      description: 'Kontrollierte und sichere Fällung von Bäumen unter Berücksichtigung gesetzlicher Vorgaben und Umweltschutz.',
+      longDescription: 'Wenn ein Baum krank, beschädigt oder gefährlich geworden ist, bieten wir professionelle Fällungsdienste an. Unsere erfahrenen Arboristen führen kontrollierte Fällungen durch, wobei die Sicherheit und der Schutz umliegender Strukturen und Vegetation oberste Priorität haben.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -166,8 +166,8 @@ const AllServices = () => {
       category: 'tree-care'
     },
     {
-      title: 'Kroneneinkürzungen',
-      description: 'Fachgerechte Reduzierung der Baumkrone zur Verbesserung der Stabilität und des Erscheinungsbildes.',
+      title: 'Kronenpflege',
+      description: 'Pflege der Baumkrone durch Entfernung von Totholz, sich kreuzenden Ästen und tief hängenden Zweigen zur Einhaltung gesetzlicher Vorschriften an Straßen und Gebäuden.',
       longDescription: 'Durch fachgerechte Kroneneinkürzung können wir die Größe und Form eines Baumes kontrollieren, seine Stabilität verbessern und das Risiko von Astbrüchen reduzieren. Diese Technik ist besonders wichtig für Bäume in beengten Räumen oder in der Nähe von Gebäuden.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -177,8 +177,8 @@ const AllServices = () => {
       category: 'tree-care'
     },
     {
-      title: 'Fassadenschnitt',
-      description: 'Präziser Schnitt von Bäumen und Sträuchern entlang von Fassaden für ein gepflegtes Erscheinungsbild.',
+      title: 'Sturmschaden',
+      description: 'Schnelle und sichere Entfernung von umgestürzten oder beschädigten Bäumen nach Unwettern.',
       longDescription: 'Unser Fassadenschnitt-Service sorgt dafür, dass Bäume und Sträucher in der Nähe von Gebäuden ordentlich und kontrolliert wachsen. Dies verbessert nicht nur das Erscheinungsbild, sondern verhindert auch potenzielle Schäden an der Fassade und erhält den Lichteinfall in Gebäude.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -219,28 +219,6 @@ const AllServices = () => {
         </svg>
       ),
       category: 'removal'
-    },
-    {
-      title: 'Altbaumpflege',
-      description: 'Spezielle Pflege und Sanierung von alten, wertvollen Bäumen zur Erhaltung des Baumbestandes.',
-      longDescription: 'Alte Bäume sind wertvolle Bestandteile unserer Umwelt und verdienen besondere Aufmerksamkeit. Unsere spezialisierten Altbaumpflegedienste konzentrieren sich auf schonende Techniken zur Erhaltung der Gesundheit, Stabilität und Langlebigkeit dieser wichtigen natürlichen Schätze.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-      ),
-      category: 'tree-care'
-    },
-    {
-      title: 'Jungbaumpflege',
-      description: 'Fachgerechte Pflege junger Bäume für ein gesundes Wachstum und eine stabile Entwicklung.',
-      longDescription: 'Die ersten Jahre im Leben eines Baumes sind entscheidend für seine zukünftige Gesundheit und Struktur. Unsere Jungbaumpflege umfasst Formschnitt, Bewässerungsberatung und Schutzmaßnahmen, um sicherzustellen, dass Ihre jungen Bäume zu gesunden, stabilen und langlebigen Exemplaren heranwachsen.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
-        </svg>
-      ),
-      category: 'tree-care'
     },
     {
       title: 'Neupflanzungen',

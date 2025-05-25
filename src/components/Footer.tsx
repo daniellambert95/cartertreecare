@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="text-xl font-bold text-primary">DerBaumchirurg</span>
             </div>
             <p className="text-white/70 max-w-sm mb-6">
-              Professionelle Baumpflege und Fällarbeiten mit höchster Sorgfalt und Expertise.
+              Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise.
             </p>
             
             {/* Social Media Buttons */}

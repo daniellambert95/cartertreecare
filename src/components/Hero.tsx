@@ -100,7 +100,7 @@ const Hero = () => {
           }}
         >
           <Image 
-            src="/images/abseil.webp" 
+            src="/images/climber.webp" 
             alt="Abseiling tree surgeon" 
             width={200}
             height={300}
@@ -120,7 +120,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            <span className="block">Der Baumchirurg</span>
+            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Der Baumchirurg</span>
             <span className="block max-w-2xl text-3xl md:text-5xl mt-2 text-primary-light">Professioneller Baumpfleger und Gärtner</span>
           </h1>
           
@@ -159,13 +159,17 @@ const Hero = () => {
               
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-primary-dark border-2 border-white flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                  <Image 
+                    src="/images/saw.webp" 
+                    alt="Saw" 
+                    width={40}
+                    height={40}
+                    className="h-6 w-6 filter brightness-0 invert"
+                  />
                 </div>
                 <div className="text-white">
-                  <div className="font-bold text-xl">15+</div>
-                  <div className="text-white/80 text-sm">Jahre Erfahrung</div>
+                  <div className="font-bold text-xl">Saubere</div>
+                  <div className="text-white/80 text-sm">Schnitte</div>
                 </div>
               </div>
               

@@ -207,20 +207,16 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
       {/* Featured categories */}
       <section className="py-8 bg-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4">
-            {['Alle Beiträge', 'Baumpflege', 'Baumgesundheit', 'Sicherheit', 'Baumfällung', 'Gartengestaltung'].map((category, index) => (
-              <a
-                key={index}
-                href={index === 0 ? '/blog' : `/blog/kategorie/${category.toLowerCase().replace('ä', 'ae').replace('ü', 'ue')}`}
-                className={`px-4 py-2 rounded-full text-sm font-medium ${
-                  index === 0 
-                    ? 'bg-primary text-white' 
-                    : 'bg-white text-neutral hover:bg-primary hover:text-white'
-                } transition-colors duration-300 shadow-sm`}
-              >
-                {category}
-              </a>
-            ))}
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral mb-4">
+              Unser Blog
+            </h2>
+            <p className="text-lg text-neutral/70 max-w-2xl mx-auto mb-8">
+              Entdecken Sie wertvolle Tipps und Einblicke rund um Baumpflege, Gartenarbeit und nachhaltige Grünflächenpflege.
+            </p>
+            <div className="inline-flex items-center justify-center space-x-2 text-primary">
+              <span className="font-medium">Regelmäßig neue Artikel</span>
+            </div>
           </div>
         </div>
       </section>
