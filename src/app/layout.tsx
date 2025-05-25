@@ -5,6 +5,7 @@ import "./globals.css";
 
 // Import cookie components wrapper (client component)
 const CookieComponents = dynamic(() => import('@/components/CookieComponents'));
+const StructuredData = dynamic(() => import('@/components/StructuredData'));
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,8 +14,55 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DerBaumchirurg | Professionelle Baumpflege",
-  description: "Professionelle Baumpflege und Fällarbeiten mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben.",
+  title: "DerBaumchirurg | Professionelle Baumpflege Berlin, Brandenburg, Potsdam",
+  description: "Professionelle Baumpflege und Fällarbeiten mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
+  keywords: "Baumpflege, Baumfällung, Baumschnitt, Berlin, Brandenburg, Baumpfleger, Fällarbeiten, Baumklettern, Kronenpflege, Baumgutachten",
+  authors: [{ name: "DerBaumchirurg Team" }],
+  creator: "DerBaumchirurg",
+  publisher: "DerBaumchirurg",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://baumpflegeberlin-brandenburg.de'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: "DerBaumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
+    description: "Professionelle Baumpflege und Fällarbeiten mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
+    url: 'https://baumpflegeberlin-brandenburg.de',
+    siteName: 'DerBaumchirurg',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'DerBaumchirurg - Professionelle Baumpflege Berlin-Brandenburg',
+      }
+    ],
+    locale: 'de_DE',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "DerBaumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
+    description: "Professionelle Baumpflege und Fällarbeiten mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben.",
+    images: ['/twitter-image.png'],
+    creator: '@derbaumchirurg',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: [
       {
@@ -29,6 +77,11 @@ export const metadata: Metadata = {
     ],
     shortcut: "/favicon.ico",
     apple: "/icon-192-2.png",
+  },
+  verification: {
+    google: 'your-google-verification-code', // Replace with actual Google Search Console verification code
+    // yandex: 'your-yandex-verification-code', // Add if needed
+    // bing: 'your-bing-verification-code', // Add if needed
   },
 };
 
@@ -54,6 +107,9 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         {children}
+        
+        {/* Structured Data for SEO */}
+        <StructuredData type="localBusiness" />
         
         {/* Cookie Consent Management */}
         <CookieComponents />
