@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Der Baumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
     description: "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben.",
-    images: ['/twitter-image.webp'],
+    images: ['/social-image.webp'],
     creator: '@der baumchirurg',
   },
   robots: {
@@ -67,17 +67,28 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/logo.webp",
+        url: "/favicon.ico",
         sizes: "any",
       },
       {
-        url: "/logo.webp",
-        sizes: "400x400",
-        type: "image/webp",
+        url: "/icon-192-2.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/og-image.png",
+        sizes: "1200x630",
+        type: "image/png",
       },
     ],
-    shortcut: "/logo.webp",
-    apple: "/logo.webp",
+    shortcut: "/favicon.ico",
+    apple: [
+      {
+        url: "/icon-192-2.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+    ],
   },
   verification: {
     google: 'your-google-verification-code', // Replace with actual Google Search Console verification code
@@ -104,7 +115,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#22c55e" />
       </head>
       <body className="font-sans antialiased">
         {/* Google Analytics */}
