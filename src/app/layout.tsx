@@ -125,6 +125,7 @@ export default function RootLayout({
         
         {/* Structured Data for SEO */}
         <StructuredData type="localBusiness" />
+        <StructuredData type="navigation" />
         
         {/* Cookie Consent Management */}
         <CookieComponents />

@@ -131,23 +131,23 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
       )}
       
       {/* Cookie Banner */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 p-4 sm:p-6">
+      <div className="fixed bottom-0 left-0 right-0 z-50 p-2 sm:p-4 md:p-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-xl shadow-2xl border border-neutral/10">
+          <div className="bg-white rounded-lg sm:rounded-xl shadow-2xl border border-neutral/10 max-h-[85vh] sm:max-h-[90vh] overflow-hidden">
             {!showDetails ? (
               // Main Banner Content
-              <div className="p-6 sm:p-8">
-                <div className="flex items-start mb-4">
-                  <div className="h-10 w-10 rounded-xl bg-primary/15 flex items-center justify-center text-primary mr-4 flex-shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="p-4 sm:p-6 md:p-8">
+                <div className="flex items-start mb-3 sm:mb-4">
+                  <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-lg sm:rounded-xl bg-primary/15 flex items-center justify-center text-primary mr-3 sm:mr-4 flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold text-neutral mb-2">
+                    <h3 className="text-base sm:text-lg font-bold text-neutral mb-1 sm:mb-2">
                       🍪 Wir respektieren Ihre Privatsphäre
                     </h3>
-                    <p className="text-sm text-neutral/80 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-neutral/80 leading-relaxed">
                       Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern, 
                       den Website-Traffic zu analysieren und zu verstehen, woher unsere Besucher kommen. 
                       Sie können selbst entscheiden, welche Kategorien von Cookies Sie zulassen möchten.
@@ -158,29 +158,29 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                 
 
                 {/* Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                   <button
                     onClick={handleRejectAll}
-                    className="flex-1 px-4 py-3 border border-neutral/20 text-neutral font-medium rounded-md hover:bg-neutral/5 transition-colors duration-300 text-sm"
+                    className="flex-1 px-3 py-2 sm:px-4 sm:py-3 border border-neutral/20 text-neutral font-medium rounded-md hover:bg-neutral/5 transition-colors duration-300 text-xs sm:text-sm"
                   >
                     Nur notwendige Cookies
                   </button>
                   <button
                     onClick={() => setShowDetails(true)}
-                    className="flex-1 px-4 py-3 border border-primary text-primary font-medium rounded-md hover:bg-primary/5 transition-colors duration-300 text-sm"
+                    className="flex-1 px-3 py-2 sm:px-4 sm:py-3 border border-primary text-primary font-medium rounded-md hover:bg-primary/5 transition-colors duration-300 text-xs sm:text-sm"
                   >
                     Einstellungen anpassen
                   </button>
                   <button
                     onClick={handleAcceptAll}
-                    className="flex-1 px-4 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors duration-300 text-sm"
+                    className="flex-1 px-3 py-2 sm:px-4 sm:py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors duration-300 text-xs sm:text-sm"
                   >
                     Alle akzeptieren
                   </button>
                 </div>
 
                 {/* Legal Links */}
-                <div className="mt-4 pt-4 border-t border-neutral/10 text-xs text-neutral/60 text-center">
+                <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-neutral/10 text-xs text-neutral/60 text-center">
                   Weitere Informationen finden Sie in unserer{' '}
                   <Link href="/datenschutz" className="text-primary hover:underline font-medium">
                     Datenschutzerklärung
@@ -193,32 +193,32 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
               </div>
             ) : (
               // Detailed Settings
-              <div className="p-6 sm:p-8">
-                <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-lg font-bold text-neutral">Cookie-Einstellungen</h3>
+              <div className="p-4 sm:p-6 md:p-8 flex flex-col h-full">
+                <div className="flex items-center justify-between mb-4 sm:mb-6 flex-shrink-0">
+                  <h3 className="text-base sm:text-lg font-bold text-neutral">Cookie-Einstellungen</h3>
                   <button
                     onClick={() => setShowDetails(false)}
-                    className="h-8 w-8 rounded-full bg-neutral/10 flex items-center justify-center text-neutral/60 hover:bg-neutral/20 transition-colors"
+                    className="h-7 w-7 sm:h-8 sm:w-8 rounded-full bg-neutral/10 flex items-center justify-center text-neutral/60 hover:bg-neutral/20 transition-colors"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
                 </div>
 
-                <div className="space-y-6 max-h-96 overflow-y-auto">
+                <div className="space-y-3 sm:space-y-4 flex-1 overflow-y-auto max-h-[50vh] sm:max-h-96">
                   {/* Necessary Cookies */}
-                  <div className="border border-neutral/10 rounded-lg p-4">
+                  <div className="border border-neutral/10 rounded-lg p-3 sm:p-4">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center">
-                        <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
-                        <h4 className="font-semibold text-neutral">Notwendige Cookies</h4>
+                        <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full mr-2 sm:mr-3"></div>
+                        <h4 className="font-semibold text-neutral text-sm sm:text-base">Notwendige Cookies</h4>
                       </div>
                       <div className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-medium">
                         Immer aktiv
                       </div>
                     </div>
-                    <p className="text-sm text-neutral/70 mb-3">
+                    <p className="text-xs sm:text-sm text-neutral/70 mb-2 sm:mb-3">
                       Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich und können nicht deaktiviert werden.
                     </p>
                     <div className="text-xs text-neutral/60">
@@ -229,11 +229,11 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                   </div>
 
                   {/* Functional Cookies */}
-                  <div className="border border-neutral/10 rounded-lg p-4">
+                  <div className="border border-neutral/10 rounded-lg p-3 sm:p-4">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center">
-                        <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
-                        <h4 className="font-semibold text-neutral">Funktionale Cookies</h4>
+                        <div className="w-2 h-2 sm:w-3 sm:h-3 bg-blue-500 rounded-full mr-2 sm:mr-3"></div>
+                        <h4 className="font-semibold text-neutral text-sm sm:text-base">Funktionale Cookies</h4>
                       </div>
                       <label className="relative inline-flex items-center cursor-pointer">
                         <input
@@ -242,10 +242,10 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                           onChange={(e) => handleConsentChange('functional', e.target.checked)}
                           className="sr-only peer"
                         />
-                        <div className="w-11 h-6 bg-neutral/20 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                        <div className="w-9 h-5 sm:w-11 sm:h-6 bg-neutral/20 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 sm:after:h-5 sm:after:w-5 after:transition-all peer-checked:bg-primary"></div>
                       </label>
                     </div>
-                    <p className="text-sm text-neutral/70 mb-3">
+                    <p className="text-xs sm:text-sm text-neutral/70 mb-2 sm:mb-3">
                       Diese Cookies ermöglichen erweiterte Funktionalitäten und Personalisierungen, wie Spracheinstellungen und Benutzerpräferenzen.
                     </p>
                     <div className="text-xs text-neutral/60">
@@ -256,11 +256,11 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                   </div>
 
                   {/* Analytics Cookies */}
-                  <div className="border border-neutral/10 rounded-lg p-4">
+                  <div className="border border-neutral/10 rounded-lg p-3 sm:p-4">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center">
-                        <div className="w-3 h-3 bg-purple-500 rounded-full mr-3"></div>
-                        <h4 className="font-semibold text-neutral">Analytik-Cookies</h4>
+                        <div className="w-2 h-2 sm:w-3 sm:h-3 bg-purple-500 rounded-full mr-2 sm:mr-3"></div>
+                        <h4 className="font-semibold text-neutral text-sm sm:text-base">Analytik-Cookies</h4>
                       </div>
                       <label className="relative inline-flex items-center cursor-pointer">
                         <input
@@ -269,10 +269,10 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                           onChange={(e) => handleConsentChange('analytics', e.target.checked)}
                           className="sr-only peer"
                         />
-                        <div className="w-11 h-6 bg-neutral/20 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                        <div className="w-9 h-5 sm:w-11 sm:h-6 bg-neutral/20 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 sm:after:h-5 sm:after:w-5 after:transition-all peer-checked:bg-primary"></div>
                       </label>
                     </div>
-                    <p className="text-sm text-neutral/70 mb-3">
+                    <p className="text-xs sm:text-sm text-neutral/70 mb-2 sm:mb-3">
                       Diese Cookies helfen uns dabei zu verstehen, wie Besucher mit unserer Website interagieren, damit wir sie verbessern können.
                     </p>
                     <div className="text-xs text-neutral/60">
@@ -285,22 +285,22 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3 mt-6 pt-6 border-t border-neutral/10">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-neutral/10 flex-shrink-0">
                   <button
                     onClick={handleRejectAll}
-                    className="flex-1 px-4 py-3 border border-neutral/20 text-neutral font-medium rounded-md hover:bg-neutral/5 transition-colors duration-300 text-sm"
+                    className="flex-1 px-3 py-2 sm:px-4 sm:py-3 border border-neutral/20 text-neutral font-medium rounded-md hover:bg-neutral/5 transition-colors duration-300 text-xs sm:text-sm"
                   >
                     Alle ablehnen
                   </button>
                   <button
                     onClick={handleSavePreferences}
-                    className="flex-1 px-4 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors duration-300 text-sm"
+                    className="flex-1 px-3 py-2 sm:px-4 sm:py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors duration-300 text-xs sm:text-sm"
                   >
                     Einstellungen speichern
                   </button>
                   <button
                     onClick={handleAcceptAll}
-                    className="flex-1 px-4 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors duration-300 text-sm"
+                    className="flex-1 px-3 py-2 sm:px-4 sm:py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors duration-300 text-xs sm:text-sm"
                   >
                     Alle akzeptieren
                   </button>

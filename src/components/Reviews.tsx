@@ -13,7 +13,7 @@ type Review = {
   date: string;
 };
 
-const ReviewCard: React.FC<{ review: Review; index: number }> = ({ review, index }) => {
+const ReviewCard: React.FC<{ review: Review; index: number }> = ({ review }) => {
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
       <svg
@@ -29,12 +29,8 @@ const ReviewCard: React.FC<{ review: Review; index: number }> = ({ review, index
   };
 
   return (
-    <motion.div
-      className="bg-white rounded-xl shadow-lg hover:shadow-xl p-6 h-full border-l-4 border-primary"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
-      whileHover={{ scale: 1.02 }}
+    <div
+      className="bg-white rounded-xl shadow-lg hover:shadow-xl p-6 h-full border-l-4 border-primary transition-shadow duration-300"
     >
       <div className="flex items-center mb-4">
         <div className="flex items-center">
@@ -58,7 +54,7 @@ const ReviewCard: React.FC<{ review: Review; index: number }> = ({ review, index
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -66,64 +62,64 @@ const Reviews = () => {
   const reviews: Review[] = [
     {
       id: 1,
-      name: "Michael Weber",
-      location: "Berlin-Mitte",
+      name: "Sebastian Hüthwohl",
+      location: "Berlin-Mitte", 
       rating: 5,
-      comment: "Hervorragende Arbeit bei der Baumpflege! Sehr professionell und zuverlässig. Die Bäume in unserem Garten sehen jetzt perfekt aus.",
+      comment: "James hat bei mir 5 Bäume im Februar gekürzt. Bin sehr zufrieden mit dem Ergebnis. Die Absprache und Terminierungen war problemlos und zuverlässig. Der gesamte Abschnitt wurde entsorgt und die Bäume von getrockneten Efeu befreit. James und sein Team kann ich nur schwer empfehlen.",
       service: "Baumpflege",
-      date: "November 2024"
+      date: "Mai 2025"
     },
     {
       id: 2,
-      name: "Sarah Müller",
-      location: "Potsdam",
+      name: "Regina Bock",
+      location: "Brandenburg",
       rating: 5,
-      comment: "Schnelle und saubere Baumfällung. Das Team war sehr freundlich und hat alles perfekt hinterlassen. Absolut empfehlenswert!",
-      service: "Baumfällung",
-      date: "Oktober 2024"
+      comment: "Der Baumchiurg James ist sehr zu empfehlen, arbeiten sauber und korrekt,entsorgen auf Wunsch auch den Abfall vom Baumschnitt Ich war sehr zufrieden mit den Leuten.👍🤗macht weiter so",
+      service: "Baumfällung", 
+      date: "Mai 2025"
     },
     {
       id: 3,
       name: "Thomas Bauer",
       location: "Berlin-Charlottenburg",
       rating: 5,
-      comment: "Professionelle Seilklettertechnik für schwer zugängliche Bereiche. Beeindruckende Fähigkeiten und faire Preise.",
-      service: "Seilklettertechnik",
-      date: "September 2024"
+      comment: "James und sein Team haben hervorragende Arbeit geleistet. Die Bäume wurden professionell und sicher beschnitten. Alles wurde sauber aufgeräumt und entsorgt. Sehr zuverlässig und kompetent, kann ich nur weiterempfehlen! 👍",
+      service: "Baumpflege",
+      date: "Mai 2025"
     },
-    {
-      id: 4,
-      name: "Anna Schmidt",
-      location: "Brandenburg an der Havel",
-      rating: 5,
-      comment: "Exzellente Gartenarbeit und Heckenschnitt. Unser Garten sieht jetzt wie neu aus. Vielen Dank für die tolle Arbeit!",
-      service: "Gartenarbeit",
-      date: "Oktober 2024"
-    },
-    {
-      id: 5,
-      name: "Klaus Hoffmann",
-      location: "Berlin-Spandau",
-      rating: 5,
-      comment: "Sehr gründliche Baumprüfung mit detailliertem Bericht. Kompetente Beratung und faire Preise. Würde ich jederzeit wieder beauftragen.",
-      service: "Baumprüfung",
-      date: "August 2024"
-    },
-    {
-      id: 6,
-      name: "Lisa Wagner",
-      location: "Cottbus",
-      rating: 5,
-      comment: "Perfekte Kronensicherung für unseren alten Eichenbaum. Fachkundige Arbeit mit viel Erfahrung. Sehr zufrieden!",
-      service: "Kronensicherung",
-      date: "September 2024"
-    }
+    // {
+    //   id: 4,
+    //   name: "Anna Schmidt",
+    //   location: "Brandenburg an der Havel",
+    //   rating: 5,
+    //   comment: "Exzellente Gartenarbeit und Heckenschnitt. Unser Garten sieht jetzt wie neu aus. Vielen Dank für die tolle Arbeit!",
+    //   service: "Gartenarbeit",
+    //   date: "Oktober 2024"
+    // },
+    // {
+    //   id: 5,
+    //   name: "Klaus Hoffmann",
+    //   location: "Berlin-Spandau",
+    //   rating: 5,
+    //   comment: "Sehr gründliche Baumprüfung mit detailliertem Bericht. Kompetente Beratung und faire Preise. Würde ich jederzeit wieder beauftragen.",
+    //   service: "Baumprüfung",
+    //   date: "August 2024"
+    // },
+    // {
+    //   id: 6,
+    //   name: "Lisa Wagner",
+    //   location: "Cottbus",
+    //   rating: 5,
+    //   comment: "Perfekte Kronensicherung für unseren alten Eichenbaum. Fachkundige Arbeit mit viel Erfahrung. Sehr zufrieden!",
+    //   service: "Kronensicherung",
+    //   date: "September 2024"
+    // }
   ];
 
   const stats = [
-    { number: "700+", label: "Zufriedene Kunden" },
-    { number: "15+", label: "Jahre Erfahrung" },
-    { number: "4.9", label: "⭐ Bewertung" },
+    { number: "240+", label: "Zufriedene Kunden" },
+    { number: "5+", label: "Jahre Erfahrung" },
+    { number: "5", label: "⭐ Bewertung" },
     { number: "100%", label: "Professionell" }
   ];
 

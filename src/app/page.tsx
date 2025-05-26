@@ -1,3 +1,4 @@
+import Reviews from '@/components/Reviews';
 import dynamic from 'next/dynamic';
 
 // Import components
@@ -14,7 +15,7 @@ export default function Home() {
       <Hero />
       <Services />
       <ImageGallery />
-      {/* <Reviews /> */}
+      <Reviews />
       <Footer />
     </main>
   );

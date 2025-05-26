@@ -37,12 +37,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   icon
 }) => {
   return (
-    <motion.div 
+    <div 
       className="bg-white rounded-xl shadow-lg hover:shadow-xl p-6 transition-all duration-300 border-l-4 border-primary flex flex-col h-full"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      whileHover={{ scale: 1.03, borderColor: 'var(--color-primary-dark)' }}
     >
       <div className="h-16 w-16 rounded-full bg-primary/15 flex items-center justify-center text-primary-dark mb-5">
         {icon}
@@ -57,7 +53,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           </svg>
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -245,18 +241,8 @@ const Services = () => {
         </div>
 
         {/* Service Cards with Staggered Animation */}
-        <motion.div 
+        <div 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={{
-            visible: {
-              transition: {
-                staggerChildren: 0.1
-              }
-            }
-          }}
         >
           {filteredServices.map((service, index) => (
             <ServiceCard
@@ -266,7 +252,7 @@ const Services = () => {
               icon={service.icon}
             />
           ))}
-        </motion.div>
+        </div>
 
         {/* Call to Action */}
         <motion.div 
