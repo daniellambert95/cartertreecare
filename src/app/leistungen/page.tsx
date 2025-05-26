@@ -10,11 +10,11 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 const AllServices = dynamic(() => import('@/components/AllServices'), { ssr: true });
 
 export const metadata: Metadata = {
-  title: 'Alle Leistungen | DerBaumchirurg - Professionelle Baumpflege Berlin, Brandenburg, Potsdam',
-  description: 'Übersicht aller Baumpflege- und Gartenarbeitsleistungen von DerBaumchirurg - Professionelle Baumpflege mit höchsten Sicherheitsstandards in Berlin und Brandenburg.',
+  title: 'Alle Leistungen | Der Baumchirurg - Professionelle Baumpflege Berlin, Brandenburg, Potsdam',
+  description: 'Übersicht aller Baumpflege- und Gartenarbeitsleistungen von Der Baumchirurg - Professionelle Baumpflege mit höchsten Sicherheitsstandards in Berlin und Brandenburg.',
   keywords: 'Baumpflege Leistungen, Baumfällung, Baumschnitt, Kronenpflege, Baumgutachten, Berlin, Brandenburg, Baumpfleger',
   openGraph: {
-    title: 'Alle Leistungen | DerBaumchirurg - Professionelle Baumpflege',
+    title: 'Alle Leistungen | Der Baumchirurg - Professionelle Baumpflege',
     description: 'Entdecken Sie unser umfassendes Angebot an Baumpflege- und Gartenarbeitsleistungen. Mit über 2000 Bäumen Erfahrung.',
     url: 'https://baumpflegeberlin-brandenburg.de/leistungen',
     images: [
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'DerBaumchirurg Leistungen - Professionelle Baumpflege',
+        alt: 'Der Baumchirurg Leistungen - Professionelle Baumpflege',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Alle Leistungen | DerBaumchirurg - Professionelle Baumpflege',
+    title: 'Alle Leistungen | Der Baumchirurg - Professionelle Baumpflege',
     description: 'Entdecken Sie unser umfassendes Angebot an Baumpflege- und Gartenarbeitsleistungen.',
     images: ['/twitter-image.png'],
   },

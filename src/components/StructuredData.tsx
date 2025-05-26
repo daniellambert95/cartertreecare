@@ -25,14 +25,20 @@ export default function StructuredData({ type = 'organization', data }: Structur
       return {
         ...baseData,
         "@type": "LocalBusiness",
-        "name": "DerBaumchirurg",
+        "name": "Der Baumchirurg",
         "alternateName": "Der Baumchirurg",
         "description": "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
         "url": "https://baumpflegeberlin-brandenburg.de",
-        "logo": "https://baumpflegeberlin-brandenburg.de/og-image.png",
-        "image": "https://baumpflegeberlin-brandenburg.de/og-image.png",
-        "telephone": "+49-XXX-XXXXXXX", // Replace with actual phone number
-        "email": "info@baumpflegeberlin-brandenburg.de", // Replace with actual email
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://baumpflegeberlin-brandenburg.de/logo.webp",
+          "width": "400",
+          "height": "400",
+          "contentUrl": "https://baumpflegeberlin-brandenburg.de/logo.webp"
+        },
+        "image": "https://baumpflegeberlin-brandenburg.de/logo.png",
+        "telephone": "+49174 5225935",
+        "email": "derbaumchirurg@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Berlin",
@@ -41,7 +47,7 @@ export default function StructuredData({ type = 'organization', data }: Structur
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "52.5200", // Berlin coordinates - replace with actual
+          "latitude": "52.5200", 
           "longitude": "13.4050"
         },
         "areaServed": [
@@ -114,11 +120,11 @@ export default function StructuredData({ type = 'organization', data }: Structur
         "image": data.image,
         "author": {
           "@type": "Organization",
-          "name": "DerBaumchirurg"
+          "name": "Der Baumchirurg"
         },
         "publisher": {
           "@type": "Organization",
-          "name": "DerBaumchirurg",
+          "name": "Der Baumchirurg",
           "logo": {
             "@type": "ImageObject",
             "url": "https://baumpflegeberlin-brandenburg.de/og-image.png"

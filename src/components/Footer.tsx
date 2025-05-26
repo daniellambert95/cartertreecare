@@ -9,8 +9,8 @@ const Footer = () => {
           {/* Logo and company info */}
           <div className="col-span-1 md:col-span-2 lg:col-span-2">
             <div className="flex items-center mb-4">
-              <Image src="/logo-light.svg" alt="DerBaumchirurg Logo" width={40} height={40} className="mr-2" />
-              <span className="text-xl font-bold text-primary">DerBaumchirurg</span>
+              <Image src="/logo-light.svg" alt="Der Baumchirurg Logo" width={40} height={40} className="mr-2" />
+              <span className="text-xl font-bold text-primary">Der Baumchirurg</span>
             </div>
             <p className="text-white/70 max-w-sm mb-6">
               Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise.
@@ -108,7 +108,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/50 text-sm">&copy; {new Date().getFullYear()} DerBaumchirurg. Alle Rechte vorbehalten.</p>
+          <p className="text-white/50 text-sm">&copy; {new Date().getFullYear()} Der Baumchirurg. Alle Rechte vorbehalten.</p>
           <a href="https://www.siteandsight.com" className="text-sm text-white/50 hover:text-primary transition">
             Webdesign by 
             <span className="text-primary hover:text-primary"> Site</span> 

@@ -15,12 +15,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DerBaumchirurg | Professionelle Baumpflege Berlin, Brandenburg, Potsdam",
+  title: "Der Baumchirurg | Professionelle Baumpflege Berlin, Brandenburg, Potsdam",
   description: "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
   keywords: "Baumpflege, Baumfällung, Baumschnitt, Berlin, Brandenburg, Baumpfleger, Fällarbeiten, Baumklettern, Kronenpflege, Baumgutachten",
-  authors: [{ name: "DerBaumchirurg Team" }],
-  creator: "DerBaumchirurg",
-  publisher: "DerBaumchirurg",
+  authors: [{ name: "Der Baumchirurg Team" }],
+  creator: "Der Baumchirurg",
+  publisher: "Der Baumchirurg",
   formatDetection: {
     email: false,
     address: false,
@@ -31,16 +31,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "DerBaumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
+    title: "Der Baumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
     description: "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
     url: 'https://baumpflegeberlin-brandenburg.de',
-    siteName: 'DerBaumchirurg',
+    siteName: 'Der Baumchirurg',
     images: [
       {
         url: '/social-image.webp',
         width: 1200,
         height: 630,
-        alt: 'DerBaumchirurg - Professionelle Baumpflege Berlin-Brandenburg',
+        alt: 'Der Baumchirurg - Professionelle Baumpflege Berlin-Brandenburg',
       }
     ],
     locale: 'de_DE',
@@ -48,10 +48,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "DerBaumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
+    title: "Der Baumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
     description: "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben.",
     images: ['/twitter-image.webp'],
-    creator: '@derbaumchirurg',
+    creator: '@der baumchirurg',
   },
   robots: {
     index: true,
@@ -67,17 +67,17 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon.ico",
+        url: "/logo.webp",
         sizes: "any",
       },
       {
-        url: "/icon-192-2.png",
-        sizes: "192x192",
-        type: "image/png",
+        url: "/logo.webp",
+        sizes: "400x400",
+        type: "image/webp",
       },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/icon-192-2.png",
+    shortcut: "/logo.webp",
+    apple: "/logo.webp",
   },
   verification: {
     google: 'your-google-verification-code', // Replace with actual Google Search Console verification code
