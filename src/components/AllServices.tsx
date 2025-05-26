@@ -103,9 +103,13 @@ const AllServices = () => {
       description: 'Professionelle Pflege für gesunde und sichere Bäume durch fachgerechten Schnitt und regelmäßige Wartung.',
       longDescription: 'Unsere Baumpflegedienste umfassen regelmäßige Inspektionen, fachgerechten Schnitt und präventive Maßnahmen, um die Gesundheit und Sicherheit Ihrer Bäume zu gewährleisten. Mit modernsten Techniken und umfassendem Fachwissen sorgen wir dafür, dass Ihre Bäume optimal wachsen und gedeihen können.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-        </svg>
+        <Image 
+          src="/icons/2baumpflege.svg .svg" 
+          alt="Baumpflege" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'tree-care'
     },
@@ -114,9 +118,13 @@ const AllServices = () => {
       description: 'Fachkundige Beurteilung der Gesundheit und Sicherheit Ihrer Bäume durch zertifizierte Experten.',
       longDescription: 'Unsere zertifizierten Baumgutachter führen umfassende Baumprüfungen durch, um die Verkehrssicherheit zu gewährleisten und den Gesundheitszustand Ihrer Bäume zu bewerten. Mit modernsten Diagnoseverfahren erkennen wir frühzeitig potenzielle Probleme und entwickeln gezielte Pflegemaßnahmen.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
+        <Image 
+          src="/icons/7prufung.svg .svg" 
+          alt="Baumprüfung" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'tree-care'
     },
@@ -125,9 +133,13 @@ const AllServices = () => {
       description: 'Fachgerechte Reduzierung der Baumkrone zur Größenkontrolle und Verbesserung der Stabilität.',
       longDescription: 'Durch professionelle Kroneneinkürzung reduzieren wir die Größe und das Gewicht der Baumkrone, um die Stabilität zu verbessern und das Risiko von Astbrüchen zu minimieren. Diese Technik ist besonders wichtig für Bäume in beengten Räumen oder in der Nähe von Gebäuden und Stromleitungen.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4a1 1 0 011-1h4m5 0h4a1 1 0 011 1v4m0 5v4a1 1 0 01-1 1h-4m-5 0H5a1 1 0 01-1-1v-4" />
-        </svg>
+        <Image 
+          src="/icons/6einkurzung.svg .svg" 
+          alt="Kroneneinkürzung" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'tree-care'
     },
@@ -136,10 +148,13 @@ const AllServices = () => {
       description: 'Sichere und kontrollierte Baumfällung durch erfahrene Experten mit Rücksicht auf die Umgebung.',
       longDescription: 'Wenn ein Baum krank, beschädigt oder gefährlich geworden ist, bieten wir professionelle Fällungsdienste an. Unsere erfahrenen Arboristen führen kontrollierte Fällungen durch, wobei die Sicherheit und der Schutz umliegender Strukturen und Vegetation oberste Priorität haben.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 17v-6m0-6V4" />
-        </svg>
+        <Image 
+          src="/icons/3baumfallung.svg .svg" 
+          alt="Baumfällungen" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'removal'
     },
@@ -148,9 +163,13 @@ const AllServices = () => {
       description: 'Professioneller Heckenschnitt und Bepflanzung für einen gepflegten und attraktiven Garten.',
       longDescription: 'Unser Gartenarbeitsdienst umfasst professionellen Heckenschnitt, Bepflanzung und allgemeine Gartenpflege. Wir helfen Ihnen, einen ästhetisch ansprechenden und gesunden Garten zu gestalten und zu erhalten, der das ganze Jahr über Freude bereitet.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
+        <Image 
+          src="/icons/8gartenarbeit.svg .svg" 
+          alt="Gartenarbeit" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'garden'
     },
@@ -159,9 +178,13 @@ const AllServices = () => {
       description: 'Baumpflegerische Arbeiten mit professioneller Seilklettertechnik oder Hubarbeitsbühne für schwer zugängliche Bereiche.',
       longDescription: 'Mit unserer fortschrittlichen Seilklettertechnik können wir auch schwer zugängliche Bereiche in Bäumen sicher erreichen. Diese Methode ist besonders schonend für den Baum und die umgebende Landschaft und ermöglicht präzise Arbeiten in großen Höhen.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-        </svg>
+        <Image 
+          src="/icons/10seilkletter.svg .svg" 
+          alt="Seilklettertechnik" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'safety'
     },
@@ -170,9 +193,13 @@ const AllServices = () => {
       description: 'Kontrollierte und sichere Fällung von Bäumen unter Berücksichtigung gesetzlicher Vorgaben und Umweltschutz.',
       longDescription: 'Wenn ein Baum krank, beschädigt oder gefährlich geworden ist, bieten wir professionelle Fällungsdienste an. Unsere erfahrenen Arboristen führen kontrollierte Fällungen durch, wobei die Sicherheit und der Schutz umliegender Strukturen und Vegetation oberste Priorität haben.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
+        <Image 
+          src="/icons/12baumfallung.svg .svg" 
+          alt="Baumfällung" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'tree-care'
     },
@@ -181,9 +208,13 @@ const AllServices = () => {
       description: 'Sichere Beseitigung von abgestorbenem Holz zur Vermeidung von Gefahren und zur Förderung der Baumgesundheit.',
       longDescription: 'Abgestorbene Äste und Holz können ein Sicherheitsrisiko darstellen und die Gesundheit des Baumes beeinträchtigen. Wir entfernen Totholz fachgerecht, um die Sicherheit zu erhöhen und die allgemeine Gesundheit und Ästhetik des Baumes zu verbessern.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-        </svg>
+        <Image 
+          src="/icons/4.totholz.svg .svg" 
+          alt="Totholzentfernung" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'tree-care'
     },
@@ -192,9 +223,13 @@ const AllServices = () => {
       description: 'Pflege der Baumkrone durch Entfernung von Totholz, sich kreuzenden Ästen und tief hängenden Zweigen zur Einhaltung gesetzlicher Vorschriften an Straßen und Gebäuden.',
       longDescription: 'Durch fachgerechte Kroneneinkürzung können wir die Größe und Form eines Baumes kontrollieren, seine Stabilität verbessern und das Risiko von Astbrüchen reduzieren. Diese Technik ist besonders wichtig für Bäume in beengten Räumen oder in der Nähe von Gebäuden.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
-        </svg>
+        <Image 
+          src="/icons/5kronenpflege.svg .svg" 
+          alt="Kronenpflege" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'tree-care'
     },
@@ -203,9 +238,13 @@ const AllServices = () => {
       description: 'Schnelle und sichere Entfernung von umgestürzten oder beschädigten Bäumen nach Unwettern.',
       longDescription: 'Unser Fassadenschnitt-Service sorgt dafür, dass Bäume und Sträucher in der Nähe von Gebäuden ordentlich und kontrolliert wachsen. Dies verbessert nicht nur das Erscheinungsbild, sondern verhindert auch potenzielle Schäden an der Fassade und erhält den Lichteinfall in Gebäude.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-        </svg>
+        <Image 
+          src="/icons/15.stormschade.svg.svg" 
+          alt="Sturmschaden" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'tree-care'
     },
@@ -214,9 +253,13 @@ const AllServices = () => {
       description: 'Installation von Sicherungssystemen zur Stabilisierung von Bäumen und Vermeidung von Astbrüchen.',
       longDescription: 'Für Bäume mit strukturellen Schwächen oder wertvollen historischen Bäumen bieten wir professionelle Kronensicherungssysteme an. Diese nicht-invasiven Systeme reduzieren das Risiko von Astbrüchen und verlängern die Lebensdauer des Baumes, während seine natürliche Schönheit erhalten bleibt.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-        </svg>
+        <Image 
+          src="/icons/11kronensicher.svg.svg" 
+          alt="Kronensicherungen" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'safety'
     },
@@ -225,9 +268,13 @@ const AllServices = () => {
       description: 'Umweltgerechte Entsorgung von Grünschnitt nach allen Baumpflegearbeiten.',
       longDescription: 'Nach Abschluss unserer Baumpflegearbeiten bieten wir eine umweltfreundliche Entsorgung des anfallenden Grünschnitts an. Je nach Material und Ihren Wünschen kann der Schnitt zu Mulch verarbeitet, kompostiert oder ordnungsgemäß entsorgt werden.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-        </svg>
+        <Image 
+          src="/icons/13.grunschnitt.svg .svg" 
+          alt="Grünschnittentsorgung" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'removal'
     },
@@ -236,9 +283,13 @@ const AllServices = () => {
       description: 'Professionelle Entfernung von Baumstümpfen und Wurzeln für eine saubere Fläche.',
       longDescription: 'Nach einer Baumfällung kann der zurückbleibende Stumpf unattraktiv sein und die Nutzung des Grundstücks einschränken. Unsere Baumstumpfentfernung beseitigt den Stumpf und die Hauptwurzeln vollständig, sodass Sie den Bereich neu gestalten oder bepflanzen können.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
+        <Image 
+          src="/icons/14stumpp.svg.svg" 
+          alt="Baumstumpfentfernung" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'removal'
     },
@@ -247,9 +298,13 @@ const AllServices = () => {
       description: 'Fachkundige Beratung und Durchführung von Neu- und Ersatzpflanzungen mit geeigneten Baumarten.',
       longDescription: 'Wir beraten Sie bei der Auswahl geeigneter Baumarten für Ihren Standort und führen professionelle Pflanzungen durch. Unser Service umfasst die richtige Pflanzlochvorbereitung, Pflanzung und Erstpflege, um einen optimalen Start für Ihren neuen Baum zu gewährleisten.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-        </svg>
+        <Image 
+          src="/icons/9neuebam.svg.svg" 
+          alt="Neupflanzungen" 
+          width={32} 
+          height={32}
+          className="object-contain"
+        />
       ),
       category: 'garden'
     }

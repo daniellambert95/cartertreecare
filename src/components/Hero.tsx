@@ -160,11 +160,11 @@ const Hero = () => {
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-primary-dark border-2 border-white flex items-center justify-center">
                   <Image 
-                    src="/images/saw.webp" 
+                    src="/icons/1saubereschnitt.svg.svg" 
                     alt="Saw" 
-                    width={40}
-                    height={40}
-                    className="h-6 w-6 filter brightness-0 invert"
+                    width={400}
+                    height={400}
+                    className="h-7 w-7 filter brightness-0 invert"
                   />
                 </div>
                 <div className="text-white">
