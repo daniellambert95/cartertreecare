@@ -133,7 +133,7 @@ const Hero = () => {
               href="/kontakt" 
               className="px-8 py-4 rounded-md bg-primary text-white font-medium text-lg shadow-lg hover:bg-primary-dark transform hover:-translate-y-1 transition duration-300 text-center"
             >
-              Kontakt aufnehmen
+              Kontakt
             </Link>
             <Link 
               href="#leistungen" 
