@@ -15,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Der Baumchirurg | Professionelle Baumpflege Berlin, Brandenburg, Potsdam",
-  description: "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
+  title: "Der Baumchirurg | Baumpflege Berlin, Brandenburg",
+  description: "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
   keywords: "Baumpflege, Baumfällung, Baumschnitt, Berlin, Brandenburg, Baumpfleger, Fällarbeiten, Baumklettern, Kronenpflege, Baumgutachten",
   authors: [{ name: "Der Baumchirurg Team" }],
   creator: "Der Baumchirurg",
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://baumpflegeberlin-brandenburg.de'),
+  metadataBase: new URL('https://www.baumpflegeberlin-brandenburg.de'),
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.baumpflegeberlin-brandenburg.de',
   },
   openGraph: {
     title: "Der Baumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
     description: "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
-    url: 'https://baumpflegeberlin-brandenburg.de',
+    url: 'https://www.baumpflegeberlin-brandenburg.de',
     siteName: 'Der Baumchirurg',
     images: [
       {
@@ -66,24 +66,6 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
-  // },
-  // icons: {
-  //   icon: [
-  //     {
-  //       url: "/favicon.ico",
-  //       sizes: "any",
-  //     },
-  //     {
-  //       url: "/icon-192-2.png",
-  //       sizes: "192x192",
-  //       type: "image/png",
-  //     },
-  //     {
-  //       url: "/og-image.png",
-  //       sizes: "1200x630",
-  //       type: "image/png",
-  //     },
-  //   ],
     shortcut: "/favicon.ico",
     apple: [
       {

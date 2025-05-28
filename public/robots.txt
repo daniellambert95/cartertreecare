@@ -3,11 +3,15 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
-Disallow: /*.json$
 Disallow: /private/
-Disallow: /*?utm_*
-Disallow: /*?ref=*
-Disallow: /*?source=*
+
+# Block URLs with common tracking parameters
+Disallow: /*?utm_
+Disallow: /*?ref=
+Disallow: /*?source=
+
+# Block JSON files
+Disallow: /*.json
 
 # Allow specific important files
 Allow: /sitemap.xml
