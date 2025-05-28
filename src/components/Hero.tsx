@@ -120,7 +120,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Der Baumchirurg</span>
+            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl pt-10">Der Baumchirurg</span>
             <span className="block max-w-2xl text-3xl md:text-5xl mt-2 text-primary-light">Professioneller Baumpfleger und Gärtner</span>
           </h1>
           
