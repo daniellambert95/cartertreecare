@@ -76,6 +76,16 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizeCss: true,
   },
+  
+  // Generate static sitemap
+  async rewrites() {
+    return [
+      {
+        source: '/sitemap.xml',
+        destination: '/api/sitemap',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

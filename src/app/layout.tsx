@@ -93,11 +93,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  verification: {
-    google: 'your-google-verification-code', // Replace with actual Google Search Console verification code
-    // yandex: 'your-yandex-verification-code', // Add if needed
-    // bing: 'your-bing-verification-code', // Add if needed
-  },
 };
 
 export const viewport: Viewport = {

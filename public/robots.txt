@@ -4,6 +4,15 @@ Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
 Disallow: /*.json$
+Disallow: /private/
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?source=*
+
+# Allow specific important files
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /favicon.ico
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
