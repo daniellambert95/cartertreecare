@@ -125,7 +125,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl">
-            Hochwertige Arbeit. Sichere Arbeit. Toller Preis. Professioneller, zertifizierter Baumpfleger mit viel Erfahrung.
+          Verlässliche Erfahrung. Garantierte Sicherheit. Toller Preis.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
