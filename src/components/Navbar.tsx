@@ -1,38 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
-
-  const openCalendly = () => {
-    setIsCalendlyOpen(true);
-  };
-
-  const closeCalendly = () => {
-    setIsCalendlyOpen(false);
-  };
-
-  // Load Calendly script when modal opens
-  useEffect(() => {
-    if (isCalendlyOpen) {
-      const script = document.createElement('script');
-      script.src = 'https://assets.calendly.com/assets/external/widget.js';
-      script.async = true;
-      document.body.appendChild(script);
-
-      return () => {
-        // Cleanup script when component unmounts or modal closes
-        const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
-        if (existingScript) {
-          document.body.removeChild(existingScript);
-        }
-      };
-    }
-  }, [isCalendlyOpen]);
 
   return (
     <>
@@ -63,18 +36,21 @@ const Navbar = () => {
               <Link href="/blog" className="text-black font-semibold hover:text-primary-dark transition duration-150">
                 Blog
               </Link>
+              <Link href="/faq" className="text-black font-semibold hover:text-primary-dark transition duration-150">
+                FAQ
+              </Link>
               <Link href="/ueber-uns" className="text-black font-semibold hover:text-primary-dark transition duration-150">
                 Über uns
               </Link>
               <Link href="/kontakt" className="text-black font-semibold hover:text-primary-dark transition duration-150">
                 Kontakt
               </Link>
-              <button 
-                onClick={openCalendly}
+              <Link 
+                href="/kontakt"
                 className="px-4 py-2 rounded-md font-semibold shadow-md transition duration-150 whitespace-nowrap bg-primary-dark text-white hover:bg-primary"
               >
-                Jetzt Termin buchen
-              </button>
+                Kostenlos Beratung
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -131,6 +107,13 @@ const Navbar = () => {
               Blog
             </Link>
             <Link 
+              href="/faq" 
+              className="block px-3 py-2 rounded-md text-base font-semibold text-gray-800 hover:text-primary-dark hover:bg-secondary-light transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              FAQ
+            </Link>
+            <Link 
               href="/ueber-uns" 
               className="block px-3 py-2 rounded-md text-base font-semibold text-gray-800 hover:text-primary-dark hover:bg-secondary-light transition-colors"
               onClick={() => setIsMenuOpen(false)}
@@ -144,58 +127,16 @@ const Navbar = () => {
             >
               Kontakt
             </Link>
-            <button 
-              onClick={() => {
-                setIsMenuOpen(false);
-                openCalendly();
-              }}
+            <Link 
+              href="/kontakt"
+              onClick={() => setIsMenuOpen(false)}
               className="block px-3 py-2 mx-3 mt-2 rounded-md text-base font-semibold transition-colors text-center w-full bg-primary-dark text-white hover:bg-primary"
             >
-              Jetzt Termin buchen
-            </button>
+              Kostenlos Beratung
+            </Link>
           </div>
         </div>
       </nav>
-
-      {/* Calendly Modal */}
-      {isCalendlyOpen && (
-        <div className="fixed inset-0 z-[9999] overflow-y-auto">
-          {/* Backdrop */}
-          <div 
-            className="fixed inset-0 bg-black bg-opacity-50 transition-opacity"
-            onClick={closeCalendly}
-          ></div>
-          
-          {/* Modal */}
-          <div className="flex min-h-full items-center justify-center p-4">
-            <div className="relative bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] overflow-hidden">
-              {/* Header */}
-              <div className="flex items-center justify-between p-4 border-b border-gray-200">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  Termin buchen
-                </h3>
-                <button
-                  onClick={closeCalendly}
-                  className="rounded-md p-2 hover:bg-gray-100 transition-colors"
-                >
-                  <svg className="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-              
-              {/* Calendly Widget */}
-              <div className="p-4">
-                <div 
-                  className="calendly-inline-widget" 
-                  data-url="https://calendly.com/derbaumchirurg?primary_color=2ecc40" 
-                  style={{ minWidth: '320px', height: '700px' }}
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 };
