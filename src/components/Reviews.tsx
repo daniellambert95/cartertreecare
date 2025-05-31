@@ -80,10 +80,10 @@ const Reviews = () => {
     },
     {
       id: 3,
-      name: "Thomas Bauer",
-      location: "Berlin-Charlottenburg",
+      name: "Frau Haueis",
+      location: "Berlin",
       rating: 5,
-      comment: "James und sein Team haben hervorragende Arbeit geleistet. Die Bäume wurden professionell und sicher beschnitten. Alles wurde sauber aufgeräumt und entsorgt. Sehr zuverlässig und kompetent, kann ich nur weiterempfehlen! 👍",
+      comment: "Wir haben mehrere Eichen beschneiden lassen. Der Baumchirurg ist sehr zuverlässig, arbeitet super sauber und ist dabei noch super günstig.",
       service: "Baumpflege",
       date: "Mai 2025"
     },

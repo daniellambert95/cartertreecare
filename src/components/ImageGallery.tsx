@@ -125,7 +125,7 @@ export default function ImageGallery() {
             {/* Auto-play toggle */}
             <button
               onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-              className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-2 rounded-full transition-all duration-300"
+              className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-2 rounded-full transition-all duration-300 hidden md:block"
               aria-label={isAutoPlaying ? "Pause slideshow" : "Play slideshow"}
             >
               {isAutoPlaying ? (
@@ -157,7 +157,7 @@ export default function ImageGallery() {
           </div>
 
           {/* Thumbnail Navigation */}
-          <div className="flex justify-center mt-6 space-x-4 overflow-x-auto pb-2">
+          <div className="flex justify-center mt-8 pt-2 space-x-4 overflow-x-auto pb-2">
             {images.map((image, index) => (
               <button
                 key={index}

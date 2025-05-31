@@ -144,9 +144,9 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
       
       {/* Modal */}
       <div className="flex min-h-full items-center justify-center p-4">
-        <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-hidden transform transition-all">
+        <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col transform transition-all">
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-100">
+          <div className="flex items-center justify-between p-6 border-b border-gray-100 flex-shrink-0">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -169,7 +169,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
           </div>
 
           {/* Progress Bar */}
-          <div className="px-6 py-4 bg-gray-50">
+          <div className="px-6 py-4 bg-gray-50 flex-shrink-0">
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm font-medium text-gray-700">Fortschritt</span>
               <span className="text-sm text-gray-500">{Math.round((currentStep / 3) * 100)}%</span>
@@ -183,7 +183,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
           </div>
 
           {/* Content */}
-          <div className="p-6 min-h-[400px]">
+          <div className="flex-1 overflow-y-auto p-6">
             {submitStatus ? (
               <div className={`text-center py-12 ${submitStatus.success ? 'text-green-600' : 'text-red-600'}`}>
                 <div className={`mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-4 ${submitStatus.success ? 'bg-green-100' : 'bg-red-100'}`}>
@@ -215,19 +215,19 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                       <p className="text-gray-600">Wählen Sie den Service aus, für den Sie eine Beratung benötigen.</p>
                     </div>
                     
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-3 sm:gap-4">
                       {services.map((service) => (
                         <button
                           key={service.id}
                           onClick={() => handleServiceSelect(service.id)}
-                          className={`p-4 rounded-xl border-2 transition-all duration-200 text-left hover:shadow-md ${
+                          className={`p-3 sm:p-4 rounded-xl border-2 transition-all duration-200 text-left hover:shadow-md ${
                             formData.service === service.id
                               ? 'border-primary bg-primary/5 shadow-md'
                               : 'border-gray-200 hover:border-primary/50'
                           }`}
                         >
-                          <div className="flex items-center space-x-3">
-                            <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
+                          <div className="flex flex-col items-center justify-center space-y-2 text-center">
+                            <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center ${
                               formData.service === service.id ? 'bg-primary/15' : 'bg-gray-100'
                             }`}>
                               <Image 
@@ -235,7 +235,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                                 alt={service.name}
                                 width={24}
                                 height={24}
-                                className="w-6 h-6"
+                                className="w-6 h-6 sm:w-7 sm:h-7"
                                 style={{
                                   filter: formData.service === service.id 
                                     ? 'brightness(0) saturate(100%) invert(45%) sepia(98%) saturate(451%) hue-rotate(81deg) brightness(90%) contrast(101%)'
@@ -243,7 +243,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                                 }}
                               />
                             </div>
-                            <span className={`font-medium ${
+                            <span className={`font-medium text-xs sm:text-sm leading-tight ${
                               formData.service === service.id ? 'text-primary' : 'text-gray-700'
                             }`}>
                               {service.name}
@@ -355,7 +355,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
 
           {/* Footer with buttons */}
           {!submitStatus && (
-            <div className="flex items-center justify-between p-6 bg-gray-50 border-t border-gray-100">
+            <div className="flex items-center justify-between p-6 bg-gray-50 border-t border-gray-100 flex-shrink-0">
               {currentStep > 1 ? (
                 <button
                   onClick={handleBack}
