@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 // Define service categories and their types
@@ -41,12 +40,8 @@ const ServiceCard = ({
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <motion.div 
+    <div 
       className="bg-white rounded-xl shadow-lg p-5 transition-all duration-300 border-l-4 border-primary flex flex-col h-full hover:shadow-xl hover:translate-y-[-2px]"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      layout
     >
       <div className="flex items-start">
         <div className="h-14 w-14 rounded-full bg-primary/15 flex items-center justify-center text-primary-dark mr-3 flex-shrink-0">
@@ -59,17 +54,13 @@ const ServiceCard = ({
       </div>
       
       {longDescription && (
-        <motion.div 
-          className="mt-4"
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ 
-            opacity: expanded ? 1 : 0,
-            height: expanded ? 'auto' : 0
-          }}
-          transition={{ duration: 0.3 }}
+        <div 
+          className={`mt-4 transition-all duration-300 overflow-hidden ${
+            expanded ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0'
+          }`}
         >
           <p className="text-neutral/70 text-sm border-t border-primary/10 pt-3">{longDescription}</p>
-        </motion.div>
+        </div>
       )}
       
       <div className="mt-auto pt-4">
@@ -90,7 +81,7 @@ const ServiceCard = ({
           </button>
         )}
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -349,11 +340,8 @@ const AllServices = () => {
           ))}
         </div>
 
-        {/* Service Cards with Layout Animation */}
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          layout
-        >
+        {/* Service Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredServices.map((service, index) => (
             <ServiceCard
               key={index}
@@ -363,16 +351,10 @@ const AllServices = () => {
               icon={service.icon}
             />
           ))}
-        </motion.div>
+        </div>
 
         {/* Call to Action */}
-        <motion.div 
-          className="mt-20 text-center"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
-          viewport={{ once: true }}
-        >
+        <div className="mt-20 text-center">
           <div className="bg-primary/10 rounded-2xl p-8 md:p-12 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
@@ -407,7 +389,7 @@ const AllServices = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

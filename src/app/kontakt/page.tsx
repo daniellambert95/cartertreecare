@@ -71,7 +71,7 @@ export default function ContactPage() {
               
               <p className="text-lg text-neutral/80 mb-8 leading-relaxed max-w-3xl mx-auto">
                 Füllen Sie unser Kontaktformular aus und erhalten Sie eine kostenlose Beratung für Ihre Baumpflege-Bedürfnisse. 
-                Unser Team meldet sich innerhalb von 24 Stunden bei Ihnen zurück.
+                Unser Team meldet sich innerhalb von 12 Stunden bei Ihnen zurück.
               </p>
             </div>
 

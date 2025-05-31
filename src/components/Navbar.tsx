@@ -3,9 +3,11 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import ConsultationModal from './ConsultationModal';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <>
@@ -45,12 +47,12 @@ const Navbar = () => {
               <Link href="/kontakt" className="text-black font-semibold hover:text-primary-dark transition duration-150">
                 Kontakt
               </Link>
-              <Link 
-                href="/kontakt"
+              <button 
+                onClick={() => setIsModalOpen(true)}
                 className="px-4 py-2 rounded-md font-semibold shadow-md transition duration-150 whitespace-nowrap bg-primary-dark text-white hover:bg-primary"
               >
                 Kostenlos Beratung
-              </Link>
+              </button>
             </div>
 
             {/* Mobile menu button */}
@@ -127,16 +129,24 @@ const Navbar = () => {
             >
               Kontakt
             </Link>
-            <Link 
-              href="/kontakt"
-              onClick={() => setIsMenuOpen(false)}
-              className="block px-3 py-2 mx-3 mt-2 rounded-md text-base font-semibold transition-colors text-center w-full bg-primary-dark text-white hover:bg-primary"
+            <button 
+              onClick={() => {
+                setIsModalOpen(true);
+                setIsMenuOpen(false);
+              }}
+              className="block px-3 py-2 mx-3 mt-2 rounded-md text-base font-semibold transition-colors text-center bg-primary-dark text-white hover:bg-primary"
+              style={{ width: 'calc(100% - 1.5rem)' }}
             >
               Kostenlos Beratung
-            </Link>
+            </button>
           </div>
         </div>
       </nav>
+
+      <ConsultationModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </>
   );
 };

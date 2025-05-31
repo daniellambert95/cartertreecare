@@ -1,0 +1,413 @@
+'use client';
+
+import React, { useState } from 'react';
+import Image from 'next/image';
+
+interface ConsultationModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+interface FormData {
+  service: string;
+  description: string;
+  name: string;
+  phone: string;
+  email: string;
+  consent: boolean;
+}
+
+const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }) => {
+  const [currentStep, setCurrentStep] = useState(1);
+  const [formData, setFormData] = useState<FormData>({
+    service: '',
+    description: '',
+    name: '',
+    phone: '',
+    email: '',
+    consent: false,
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ success?: boolean; message?: string } | null>(null);
+
+  const services = [
+    { id: 'baumpflege', name: 'Baumpflege', icon: '/icons/2baumpflege.svg .svg' },
+    { id: 'baumfaellung', name: 'Baumfällung', icon: '/icons/3baumfallung.svg .svg' },
+    { id: 'kroneneinkuerzung', name: 'Kroneneinkürzung', icon: '/icons/6einkurzung.svg .svg' },
+    { id: 'baumstumpfentfernung', name: 'Baumstumpfentfernung', icon: '/icons/14stumpp.svg.svg' },
+    { id: 'gartenarbeit', name: 'Gartenarbeit', icon: '/icons/8gartenarbeit.svg .svg' },
+    { id: 'kronenpflege', name: 'Anderes', icon: '/icons/5kronenpflege.svg .svg' },
+  ];
+
+  const handleServiceSelect = (serviceId: string) => {
+    setFormData(prev => ({ ...prev, service: serviceId }));
+  };
+
+  const handleNext = () => {
+    if (currentStep < 3) {
+      setCurrentStep(currentStep + 1);
+    }
+  };
+
+  const handleBack = () => {
+    if (currentStep > 1) {
+      setCurrentStep(currentStep - 1);
+    }
+  };
+
+  const handleSubmit = async () => {
+    setIsSubmitting(true);
+    
+    try {
+      const selectedService = services.find(s => s.id === formData.service);
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: `Kostenlose Beratung - ${selectedService?.name || 'Unbekannter Service'}`,
+          message: `Service: ${selectedService?.name || 'Unbekannt'}\n\nBeschreibung:\n${formData.description}`,
+          from_name: "Der Baumchirurg Website - Kostenlose Beratung",
+          to_name: "Der Baumchirurg Team",
+        }),
+      });
+      
+      const result = await response.json();
+      
+      if (result.success) {
+        setSubmitStatus({
+          success: true,
+          message: 'Vielen Dank! Wir werden uns innerhalb von 12 Stunden bei Ihnen melden.'
+        });
+        
+        // Reset form after successful submission
+        setTimeout(() => {
+          setFormData({
+            service: '',
+            description: '',
+            name: '',
+            phone: '',
+            email: '',
+            consent: false,
+          });
+          setCurrentStep(1);
+          setSubmitStatus(null);
+          onClose();
+        }, 3000);
+      } else {
+        setSubmitStatus({
+          success: false,
+          message: 'Es ist ein Fehler beim Senden aufgetreten. Bitte versuchen Sie es später noch einmal.'
+        });
+      }
+      
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitStatus({
+        success: false,
+        message: 'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const isStepValid = () => {
+    switch (currentStep) {
+      case 1:
+        return formData.service !== '';
+      case 2:
+        return formData.description.trim() !== '';
+      case 3:
+        return formData.name.trim() !== '' && formData.email.trim() !== '' && 
+               /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) && formData.consent;
+      default:
+        return false;
+    }
+  };
+
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 overflow-y-auto">
+      {/* Backdrop */}
+      <div 
+        className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
+        onClick={onClose}
+      ></div>
+      
+      {/* Modal */}
+      <div className="flex min-h-full items-center justify-center p-4">
+        <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-hidden transform transition-all">
+          {/* Header */}
+          <div className="flex items-center justify-between p-6 border-b border-gray-100">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </div>
+              <div>
+                <h2 className="text-xl font-bold text-neutral">Kostenlose Beratung</h2>
+                <p className="text-sm text-neutral/60">Schritt {currentStep} von 3</p>
+              </div>
+            </div>
+            <button
+              onClick={onClose}
+              className="rounded-full p-2 hover:bg-gray-100 transition-colors"
+            >
+              <svg className="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Progress Bar */}
+          <div className="px-6 py-4 bg-gray-50">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-sm font-medium text-gray-700">Fortschritt</span>
+              <span className="text-sm text-gray-500">{Math.round((currentStep / 3) * 100)}%</span>
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-2">
+              <div 
+                className="bg-primary h-2 rounded-full transition-all duration-300 ease-out"
+                style={{ width: `${(currentStep / 3) * 100}%` }}
+              ></div>
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="p-6 min-h-[400px]">
+            {submitStatus ? (
+              <div className={`text-center py-12 ${submitStatus.success ? 'text-green-600' : 'text-red-600'}`}>
+                <div className={`mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-4 ${submitStatus.success ? 'bg-green-100' : 'bg-red-100'}`}>
+                  {submitStatus.success ? (
+                    <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  ) : (
+                    <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  )}
+                </div>
+                <h3 className="text-xl font-semibold mb-2">
+                  {submitStatus.success ? 'Erfolgreich gesendet!' : 'Fehler aufgetreten'}
+                </h3>
+                <p className="text-gray-600">{submitStatus.message}</p>
+              </div>
+            ) : (
+              <>
+                {/* Step 1: Service Selection */}
+                {currentStep === 1 && (
+                  <div className="space-y-6">
+                    <div className="text-center">
+                      <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary/10 text-primary mb-4">
+                        Los geht&apos;s!
+                      </div>
+                      <h3 className="text-2xl font-bold text-neutral mb-2">Was können wir für Sie tun?</h3>
+                      <p className="text-gray-600">Wählen Sie den Service aus, für den Sie eine Beratung benötigen.</p>
+                    </div>
+                    
+                    <div className="grid grid-cols-2 gap-4">
+                      {services.map((service) => (
+                        <button
+                          key={service.id}
+                          onClick={() => handleServiceSelect(service.id)}
+                          className={`p-4 rounded-xl border-2 transition-all duration-200 text-left hover:shadow-md ${
+                            formData.service === service.id
+                              ? 'border-primary bg-primary/5 shadow-md'
+                              : 'border-gray-200 hover:border-primary/50'
+                          }`}
+                        >
+                          <div className="flex items-center space-x-3">
+                            <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
+                              formData.service === service.id ? 'bg-primary/15' : 'bg-gray-100'
+                            }`}>
+                              <Image 
+                                src={service.icon} 
+                                alt={service.name}
+                                width={24}
+                                height={24}
+                                className="w-6 h-6"
+                                style={{
+                                  filter: formData.service === service.id 
+                                    ? 'brightness(0) saturate(100%) invert(45%) sepia(98%) saturate(451%) hue-rotate(81deg) brightness(90%) contrast(101%)'
+                                    : 'brightness(0) saturate(100%) invert(37%) sepia(8%) saturate(378%) hue-rotate(314deg) brightness(95%) contrast(92%)'
+                                }}
+                              />
+                            </div>
+                            <span className={`font-medium ${
+                              formData.service === service.id ? 'text-primary' : 'text-gray-700'
+                            }`}>
+                              {service.name}
+                            </span>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Step 2: Description */}
+                {currentStep === 2 && (
+                  <div className="space-y-6">
+                    <div className="text-center">
+                      <h3 className="text-2xl font-bold text-neutral mb-2">Bitte die Arbeiten kurz beschreiben...</h3>
+                      <p className="text-gray-600">Teilen Sie uns mit, was genau getan werden soll.</p>
+                    </div>
+                    
+                    <div>
+                      <textarea
+                        value={formData.description}
+                        onChange={(e) => setFormData(prev => ({ ...prev, description: e.target.value }))}
+                        placeholder="Beschreiben Sie Ihr Anliegen hier..."
+                        rows={8}
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary resize-none text-gray-900 placeholder-gray-500"
+                      />
+                      <p className="text-sm text-gray-500 mt-2">
+                        Je detaillierter Sie Ihr Anliegen beschreiben, desto besser können wir Ihnen helfen.
+                      </p>
+                    </div>
+                  </div>
+                )}
+
+                {/* Step 3: Contact Information */}
+                {currentStep === 3 && (
+                  <div className="space-y-6">
+                    <div className="text-center">
+                      <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800 mb-4">
+                        Fast geschafft!
+                      </div>
+                      <h3 className="text-2xl font-bold text-neutral mb-2">Bitte Kontaktdaten angeben</h3>
+                      <p className="text-gray-600">Wir kontaktieren Sie innerhalb von 12 Stunden.</p>
+                    </div>
+                    
+                    <div className="space-y-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Ihr Name <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          value={formData.name}
+                          onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+                          placeholder="Ihr vollständiger Name"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-gray-900 placeholder-gray-500"
+                        />
+                      </div>
+                      
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Telefonnummer
+                        </label>
+                        <input
+                          type="tel"
+                          value={formData.phone}
+                          onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+                          placeholder="Ihre Telefonnummer (optional)"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-gray-900 placeholder-gray-500"
+                        />
+                      </div>
+                      
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          E-Mail <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="email"
+                          value={formData.email}
+                          onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                          placeholder="Ihre E-Mail-Adresse"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-gray-900 placeholder-gray-500"
+                        />
+                      </div>
+                      
+                      <div className="flex items-start">
+                        <div className="flex items-center h-5">
+                          <input
+                            id="consent"
+                            name="consent"
+                            type="checkbox"
+                            checked={formData.consent}
+                            onChange={(e) => setFormData(prev => ({ ...prev, consent: e.target.checked }))}
+                            className="w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary/50"
+                          />
+                        </div>
+                        <div className="ml-3 text-sm">
+                          <label htmlFor="consent" className="font-medium text-gray-700">
+                            Ich stimme der <span className="text-primary hover:underline cursor-pointer">Datenschutzerklärung</span> zu <span className="text-red-500">*</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
+          </div>
+
+          {/* Footer with buttons */}
+          {!submitStatus && (
+            <div className="flex items-center justify-between p-6 bg-gray-50 border-t border-gray-100">
+              {currentStep > 1 ? (
+                <button
+                  onClick={handleBack}
+                  className="px-6 py-3 text-gray-600 font-medium rounded-xl hover:bg-gray-100 transition-colors"
+                >
+                  Zurück
+                </button>
+              ) : (
+                <div></div>
+              )}
+              
+              {currentStep < 3 ? (
+                <button
+                  onClick={handleNext}
+                  disabled={!isStepValid()}
+                  className="px-8 py-3 bg-primary text-white font-medium rounded-xl hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
+                >
+                  <span>Weiter</span>
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              ) : (
+                <button
+                  onClick={handleSubmit}
+                  disabled={!isStepValid() || isSubmitting}
+                  className="px-8 py-3 bg-primary text-white font-medium rounded-xl hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      <span>Wird gesendet...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>Absenden</span>
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                      </svg>
+                    </>
+                  )}
+                </button>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ConsultationModal; 

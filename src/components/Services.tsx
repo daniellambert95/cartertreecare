@@ -200,7 +200,7 @@ const Services = () => {
           className="object-contain"
         />
       ),
-      category: 'safety'
+      category: 'tree-care'
     },
     {
       title: 'Kronensicherungen',
