@@ -311,7 +311,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
-                          placeholder="Ihre Telefonnummer (optional)"
+                          placeholder="Ihre Telefonnummer (freiwillig)"
                           className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-gray-900 placeholder-gray-500"
                         />
                       </div>

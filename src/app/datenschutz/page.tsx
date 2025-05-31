@@ -146,7 +146,7 @@ export default function PrivacyPolicyPage() {
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>Telefonnummer (optional)</span>
+                        <span>Telefonnummer (freiwillig)</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
