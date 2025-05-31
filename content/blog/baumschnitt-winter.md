@@ -1,7 +1,7 @@
 ---
 title: "Baumschnitt im Winter: Die ideale Zeit für gesunde Bäume"
 excerpt: "Erfahren Sie, warum der Winter die optimale Zeit ist, um Ihre Bäume zu schneiden und wie dies das Wachstum im Frühjahr fördert."
-date: "2023-12-15"
+date: "2025-05-04"
 author: "Der Baumchirurg Team"
 category: "Baumpflege"
 slug: "baumschnitt-winter"

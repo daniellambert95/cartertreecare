@@ -1,7 +1,7 @@
 ---
 title: "Baumpflege-Ratgeber und Techniken von den Profis: Warum Bäume wichtig sind und was es kostet"
 excerpt: "Das Herzstück Ihres Gartens sind immer Ihre Bäume. Lernen Sie unseren einfachen Fünf-Punkte-Plan kennen, um Ihren Baum zum Star Ihrer Gartengestaltung zu machen."
-date: "2024-01-15"
+date: "2025-05-25"
 author: "Der Baumchirurg Team"
 category: "Baumpflege"
 slug: "baumpflege-ratgeber"

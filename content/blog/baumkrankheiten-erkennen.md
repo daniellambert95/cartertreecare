@@ -1,7 +1,7 @@
 ---
 title: "Baumkrankheiten erkennen und behandeln: Ein Leitfaden für Gartenbesitzer"
 excerpt: "Lernen Sie die häufigsten Baumkrankheiten und Schädlinge in Berlin zu erkennen und erfahren Sie, wie Sie Ihre Bäume effektiv schützen können."
-date: "2024-02-20"
+date: "2025-05-20"
 author: "Der Baumchirurg Team"
 category: "Baumgesundheit"
 slug: "baumkrankheiten-erkennen"

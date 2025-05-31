@@ -1,7 +1,7 @@
 ---
 title: "So machen Sie Ihre Bäume sturmsicher"
 excerpt: "Praktische Tipps zur Vorbereitung Ihrer Bäume auf Herbst- und Winterstürme in Berlin und Brandenburg."
-date: "2023-11-02"
+date: "2025-04-29"
 author: "Der Baumchirurg Team"
 category: "Sicherheit"
 slug: "sturmsichere-baeume"
