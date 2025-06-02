@@ -12,7 +12,7 @@ export const metadata = {
   description: 'Fachbeiträge und Expertentipps zu Baumpflege, Baumfällung und Gartenpflege in Berlin und Brandenburg. Erfahren Sie mehr über professionelle Baumpflege.',
   keywords: 'baumpflege blog, baumfällung tipps, gartenpflege berlin, baumschnitt brandenburg, baumpflege ratgeber',
   alternates: {
-    canonical: 'https://baumpflegeberlin-brandenburg.de/blog',
+    canonical: 'https://www.baumpflegeberlin-brandenburg.de/blog',
   },
 };
 

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Alle Leistungen | Der Baumchirurg - Professionelle Baumpflege',
     description: 'Entdecken Sie unser umfassendes Angebot an Baumpflege- und Gartenarbeitsleistungen. Mit über 2000 Bäumen Erfahrung.',
-    url: 'https://baumpflegeberlin-brandenburg.de/leistungen',
+    url: 'https://www.baumpflegeberlin-brandenburg.de/leistungen',
     images: [
       {
         url: '/og-image.png',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     images: ['/twitter-image.png'],
   },
   alternates: {
-    canonical: 'https://baumpflegeberlin-brandenburg.de/leistungen',
+    canonical: 'https://www.baumpflegeberlin-brandenburg.de/leistungen',
   },
 };
 

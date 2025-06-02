@@ -4,7 +4,7 @@ excerpt: "Ihr Leitfaden für den richtigen Baumschnitt – das ganze Jahr über 
 date: "2025-05-31"
 author: "Der Baumchirurg Team"
 category: "Baumpflege"
-slug: "baume-schneidet"
+slug: "wie-man-bäume-schneidet"
 image: "/images/blog/tree-pruning-guide.webp"
 readTime: "7 min"
 keywords: "Baumschnitt, Baumpflege Berlin, Baumschnitt Brandenburg, Baumpflege Ratgeber, Bäume schneiden, Drei-Schnitt-Methode"

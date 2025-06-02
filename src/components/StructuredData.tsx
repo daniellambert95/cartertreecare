@@ -49,28 +49,28 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
           "@type": "SiteNavigationElement",
           "name": "Leistungen",
           "description": "Alle unsere professionellen Baumpflege-Dienstleistungen",
-          "url": "https://baumpflegeberlin-brandenburg.de/leistungen"
+          "url": "https://www.baumpflegeberlin-brandenburg.de/leistungen"
         },
         {
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement", 
           "name": "Über uns",
           "description": "Lernen Sie unser erfahrenes Team kennen",
-          "url": "https://baumpflegeberlin-brandenburg.de/ueber-uns"
+          "url": "https://www.baumpflegeberlin-brandenburg.de/ueber-uns"
         },
         {
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement",
           "name": "Kontakt", 
           "description": "Kontaktieren Sie uns für eine kostenlose Beratung",
-          "url": "https://baumpflegeberlin-brandenburg.de/kontakt"
+          "url": "https://www.baumpflegeberlin-brandenburg.de/kontakt"
         },
         {
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement",
           "name": "Blog",
           "description": "Tipps und Neuigkeiten rund um Baumpflege", 
-          "url": "https://baumpflegeberlin-brandenburg.de/blog"
+          "url": "https://www.baumpflegeberlin-brandenburg.de/blog"
         }
       ];
     }
@@ -82,15 +82,15 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
         "name": "Der Baumchirurg",
         "alternateName": "Der Baumchirurg",
         "description": "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
-        "url": "https://baumpflegeberlin-brandenburg.de",
+        "url": "https://www.baumpflegeberlin-brandenburg.de",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://baumpflegeberlin-brandenburg.de/logo.webp",
+          "url": "https://www.baumpflegeberlin-brandenburg.de/logo.webp",
           "width": "400",
           "height": "400",
-          "contentUrl": "https://baumpflegeberlin-brandenburg.de/logo.webp"
+          "contentUrl": "https://www.baumpflegeberlin-brandenburg.de/logo.webp"
         },
-        "image": "https://baumpflegeberlin-brandenburg.de/logo.png",
+        "image": "https://www.baumpflegeberlin-brandenburg.de/logo.png",
         "telephone": "+49174 5225935",
         "email": "derbaumchirurg@gmail.com",
         "address": {
@@ -134,19 +134,12 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
         ],
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://baumpflegeberlin-brandenburg.de"
+          "@id": "https://www.baumpflegeberlin-brandenburg.de"
         },
-        "potentialAction": [
-          {
-            "@type": "ContactAction",
-            "target": "https://baumpflegeberlin-brandenburg.de/kontakt"
-          },
-          {
-            "@type": "ViewAction", 
-            "target": "https://baumpflegeberlin-brandenburg.de/leistungen",
-            "name": "View Services"
-          }
-        ],
+        "potentialAction": {
+          "@type": "ContactAction",
+          "@id": "https://www.baumpflegeberlin-brandenburg.de"
+        },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Baumpflege Services",
@@ -176,6 +169,13 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
               }
             }
           ]
+        },
+        "actionableFeedbackPolicy": {
+          "target": "https://www.baumpflegeberlin-brandenburg.de/leistungen",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://www.baumpflegeberlin-brandenburg.de/og-image.png"
+          }
         }
       };
     }
@@ -196,7 +196,7 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
           "name": "Der Baumchirurg",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://baumpflegeberlin-brandenburg.de/og-image.png"
+            "url": "https://www.baumpflegeberlin-brandenburg.de/og-image.png"
           }
         },
         "datePublished": data.datePublished,

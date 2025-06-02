@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: post.excerpt,
     keywords: post.keywords || '',
     alternates: {
-      canonical: `https://baumpflegeberlin-brandenburg.de/blog/${post.slug}`,
+      canonical: `https://www.baumpflegeberlin-brandenburg.de/blog/${post.slug}`,
     },
     openGraph: {
       title: post.title,
