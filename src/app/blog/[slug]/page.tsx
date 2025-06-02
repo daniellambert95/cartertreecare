@@ -281,7 +281,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       )}
 
       {/* Newsletter Section */}
-      <section className="bg-primary/5 py-16">
+      {/* <section className="bg-primary/5 py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
             <div className="text-center mb-8">
@@ -312,7 +312,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
       
       <Footer />
     </main>

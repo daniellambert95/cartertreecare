@@ -22,6 +22,8 @@ Verschiedene Faktoren machen Bäume anfällig für Sturmschäden:
 - **Schlechter Schnitt:** Unausgewogene Kronen erhöhen die Windlast
 - **Alter:** Sehr alte Bäume können strukturelle Schwächen entwickeln
 
+Mehr über [Baumkrankheiten und deren Erkennung](/blog/baumkrankheiten-erkennen) erfahren Sie in unserem umfassenden Ratgeber.
+
 ## Präventive Maßnahmen für sturmsichere Bäume
 
 ### 1. Regelmäßige Inspektion
@@ -41,11 +43,15 @@ Ein fachgerechter Schnitt kann die Windlast erheblich reduzieren:
 - **Gewichtsreduzierung:** Kürzung überlanger Äste
 - **Strukturverbesserung:** Förderung einer ausgewogenen Krone
 
+Detaillierte Informationen zum richtigen Vorgehen finden Sie in unserem Guide [Wie man Bäume richtig schneidet](/blog/wie-man-bäume-schneidet). Besonders der [Winterschnitt](/blog/baumschnitt-winter) ist ideal, um strukturelle Schwächen zu beseitigen.
+
 ### 3. Wurzelbereich stärken
 
 - Vermeiden Sie Verdichtung im Wurzelbereich
 - Mulchen Sie den Boden um den Stamm
 - Sorgen Sie für ausreichende Bewässerung
+
+Mehr Tipps zur allgemeinen Baumpflege finden Sie in unserem [Baumpflege-Ratgeber](/blog/baumpflege-ratgeber).
 
 ## Warnzeichen erkennen
 
@@ -64,6 +70,8 @@ Achten Sie besonders auf diese Alarmsignale:
 2. **Stützen installieren:** Bei gefährdeten wertvollen Bäumen
 3. **Umgebung sichern:** Gartenmöbel und lose Gegenstände entfernen
 4. **Experten konsultieren:** Bei Unsicherheit professionelle Hilfe holen
+
+Beachten Sie dabei die [gesetzlichen Regelungen zum Baumschnitt](/blog/baumschnitt-zeitpunkt-berlin) in Berlin und Brandenburg.
 
 ## Nach dem Sturm: Schadensbewertung
 
@@ -94,3 +102,11 @@ Manchmal ist die Entfernung eines Baumes die sicherste Option:
 Die beste Strategie gegen Sturmschäden ist die langfristige Pflege und regelmäßige Kontrolle Ihrer Bäume. Ein gesunder, gut gepflegter Baum übersteht Stürme deutlich besser als ein vernachlässigter.
 
 **Unser Tipp:** Lassen Sie Ihre Bäume vor der Sturmsaison von einem Fachmann begutachten. Präventive Maßnahmen sind immer kostengünstiger als die Beseitigung von Sturmschäden.
+
+**Weitere hilfreiche Artikel:**
+
+- [Baumpflege Ratgeber](/blog/baumpflege-ratgeber) - Grundlagen der professionellen Baumpflege
+- [Wie man Bäume richtig schneidet](/blog/wie-man-bäume-schneidet) - Techniken und Methoden der Baumpflege
+- [Baumschnitt im Winter](/blog/baumschnitt-winter) - Spezielle Tipps für die kalte Jahreszeit
+- [Baumkrankheiten erkennen](/blog/baumkrankheiten-erkennen) - Früherkennung und Behandlung von Baumkrankheiten
+- [Baumschnitt Zeitpunkt Berlin](/blog/baumschnitt-zeitpunkt-berlin) - Wann ist der beste Zeitpunkt für den Baumschnitt?

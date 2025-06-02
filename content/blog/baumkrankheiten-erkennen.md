@@ -121,6 +121,8 @@ Mindestens zweimal im Jahr sollten Sie Ihre Bäume systematisch untersuchen:
 - Organische Düngung im Frühjahr
 - Mulchen des Wurzelbereichs
 
+Mehr über die richtige [Baumpflege](/blog/baumpflege-ratgeber) erfahren Sie in unserem umfassenden Ratgeber.
+
 ### Behandlung bei Befall
 
 **Mechanische Bekämpfung:**
@@ -141,6 +143,8 @@ Mindestens zweimal im Jahr sollten Sie Ihre Bäume systematisch untersuchen:
 - Fachgerechte Anwendung erforderlich
 - Umweltschutz beachten
 
+Bei der Entfernung befallener Äste ist der richtige [Baumschnitt](/blog/wie-man-bäume-schneidet) entscheidend für eine gute Wundheilung.
+
 ## Wann sollten Sie einen Fachmann rufen?
 
 Bestimmte Situationen erfordern professionelle Hilfe:
@@ -160,8 +164,17 @@ Die beste Behandlung ist die Vorbeugung. Gesunde, gut gepflegte Bäume sind weni
 - Optimierung der Standortbedingungen
 - Frühe Intervention bei Problemen
 
+Der [Winterschnitt](/blog/baumschnitt-winter) ist besonders wichtig, um kranke und schwache Äste zu entfernen, bevor sie Schäden verursachen können.
+
 ## Fazit
 
 Die Gesundheit Ihrer Bäume liegt in Ihren Händen. Mit regelmäßiger Beobachtung, vorbeugenden Maßnahmen und rechtzeitiger Behandlung können Sie die meisten Probleme erfolgreich bewältigen. Bei Unsicherheiten zögern Sie nicht, professionelle Hilfe in Anspruch zu nehmen.
 
 **Unser Tipp:** Führen Sie ein Baumtagebuch, in dem Sie Beobachtungen und durchgeführte Maßnahmen dokumentieren. So behalten Sie den Überblick über die Entwicklung Ihrer Bäume und können Muster erkennen.
+
+**Weitere hilfreiche Artikel:**
+
+- [Baumpflege Ratgeber](/blog/baumpflege-ratgeber) - Grundlagen der professionellen Baumpflege
+- [Wie man Bäume richtig schneidet](/blog/wie-man-bäume-schneidet) - Techniken und Methoden der Baumpflege
+- [Baumschnitt im Winter](/blog/baumschnitt-winter) - Spezielle Tipps für die kalte Jahreszeit
+- [Sturmsichere Bäume](/blog/sturmsichere-baeume) - Wie Sie Ihre Bäume vor Sturmschäden schützen
