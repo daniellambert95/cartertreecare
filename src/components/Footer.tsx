@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer id="kontakt" className="bg-neutral text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and company info */}
-          <div className="col-span-1 md:col-span-2 lg:col-span-2">
+          <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <div className="flex items-center mb-4">
               <Image src="/logo-light.svg" alt="Der Baumchirurg Logo" width={40} height={40} className="mr-2" />
               <span className="text-xl font-bold text-primary">Der Baumchirurg</span>
@@ -64,6 +64,19 @@ const Footer = () => {
                <li><Link href="/kontakt" className="text-white/70 hover:text-primary transition">Kontakt</Link></li>
              </ul>
            </div>
+
+          {/* Blog Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-white">Ratgeber</h3>
+            <ul className="space-y-2">
+              <li><Link href="/blog/wie-man-bäume-schneidet" className="text-white/70 hover:text-primary transition">Baumschnitt Guide</Link></li>
+              <li><Link href="/blog/baumkrankheiten-erkennen" className="text-white/70 hover:text-primary transition">Baumkrankheiten</Link></li>
+              <li><Link href="/blog/baumpflege-ratgeber" className="text-white/70 hover:text-primary transition">Baumpflege Tipps</Link></li>
+              <li><Link href="/blog/baumschnitt-winter" className="text-white/70 hover:text-primary transition">Winterschnitt</Link></li>
+              <li><Link href="/blog/sturmsichere-baeume" className="text-white/70 hover:text-primary transition">Sturmsicherheit</Link></li>
+              <li><Link href="/blog" className="text-white/70 hover:text-primary transition font-medium">Alle Artikel →</Link></li>
+            </ul>
+          </div>
 
           {/* Contact info */}
           <div>

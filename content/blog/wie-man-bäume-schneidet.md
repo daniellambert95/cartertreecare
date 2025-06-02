@@ -27,7 +27,7 @@ In Berlin und Brandenburg ist das starke Schneiden von Bäumen gesetzlich gerege
 - Das starke Einkürzen der Krone
 - Strukturelle Änderungen am Baum
 
-Für solche Maßnahmen außerhalb der Saison benötigen Sie eine Genehmigung der Unteren Naturschutzbehörde. Wenn Sie unsicher sind, ob Ihr Vorhaben genehmigungspflichtig ist, bieten wir Ihnen gerne eine kostenlose Beratung zur Baumpflege Berlin & Brandenburg an.
+Für solche Maßnahmen außerhalb der Saison benötigen Sie eine Genehmigung der Unteren Naturschutzbehörde. Wenn Sie unsicher sind, ob Ihr Vorhaben genehmigungspflichtig ist, bieten wir Ihnen gerne eine [kostenlose Beratung zur Baumpflege](/kontakt) Berlin & Brandenburg an.
 
 ## Wann ist der richtige Zeitpunkt für den Baumschnitt?
 
@@ -37,7 +37,7 @@ Der ideale Zeitpunkt für den Baumschnitt in Berlin richtet sich nach Baumart un
 - **Ganzjährig**: kleinere Pflegearbeiten
 - **Obstbäume**: im Winter schneiden, für Ernte im Sommer
 
-**Wichtig**: Nicht bei Frost schneiden! Dies kann Krankheiten fördern und die Wundheilung des Baumes stören.
+**Wichtig**: Nicht bei Frost schneiden! Dies kann Krankheiten fördern und die Wundheilung des Baumes stören. Mehr über [Baumkrankheiten erkennen](/blog/baumkrankheiten-erkennen) erfahren Sie in unserem ausführlichen Ratgeber.
 
 ## Professionelle Baumpflege: Werkzeuge und Sicherheit
 
@@ -86,11 +86,11 @@ Auch nach einem erfolgreichen Baumschnitt in Berlin sollten Sie Ihre Bäume rege
 - Pilzbefall an Schnittstellen
 - Absterbende Triebe
 
-Sollten Sie Anzeichen einer Erkrankung entdecken oder unsicher sein, kontaktieren Sie unsere Baumpflege-Experten in Berlin und Brandenburg. Wir stehen Ihnen mit Rat und Tat zur Seite.
+Sollten Sie Anzeichen einer Erkrankung entdecken oder unsicher sein, kontaktieren Sie unsere [Baumpflege-Experten](/kontakt) in Berlin und Brandenburg. Wir stehen Ihnen mit Rat und Tat zur Seite.
 
 ## Unsere Leistungen – Baumpflege Berlin & Baumfällung Brandenburg
 
-Wir bieten ein breites Spektrum an professionellen Baumpflege-Dienstleistungen an, darunter:
+Wir bieten ein breites Spektrum an professionellen [Baumpflege-Dienstleistungen](/leistungen) an, darunter:
 
 - Kronenrückschnitt und Formschnitt
 - Baumfällung in Brandenburg bei Gefahrenbäumen oder Bauvorhaben
@@ -98,3 +98,9 @@ Wir bieten ein breites Spektrum an professionellen Baumpflege-Dienstleistungen a
 - Obstbaumschnitt & Pflege alter Bäume
 
 Mit über 2.000 gepflegten Bäumen verfügen wir über umfassende Erfahrung in Stadt- und Privatgärten. Vertrauen Sie auf unser Know-how für eine sichere, gesunde und schöne Baumlandschaft – von Berlin bis Brandenburg.
+
+**Weitere hilfreiche Artikel:**
+
+- [Baumpflege Ratgeber](/blog/baumpflege-ratgeber) - Grundlagen der professionellen Baumpflege
+- [Baumschnitt im Winter](/blog/baumschnitt-winter) - Spezielle Tipps für die kalte Jahreszeit
+- [Sturmsichere Bäume](/blog/sturmsichere-baeume) - Wie Sie Ihre Bäume vor Sturmschäden schützen

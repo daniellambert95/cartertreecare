@@ -98,10 +98,13 @@ export function getAllPosts(): BlogPostMeta[] {
   const allPostsData = fileNames
     .filter((fileName) => fileName.endsWith('.md'))
     .map((fileName) => {
-      const slug = fileName.replace(/\.md$/, '');
+      const defaultSlug = fileName.replace(/\.md$/, '');
       const fullPath = path.join(postsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, 'utf8');
       const matterResult = matter(fileContents);
+
+      // Use slug from frontmatter if it exists, otherwise use filename-based slug
+      const slug = matterResult.data.slug || defaultSlug;
 
       return {
         slug,
@@ -114,12 +117,37 @@ export function getAllPosts(): BlogPostMeta[] {
 
 export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
   try {
-    const fullPath = path.join(postsDirectory, `${slug}.md`);
-    
-    if (!fs.existsSync(fullPath)) {
+    // Check if posts directory exists
+    if (!fs.existsSync(postsDirectory)) {
       return null;
     }
 
+    const fileNames = fs.readdirSync(postsDirectory);
+    
+    // Find the file that matches the slug
+    let targetFileName: string | null = null;
+    
+    for (const fileName of fileNames) {
+      if (!fileName.endsWith('.md')) continue;
+      
+      const fullPath = path.join(postsDirectory, fileName);
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
+      const matterResult = matter(fileContents);
+      
+      const defaultSlug = fileName.replace(/\.md$/, '');
+      const postSlug = matterResult.data.slug || defaultSlug;
+      
+      if (postSlug === slug) {
+        targetFileName = fileName;
+        break;
+      }
+    }
+    
+    if (!targetFileName) {
+      return null;
+    }
+
+    const fullPath = path.join(postsDirectory, targetFileName);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const matterResult = matter(fileContents);
 
