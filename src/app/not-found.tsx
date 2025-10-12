@@ -39,11 +39,11 @@ export default function NotFound() {
                 404
               </h1>
               <h2 className="text-2xl md:text-3xl font-bold text-neutral mb-4">
-                Dieser Ast ist nicht zu finden
+                This Branch Cannot Be Found
               </h2>
               <p className="text-base md:text-lg text-neutral/70 mb-6 max-w-2xl mx-auto">
-                Es scheint, als wären Sie auf einen Pfad geraten, den wir noch nicht gepflanzt haben. 
-                Keine Sorge – auch die besten Baumkletterer verirren sich manchmal!
+                It seems you&apos;ve wandered onto a path we haven&apos;t planted yet. 
+                No worries – even the best tree climbers get lost sometimes!
               </p>
             </div>
 
@@ -54,19 +54,19 @@ export default function NotFound() {
                   href="/"
                   className="px-6 py-3 bg-primary text-white font-medium text-base rounded-md shadow-lg hover:bg-primary-dark transform hover:-translate-y-1 transition duration-300"
                 >
-                  Zurück zur Startseite
+                  Back to Home
                 </Link>
                 <Link 
                   href="/leistungen"
                   className="px-6 py-3 bg-white text-primary border-2 border-primary font-medium text-base rounded-md shadow-lg hover:bg-primary hover:text-white transform hover:-translate-y-1 transition duration-300"
                 >
-                  Unsere Leistungen
+                  Our Services
                 </Link>
                 <Link 
                   href="/kontakt"
                   className="px-6 py-3 bg-neutral text-white font-medium text-base rounded-md shadow-lg hover:bg-neutral/80 transform hover:-translate-y-1 transition duration-300"
                 >
-                  Kontakt aufnehmen
+                  Get in Touch
                 </Link>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function NotFound() {
             <div className="animate-fade-in-up" style={{ animationDelay: '700ms' }}>
               <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 border border-primary/20 mb-6">
                 <h3 className="text-lg font-semibold text-neutral mb-3">
-                  Vielleicht suchen Sie nach:
+                  Maybe you&apos;re looking for:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                   <Link 
@@ -89,8 +89,8 @@ export default function NotFound() {
                         </svg>
                       </div>
                       <div className="text-left">
-                        <div className="font-medium text-neutral text-sm">Alle Leistungen</div>
-                        <div className="text-xs text-neutral/60">Baumpflege & mehr</div>
+                        <div className="font-medium text-neutral text-sm">All Services</div>
+                        <div className="text-xs text-neutral/60">Tree Care & More</div>
                       </div>
                     </div>
                   </Link>
@@ -107,7 +107,7 @@ export default function NotFound() {
                       </div>
                       <div className="text-left">
                         <div className="font-medium text-neutral text-sm">Blog</div>
-                        <div className="text-xs text-neutral/60">Tipps & Ratgeber</div>
+                        <div className="text-xs text-neutral/60">Tips & Guides</div>
                       </div>
                     </div>
                   </Link>
@@ -123,8 +123,8 @@ export default function NotFound() {
                         </svg>
                       </div>
                       <div className="text-left">
-                        <div className="font-medium text-neutral text-sm">Über uns</div>
-                        <div className="text-xs text-neutral/60">Unser Team</div>
+                        <div className="font-medium text-neutral text-sm">About Us</div>
+                        <div className="text-xs text-neutral/60">Our Team</div>
                       </div>
                     </div>
                   </Link>
@@ -136,12 +136,12 @@ export default function NotFound() {
             <div className="animate-fade-in-up" style={{ animationDelay: '1000ms' }}>
               <div className="bg-primary/5 rounded-lg p-4 border border-primary/20">
                 <h4 className="text-base font-semibold text-neutral mb-2">
-                  💡 Wussten Sie schon?
+                  💡 Did you know?
                 </h4>
                 <p className="text-sm text-neutral/70">
-                  Ein ausgewachsener Baum kann täglich bis zu 400 Liter Wasser verdunsten und dabei 
-                  die Umgebungstemperatur um bis zu 10°C senken. Deshalb ist professionelle Baumpflege 
-                  so wichtig für unser Klima!
+                  A mature tree can evaporate up to 400 liters of water daily and 
+                  lower the ambient temperature by up to 10°C. That&apos;s why professional tree care 
+                  is so important for our climate!
                 </p>
               </div>
             </div>
