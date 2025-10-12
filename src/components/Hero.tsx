@@ -123,7 +123,7 @@ const Hero = () => {
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl pt-10">Carter Tree Care</span>
-            <span className="block max-w-2xl text-3xl md:text-5xl mt-2 text-primary-light">Professional Arborist and Gardener</span>
+            <span className="block max-w-2xl text-3xl md:text-5xl mt-2 text-primary-light">Professional Tree Surgeon and Gardener</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl">
@@ -135,7 +135,7 @@ const Hero = () => {
               onClick={() => setIsModalOpen(true)}
               className="px-8 py-4 rounded-md bg-primary text-white font-medium text-lg shadow-lg hover:bg-primary-dark transform hover:-translate-y-1 transition duration-300 text-center"
             >
-              Get a Quote now
+              Get a Quote
             </button>
             <Link 
               href="https://wa.me/+491745225935" 

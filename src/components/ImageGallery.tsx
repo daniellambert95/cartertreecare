@@ -189,7 +189,7 @@ export default function ImageGallery() {
             href="/contact"
             className="inline-block bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
           >
-            Get Free Quote
+            Get a Quote
           </a>
         </div>
       </div>

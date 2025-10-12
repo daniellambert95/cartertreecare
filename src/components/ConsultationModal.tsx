@@ -73,8 +73,8 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
           phone: formData.phone,
           subject: `Free Consultation - ${selectedService?.name || 'Unknown Service'}`,
           message: `Service: ${selectedService?.name || 'Unknown'}\n\nDescription:\n${formData.description}`,
-          from_name: "Der Baumchirurg Website - Free Consultation",
-          to_name: "Der Baumchirurg Team",
+          from_name: "Carter Tree Care Website - Free Consultation",
+          to_name: "Carter Tree Care Team",
         }),
       });
       

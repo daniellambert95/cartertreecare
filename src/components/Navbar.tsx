@@ -51,7 +51,7 @@ const Navbar = () => {
                 onClick={() => setIsModalOpen(true)}
                 className="px-4 py-2 rounded-md font-semibold shadow-md transition duration-150 whitespace-nowrap bg-primary-dark text-white hover:bg-primary"
               >
-                Free Quote
+                Get a Quote
               </button>
             </div>
 
@@ -137,7 +137,7 @@ const Navbar = () => {
               className="block px-3 py-2 mx-3 mt-2 rounded-md text-base font-semibold transition-colors text-center bg-primary-dark text-white hover:bg-primary"
               style={{ width: 'calc(100% - 1.5rem)' }}
             >
-              Free Quote
+              Get a Quote
             </button>
           </div>
         </div>
