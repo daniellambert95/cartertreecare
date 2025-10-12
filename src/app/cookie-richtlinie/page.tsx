@@ -290,7 +290,7 @@ export default function CookiePolicyPage() {
               <h2 className="text-2xl font-bold text-neutral mb-4">Browser-Specific Instructions</h2>
               <div className="bg-neutral/5 rounded-lg p-6">
                 <p className="text-neutral/80 mb-4">
-                  Here's how you can manage cookies in different browsers:
+                  Here&apos;s how you can manage cookies in different browsers:
                 </p>
                 <div className="text-sm text-neutral/70 space-y-2">
                   <div className="flex items-start">
