@@ -26,10 +26,10 @@ type ServiceCardProps = {
 };
 
 const serviceCategories: ServiceCategoryItem[] = [
-  { id: 'tree-care', name: 'Baumpflege' },
-  { id: 'garden', name: 'Gartenarbeit' },
-  { id: 'safety', name: 'Sicherheit' },
-  { id: 'removal', name: 'Entfernung' }
+  { id: 'tree-care', name: 'Tree Care' },
+  { id: 'garden', name: 'Garden Work' },
+  { id: 'safety', name: 'Safety' },
+  { id: 'removal', name: 'Removal' }
 ];
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ 
@@ -47,8 +47,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <h3 className="text-xl font-bold text-neutral mb-3">{title}</h3>
       <p className="text-neutral/80 flex-grow text-base">{description}</p>
       <div className="mt-6">
-        <Link href="/kontakt" className="text-primary-dark font-semibold flex items-center hover:text-primary transition group">
-          Mehr erfahren
+        <Link href="/contact" className="text-primary-dark font-semibold flex items-center hover:text-primary transition group">
+          Learn more
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
           </svg>
@@ -63,8 +63,8 @@ const Services = () => {
 
   const services: Service[] = [
     {
-      title: 'Baumpflege',
-      description: 'Professionelle Pflege für gesunde und sichere Bäume durch fachgerechten Schnitt und regelmäßige Wartung.',
+      title: 'Tree Care',
+      description: 'Professional care for healthy and safe trees through proper pruning and regular maintenance.',
       icon: (
         <Image 
           src="/icons/2baumpflege.svg .svg" 
@@ -77,8 +77,8 @@ const Services = () => {
       category: 'tree-care'
     },
     {
-      title: 'Baumprüfung',
-      description: 'Fachkundige Beurteilung der Gesundheit und Sicherheit Ihrer Bäume durch zertifizierte Experten.',
+      title: 'Tree Inspection',
+      description: 'Expert assessment of your trees health and safety by certified professionals.',
       icon: (
         <Image 
           src="/icons/7prufung.svg .svg" 
@@ -91,8 +91,8 @@ const Services = () => {
       category: 'tree-care'
     },
     {
-      title: 'Kroneneinkürzung',
-      description: 'Fachgerechte Reduzierung der Baumkrone zur Größenkontrolle und Verbesserung der Stabilität.',
+      title: 'Crown Reduction',
+      description: 'Professional reduction of tree crown for size control and improved stability.',
       icon: (
         <Image 
           src="/icons/6einkurzung.svg .svg" 
@@ -105,8 +105,8 @@ const Services = () => {
       category: 'tree-care'
     },
     {
-      title: 'Baumfällungen',
-      description: 'Sichere und kontrollierte Baumfällung durch erfahrene Experten mit Rücksicht auf die Umgebung.',
+      title: 'Tree Removal',
+      description: 'Safe and controlled tree removal by experienced experts with consideration for the environment.',
       icon: (
         <Image 
           src="/icons/3baumfallung.svg .svg" 
@@ -119,8 +119,8 @@ const Services = () => {
       category: 'removal'
     },
     {
-      title: 'Gartenarbeit',
-      description: 'Professioneller Heckenschnitt und Bepflanzung für einen gepflegten und attraktiven Garten.',
+      title: 'Garden Work',
+      description: 'Professional hedge trimming and planting for a well-maintained and attractive garden.',
       icon: (
         <Image 
           src="/icons/8gartenarbeit.svg .svg" 
@@ -133,8 +133,8 @@ const Services = () => {
       category: 'garden'
     },
     {
-      title: 'Seilklettertechnik',
-      description: 'Baumpflegerische Arbeiten mit professioneller Seilklettertechnik oder Hubarbeitsbühne für schwer zugängliche Bereiche.',
+      title: 'Rope Access Technique',
+      description: 'Tree care work using professional rope access techniques or aerial platforms for hard-to-reach areas.',
       icon: (
         <Image 
           src="/icons/10seilkletter.svg .svg" 
@@ -147,8 +147,8 @@ const Services = () => {
       category: 'safety'
     },
     {
-      title: 'Baumfällung',
-      description: 'Kontrollierte und sichere Fällung von Bäumen unter Berücksichtigung gesetzlicher Vorgaben und Umweltschutz.',
+      title: 'Tree Felling',
+      description: 'Controlled and safe felling of trees considering legal requirements and environmental protection.',
       icon: (
         <Image 
           src="/icons/12baumfallung.svg .svg" 
@@ -161,8 +161,8 @@ const Services = () => {
       category: 'tree-care'
     },
     {
-      title: 'Totholzentfernung',
-      description: 'Sichere Beseitigung von abgestorbenem Holz zur Vermeidung von Gefahren und zur Förderung der Baumgesundheit.',
+      title: 'Deadwood Removal',
+      description: 'Safe removal of dead wood to prevent hazards and promote tree health.',
       icon: (
         <Image 
           src="/icons/4.totholz.svg .svg" 
@@ -175,8 +175,8 @@ const Services = () => {
       category: 'tree-care'
     },
     {
-      title: 'Kronenpflege',
-      description: 'Pflege der Baumkrone durch Entfernung von Totholz, sich kreuzenden Ästen und tief hängenden Zweigen zur Einhaltung gesetzlicher Vorschriften an Straßen und Gebäuden.',
+      title: 'Crown Care',
+      description: 'Crown maintenance through removal of deadwood, crossing branches and low-hanging branches to comply with legal requirements on roads and buildings.',
       icon: (
         <Image 
           src="/icons/5kronenpflege.svg .svg" 
@@ -189,8 +189,8 @@ const Services = () => {
       category: 'tree-care'
     },
     {
-      title: 'Sturmschaden',
-      description: 'Schnelle und sichere Entfernung von umgestürzten oder beschädigten Bäumen nach Unwettern.',
+      title: 'Storm Damage',
+      description: 'Quick and safe removal of fallen or damaged trees after storms.',
       icon: (
         <Image 
           src="/icons/15.stormschade.svg.svg" 
@@ -203,8 +203,8 @@ const Services = () => {
       category: 'tree-care'
     },
     {
-      title: 'Kronensicherungen',
-      description: 'Installation von Sicherungssystemen zur Stabilisierung von Bäumen und Vermeidung von Astbrüchen.',
+      title: 'Crown Bracing',
+      description: 'Installation of bracing systems to stabilize trees and prevent branch failure.',
       icon: (
         <Image 
           src="/icons/11kronensicher.svg.svg" 
@@ -217,8 +217,8 @@ const Services = () => {
       category: 'safety'
     },
     {
-      title: 'Grünschnittentsorgung',
-      description: 'Umweltgerechte Entsorgung von Grünschnitt nach allen Baumpflegearbeiten.',
+      title: 'Green Waste Disposal',
+      description: 'Environmentally friendly disposal of green waste after all tree care work.',
       icon: (
         <Image 
           src="/icons/13.grunschnitt.svg .svg" 
@@ -231,8 +231,8 @@ const Services = () => {
       category: 'removal'
     },
     {
-      title: 'Baumstumpfentfernung',
-      description: 'Professionelle Entfernung von Baumstümpfen und Wurzeln für eine saubere Fläche.',
+      title: 'Stump Removal',
+      description: 'Professional removal of tree stumps and roots for a clean area.',
       icon: (
         <Image 
           src="/icons/14stumpp.svg.svg" 
@@ -245,8 +245,8 @@ const Services = () => {
       category: 'removal'
     },
     {
-      title: 'Neupflanzungen',
-      description: 'Fachkundige Beratung und Durchführung von Neu- und Ersatzpflanzungen mit geeigneten Baumarten.',
+      title: 'New Plantings',
+      description: 'Expert advice and implementation of new and replacement plantings with suitable tree species.',
       icon: (
         <Image 
           src="/icons/9neuebam.svg.svg" 
@@ -273,9 +273,9 @@ const Services = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral mb-4">Unsere Leistungen</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral mb-4">Our Services</h2>
           <p className="max-w-2xl mx-auto text-neutral/80 text-lg font-medium">
-            Professionelle Baumpflege und Gartenarbeit mit höchsten Sicherheitsstandards und über 2000 Bäumen Erfahrung.
+            Professional tree care and garden work with the highest safety standards and experience with over 2000 trees.
           </p>
         </motion.div>
 
@@ -319,20 +319,20 @@ const Services = () => {
           viewport={{ once: true }}
         >
           <Link 
-            href="/leistungen" 
+            href="/services" 
             className="inline-flex items-center px-6 py-3 border border-primary text-base font-medium rounded-md shadow-sm text-primary hover:bg-primary/10 transition-colors duration-300"
           >
-            Alle Leistungen anzeigen
+            View All Services
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
           </Link>
           
           <a 
-            href="/kontakt" 
+            href="/contact" 
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primary-dark transition-colors duration-300"
           >
-            Kontaktieren Sie uns für ein Angebot
+            Contact us for a quote
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>

@@ -8,8 +8,8 @@ const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: true });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 
 export const metadata = {
-  title: 'About Us | Der Baumchirurg',
-  description: 'Get to know Der Baumchirurg - Your expert for professional tree care and garden work with the highest quality standards.',
+  title: 'About Us | Carter Tree Care',
+  description: 'Get to know Carter Tree Care - Your expert for professional tree care and garden work with the highest quality standards.',
 };
 
 export default function AboutPage() {
@@ -76,8 +76,8 @@ export default function AboutPage() {
                 </h1>
                 
                 <p className="text-base sm:text-lg lg:text-xl text-neutral/80 mb-6 lg:mb-8 leading-relaxed max-w-2xl">
-                  The team at Der Baumchirurg sets new standards in tree felling and tree care. 
-                  We don&apos;t settle for mediocre performance, but constantly strive to 
+                  Carter Tree Care team sets new standards in tree removal and tree care. 
+                  We are not satisfied with mediocre performance, but always strive to 
                   maintain and further improve our quality so that you as a customer are completely satisfied.
                 </p>
                 
@@ -123,7 +123,7 @@ export default function AboutPage() {
                 {/* CTA Button */}
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link 
-                    href="/kontakt" 
+                    href="/contact" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-xl shadow-sm text-white bg-primary hover:bg-primary-dark hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
                   >
                     Free Consultation
@@ -132,7 +132,7 @@ export default function AboutPage() {
                     </svg>
                   </Link>
                   <Link 
-                    href="/leistungen" 
+                    href="/services" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-neutral/20 text-base font-medium rounded-xl text-neutral bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
                   >
                     Our Services
@@ -148,7 +148,7 @@ export default function AboutPage() {
                   
                   <Image 
                     src="/images/tree-action.webp" 
-                    alt="Der Baumchirurg Team at work" 
+                    alt="Carter Tree Care team at work" 
                     fill
                     style={{ objectFit: 'cover', objectPosition: 'center' }}
                     className="rounded-2xl group-hover:scale-105 transition-transform duration-700"
@@ -160,7 +160,7 @@ export default function AboutPage() {
                   <div className="absolute bottom-4 left-4 z-20 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg">
                     <div className="flex items-center space-x-2">
                       <div className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></div>
-                      <span className="text-sm font-medium text-gray-800">Active on site</span>
+                      <span className="text-sm font-medium text-gray-800">Active in action</span>
                     </div>
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export default function AboutPage() {
               <h3 className="text-lg sm:text-xl font-bold text-neutral mb-2 sm:mb-3">Professional Expertise</h3>
               <p className="text-sm sm:text-base text-neutral/80">
                 From ground workers to climbers - our team consists of experienced professionals 
-                who understand their craft and execute it with precision.
+                who understand their craft and execute with precision.
               </p>
             </div>
             
@@ -221,10 +221,10 @@ export default function AboutPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-neutral mb-2 sm:mb-3">Continuous Training</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-neutral mb-2 sm:mb-3">Continuous Education</h3>
               <p className="text-sm sm:text-base text-neutral/80">
                 We invest in regular training of our employees to always stay up to date 
-                with the latest technology and methods.
+                with the latest techniques and methods.
               </p>
             </div>
             
@@ -236,7 +236,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-neutral mb-2 sm:mb-3">Extensive Fleet</h3>
               <p className="text-sm sm:text-base text-neutral/80">
-                We have an extensive vehicle fleet and machinery park for professional work 
+                We have an extensive fleet of vehicles and machinery for professional work 
                 on your construction site.
               </p>
             </div>
@@ -250,7 +250,7 @@ export default function AboutPage() {
               <h3 className="text-lg sm:text-xl font-bold text-neutral mb-2 sm:mb-3">Reliability</h3>
               <p className="text-sm sm:text-base text-neutral/80">
                 We guarantee high reliability and clean site management. 
-                You can count on our word.
+                You can rely on our word.
               </p>
             </div>
             
@@ -322,11 +322,11 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-neutral mb-4 md:mb-6">Ready to work with us?</h2>
           <p className="text-base sm:text-lg text-neutral/80 mb-6 md:mb-8 max-w-2xl mx-auto">
-            Contact us today for a free consultation and find out 
+            Contact us today for free consultation and learn 
             how we can help you with our professional tree care services.
           </p>
           <Link 
-            href="/kontakt" 
+            href="/contact" 
             className="inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 border border-transparent text-sm sm:text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primary-dark transition-colors duration-300"
           >
             Get in touch

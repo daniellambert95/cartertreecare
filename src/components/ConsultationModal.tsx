@@ -31,12 +31,12 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
   const [submitStatus, setSubmitStatus] = useState<{ success?: boolean; message?: string } | null>(null);
 
   const services = [
-    { id: 'baumpflege', name: 'Baumpflege', icon: '/icons/2baumpflege.svg .svg' },
-    { id: 'baumfaellung', name: 'Baumfällung', icon: '/icons/3baumfallung.svg .svg' },
-    { id: 'kroneneinkuerzung', name: 'Kroneneinkürzung', icon: '/icons/6einkurzung.svg .svg' },
-    { id: 'baumstumpfentfernung', name: 'Baumstumpfentfernung', icon: '/icons/14stumpp.svg.svg' },
-    { id: 'gartenarbeit', name: 'Gartenarbeit', icon: '/icons/8gartenarbeit.svg .svg' },
-    { id: 'kronenpflege', name: 'Anderes', icon: '/icons/5kronenpflege.svg .svg' },
+    { id: 'baumpflege', name: 'Tree Care', icon: '/icons/2baumpflege.svg .svg' },
+    { id: 'baumfaellung', name: 'Tree Felling', icon: '/icons/3baumfallung.svg .svg' },
+    { id: 'kroneneinkuerzung', name: 'Crown Reduction', icon: '/icons/6einkurzung.svg .svg' },
+    { id: 'baumstumpfentfernung', name: 'Stump Removal', icon: '/icons/14stumpp.svg.svg' },
+    { id: 'gartenarbeit', name: 'Garden Work', icon: '/icons/8gartenarbeit.svg .svg' },
+    { id: 'kronenpflege', name: 'Other', icon: '/icons/5kronenpflege.svg .svg' },
   ];
 
   const handleServiceSelect = (serviceId: string) => {
@@ -71,9 +71,9 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
-          subject: `Kostenlose Beratung - ${selectedService?.name || 'Unbekannter Service'}`,
-          message: `Service: ${selectedService?.name || 'Unbekannt'}\n\nBeschreibung:\n${formData.description}`,
-          from_name: "Der Baumchirurg Website - Kostenlose Beratung",
+          subject: `Free Consultation - ${selectedService?.name || 'Unknown Service'}`,
+          message: `Service: ${selectedService?.name || 'Unknown'}\n\nDescription:\n${formData.description}`,
+          from_name: "Der Baumchirurg Website - Free Consultation",
           to_name: "Der Baumchirurg Team",
         }),
       });
@@ -83,7 +83,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
       if (result.success) {
         setSubmitStatus({
           success: true,
-          message: 'Vielen Dank! Wir werden uns innerhalb von 12 Stunden bei Ihnen melden.'
+          message: 'Thank you! We will contact you within 12 hours.'
         });
         
         // Reset form after successful submission
@@ -103,7 +103,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
       } else {
         setSubmitStatus({
           success: false,
-          message: 'Es ist ein Fehler beim Senden aufgetreten. Bitte versuchen Sie es später noch einmal.'
+          message: 'An error occurred while sending. Please try again later.'
         });
       }
       
@@ -111,7 +111,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
       console.error('Form submission error:', error);
       setSubmitStatus({
         success: false,
-        message: 'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.'
+        message: 'An error occurred. Please try again later.'
       });
     } finally {
       setIsSubmitting(false);
@@ -154,8 +154,8 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                 </svg>
               </div>
               <div>
-                <h2 className="text-xl font-bold text-neutral">Kostenlose Beratung</h2>
-                <p className="text-sm text-neutral/60">Schritt {currentStep} von 3</p>
+                <h2 className="text-xl font-bold text-neutral">Free Consultation</h2>
+                <p className="text-sm text-neutral/60">Step {currentStep} of 3</p>
               </div>
             </div>
             <button
@@ -171,7 +171,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
           {/* Progress Bar */}
           <div className="px-6 py-4 bg-gray-50 flex-shrink-0">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm font-medium text-gray-700">Fortschritt</span>
+              <span className="text-sm font-medium text-gray-700">Progress</span>
               <span className="text-sm text-gray-500">{Math.round((currentStep / 3) * 100)}%</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-2">
@@ -198,7 +198,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                   )}
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
-                  {submitStatus.success ? 'Erfolgreich gesendet!' : 'Fehler aufgetreten'}
+                  {submitStatus.success ? 'Successfully sent!' : 'Error occurred'}
                 </h3>
                 <p className="text-gray-600">{submitStatus.message}</p>
               </div>
@@ -209,10 +209,10 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                   <div className="space-y-6">
                     <div className="text-center">
                       <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary/10 text-primary mb-4">
-                        Los geht&apos;s!
+                        Let&apos;s go!
                       </div>
-                      <h3 className="text-2xl font-bold text-neutral mb-2">Was können wir für Sie tun?</h3>
-                      <p className="text-gray-600">Wählen Sie den Service aus, für den Sie eine Beratung benötigen.</p>
+                      <h3 className="text-2xl font-bold text-neutral mb-2">What can we do for you?</h3>
+                      <p className="text-gray-600">Choose the service for which you need consultation.</p>
                     </div>
                     
                     <div className="grid grid-cols-2 gap-3 sm:gap-4">
@@ -259,20 +259,20 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                 {currentStep === 2 && (
                   <div className="space-y-6">
                     <div className="text-center">
-                      <h3 className="text-2xl font-bold text-neutral mb-2">Bitte die Arbeiten kurz beschreiben...</h3>
-                      <p className="text-gray-600">Teilen Sie uns mit, was genau getan werden soll.</p>
+                      <h3 className="text-2xl font-bold text-neutral mb-2">Please briefly describe the work...</h3>
+                      <p className="text-gray-600">Let us know what exactly needs to be done.</p>
                     </div>
                     
                     <div>
                       <textarea
                         value={formData.description}
                         onChange={(e) => setFormData(prev => ({ ...prev, description: e.target.value }))}
-                        placeholder="Beschreiben Sie Ihr Anliegen hier..."
+                        placeholder="Describe your request here..."
                         rows={8}
                         className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary resize-none text-gray-900 placeholder-gray-500"
                       />
                       <p className="text-sm text-gray-500 mt-2">
-                        Je detaillierter Sie Ihr Anliegen beschreiben, desto besser können wir Ihnen helfen.
+                        The more detailed you describe your request, the better we can help you.
                       </p>
                     </div>
                   </div>
@@ -283,35 +283,35 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                   <div className="space-y-6">
                     <div className="text-center">
                       <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800 mb-4">
-                        Fast geschafft!
+                        Almost done!
                       </div>
-                      <h3 className="text-2xl font-bold text-neutral mb-2">Bitte Kontaktdaten angeben</h3>
-                      <p className="text-gray-600">Wir kontaktieren Sie innerhalb von 12 Stunden.</p>
+                      <h3 className="text-2xl font-bold text-neutral mb-2">Please provide contact details</h3>
+                      <p className="text-gray-600">We will contact you within 12 hours.</p>
                     </div>
                     
                     <div className="space-y-4">
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Ihr Name <span className="text-red-500">*</span>
+                          Your Name <span className="text-red-500">*</span>
                         </label>
                         <input
                           type="text"
                           value={formData.name}
                           onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                          placeholder="Ihr vollständiger Name"
+                          placeholder="Your full name"
                           className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-gray-900 placeholder-gray-500"
                         />
                       </div>
                       
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Telefonnummer
+                          Phone Number
                         </label>
                         <input
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
-                          placeholder="Ihre Telefonnummer (freiwillig)"
+                          placeholder="Your phone number (optional)"
                           className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-gray-900 placeholder-gray-500"
                         />
                       </div>
@@ -324,7 +324,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                           type="email"
                           value={formData.email}
                           onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                          placeholder="Ihre E-Mail-Adresse"
+                          placeholder="Your email address"
                           className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-gray-900 placeholder-gray-500"
                         />
                       </div>
@@ -342,7 +342,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                         </div>
                         <div className="ml-3 text-sm">
                           <label htmlFor="consent" className="font-medium text-gray-700">
-                            Ich stimme der <span className="text-primary hover:underline cursor-pointer">Datenschutzerklärung</span> zu <span className="text-red-500">*</span>
+                            I agree to the <span className="text-primary hover:underline cursor-pointer">Privacy Policy</span> <span className="text-red-500">*</span>
                           </label>
                         </div>
                       </div>
@@ -361,7 +361,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                   onClick={handleBack}
                   className="px-6 py-3 text-gray-600 font-medium rounded-xl hover:bg-gray-100 transition-colors"
                 >
-                  Zurück
+                  Back
                 </button>
               ) : (
                 <div></div>
@@ -373,7 +373,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                   disabled={!isStepValid()}
                   className="px-8 py-3 bg-primary text-white font-medium rounded-xl hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
                 >
-                  <span>Weiter</span>
+                  <span>Next</span>
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -390,11 +390,11 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      <span>Wird gesendet...</span>
+                      <span>Sending...</span>
                     </>
                   ) : (
                     <>
-                      <span>Absenden</span>
+                      <span>Submit</span>
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                       </svg>

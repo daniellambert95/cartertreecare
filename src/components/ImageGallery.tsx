@@ -6,23 +6,23 @@ import Image from 'next/image';
 const images = [
   {
     src: '/images/home-2.webp',
-    alt: 'Baumfällung und Schnittarbeiten mit spezieller Ausrüstung',
-    title: 'Fachgerechte Baumfällung'
+    alt: 'Tree felling and cutting work with specialized equipment',
+    title: 'Professional Tree Felling'
   },
   {
     src: '/images/home-3.webp',
-    alt: 'Baumchirurg führt präzise Schnitte an großem Baum durch',
-    title: 'Präzise Baumarbeiten'
+    alt: 'Tree surgeon performing precise cuts on large tree',
+    title: 'Precise Tree Work'
   },
   {
     src: '/images/home-4.webp',
-    alt: 'Baumpflege und Beschneidung in Wohngebieten',
-    title: 'Baumpflege & Wartung'
+    alt: 'Tree care and pruning in residential areas',
+    title: 'Tree Care & Maintenance'
   },
   {
     src: '/images/home-5.webp',
-    alt: 'Kletterer arbeitet im Baumkronendach mit professioneller Kletterausrüstung',
-    title: 'Kronenpflege'
+    alt: 'Climber working in tree canopy with professional climbing equipment',
+    title: 'Crown Care'
   }
 ];
 
@@ -64,11 +64,11 @@ export default function ImageGallery() {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Unsere Arbeit in Aktion
+            Our Work in Action
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Sehen Sie unsere professionellen Baumchirurgen bei der Arbeit. Von präzisen Schnitten bis hin zu sicheren Fällungen - 
-            wir erledigen jeden Auftrag mit Fachwissen und Sorgfalt.
+            See our professional tree surgeons at work. From precise cuts to safe felling - 
+            we complete every job with expertise and care.
           </p>
         </div>
 
@@ -183,13 +183,13 @@ export default function ImageGallery() {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-lg text-gray-600 mb-6">
-            Bereit, Ihren Außenbereich zu verwandeln?
+            Ready to transform your outdoor space?
           </p>
           <a 
-            href="/kontakt"
+            href="/contact"
             className="inline-block bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
           >
-            Kostenloses Angebot erhalten
+            Get Free Quote
           </a>
         </div>
       </div>

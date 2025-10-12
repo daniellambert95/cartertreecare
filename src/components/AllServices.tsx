@@ -19,11 +19,11 @@ type Service = {
 };
 
 const serviceCategories: ServiceCategoryItem[] = [
-  { id: 'all', name: 'Alle Leistungen' },
-  { id: 'tree-care', name: 'Baumpflege' },
-  { id: 'garden', name: 'Gartenarbeit' },
-  { id: 'safety', name: 'Sicherheit' },
-  { id: 'removal', name: 'Entfernung' }
+  { id: 'all', name: 'All Services' },
+  { id: 'tree-care', name: 'Tree Care' },
+  { id: 'garden', name: 'Garden Work' },
+  { id: 'safety', name: 'Safety' },
+  { id: 'removal', name: 'Removal' }
 ];
 
 const ServiceCard = ({ 
@@ -69,7 +69,7 @@ const ServiceCard = ({
             onClick={() => setExpanded(!expanded)} 
             className="text-primary font-medium text-sm flex items-center hover:text-primary-dark transition group"
           >
-            {expanded ? 'Weniger anzeigen' : 'Mehr erfahren'}
+            {expanded ? 'Show less' : 'Learn more'}
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               className={`h-4 w-4 ml-1 transition-transform ${expanded ? 'rotate-180' : ''}`} 
@@ -90,13 +90,13 @@ const AllServices = () => {
 
   const services: Service[] = [
     {
-      title: 'Baumpflege',
-      description: 'Professionelle Pflege für gesunde und sichere Bäume durch fachgerechten Schnitt und regelmäßige Wartung.',
-      longDescription: 'Unsere Baumpflegedienste umfassen regelmäßige Inspektionen, fachgerechten Schnitt und präventive Maßnahmen, um die Gesundheit und Sicherheit Ihrer Bäume zu gewährleisten. Mit modernsten Techniken und umfassendem Fachwissen sorgen wir dafür, dass Ihre Bäume optimal wachsen und gedeihen können.',
+      title: 'Tree Care',
+      description: 'Professional care for healthy and safe trees through proper pruning and regular maintenance.',
+      longDescription: 'Our tree care services include regular inspections, proper pruning and preventive measures to ensure the health and safety of your trees. With state-of-the-art techniques and comprehensive expertise, we ensure that your trees can grow and thrive optimally.',
       icon: (
         <Image 
           src="/icons/2baumpflege.svg .svg" 
-          alt="Baumpflege" 
+          alt="Tree Care" 
           width={32} 
           height={32}
           className="object-contain"
@@ -105,13 +105,13 @@ const AllServices = () => {
       category: 'tree-care'
     },
     {
-      title: 'Baumprüfung',
-      description: 'Fachkundige Beurteilung der Gesundheit und Sicherheit Ihrer Bäume durch zertifizierte Experten.',
-      longDescription: 'Unsere zertifizierten Baumgutachter führen umfassende Baumprüfungen durch, um die Verkehrssicherheit zu gewährleisten und den Gesundheitszustand Ihrer Bäume zu bewerten. Mit modernsten Diagnoseverfahren erkennen wir frühzeitig potenzielle Probleme und entwickeln gezielte Pflegemaßnahmen.',
+      title: 'Tree Inspection',
+      description: 'Expert assessment of the health and safety of your trees by certified experts.',
+      longDescription: 'Our certified tree assessors conduct comprehensive tree inspections to ensure traffic safety and evaluate the health status of your trees. With state-of-the-art diagnostic procedures, we identify potential problems early and develop targeted care measures.',
       icon: (
         <Image 
           src="/icons/7prufung.svg .svg" 
-          alt="Baumprüfung" 
+          alt="Tree Inspection" 
           width={32} 
           height={32}
           className="object-contain"
@@ -120,13 +120,13 @@ const AllServices = () => {
       category: 'tree-care'
     },
     {
-      title: 'Kroneneinkürzung',
-      description: 'Fachgerechte Reduzierung der Baumkrone zur Größenkontrolle und Verbesserung der Stabilität.',
-      longDescription: 'Durch professionelle Kroneneinkürzung reduzieren wir die Größe und das Gewicht der Baumkrone, um die Stabilität zu verbessern und das Risiko von Astbrüchen zu minimieren. Diese Technik ist besonders wichtig für Bäume in beengten Räumen oder in der Nähe von Gebäuden und Stromleitungen.',
+      title: 'Crown Reduction',
+      description: 'Professional reduction of the tree crown for size control and improved stability.',
+      longDescription: 'Through professional crown reduction, we reduce the size and weight of the tree crown to improve stability and minimize the risk of branch breakage. This technique is particularly important for trees in confined spaces or near buildings and power lines.',
       icon: (
         <Image 
           src="/icons/6einkurzung.svg .svg" 
-          alt="Kroneneinkürzung" 
+          alt="Crown Reduction" 
           width={32} 
           height={32}
           className="object-contain"
@@ -135,13 +135,13 @@ const AllServices = () => {
       category: 'tree-care'
     },
     {
-      title: 'Baumfällungen',
-      description: 'Sichere und kontrollierte Baumfällung durch erfahrene Experten mit Rücksicht auf die Umgebung.',
-      longDescription: 'Wenn ein Baum krank, beschädigt oder gefährlich geworden ist, bieten wir professionelle Fällungsdienste an. Unsere erfahrenen Arboristen führen kontrollierte Fällungen durch, wobei die Sicherheit und der Schutz umliegender Strukturen und Vegetation oberste Priorität haben.',
+      title: 'Tree Removal',
+      description: 'Safe and controlled tree removal by experienced experts with consideration for the environment.',
+      longDescription: 'When a tree has become sick, damaged or dangerous, we offer professional felling services. Our experienced arborists perform controlled felling, with safety and protection of surrounding structures and vegetation being the top priority.',
       icon: (
         <Image 
           src="/icons/3baumfallung.svg .svg" 
-          alt="Baumfällungen" 
+          alt="Tree Removal" 
           width={32} 
           height={32}
           className="object-contain"
@@ -150,13 +150,13 @@ const AllServices = () => {
       category: 'removal'
     },
     {
-      title: 'Gartenarbeit',
-      description: 'Professioneller Heckenschnitt und Bepflanzung für einen gepflegten und attraktiven Garten.',
-      longDescription: 'Unser Gartenarbeitsdienst umfasst professionellen Heckenschnitt, Bepflanzung und allgemeine Gartenpflege. Wir helfen Ihnen, einen ästhetisch ansprechenden und gesunden Garten zu gestalten und zu erhalten, der das ganze Jahr über Freude bereitet.',
+      title: 'Garden Work',
+      description: 'Professional hedge trimming and planting for a well-maintained and attractive garden.',
+      longDescription: 'Our garden work service includes professional hedge trimming, planting and general garden maintenance. We help you create and maintain an aesthetically pleasing and healthy garden that brings joy all year round.',
       icon: (
         <Image 
           src="/icons/8gartenarbeit.svg .svg" 
-          alt="Gartenarbeit" 
+          alt="Garden Work" 
           width={32} 
           height={32}
           className="object-contain"
@@ -165,13 +165,13 @@ const AllServices = () => {
       category: 'garden'
     },
     {
-      title: 'Seilklettertechnik',
-      description: 'Baumpflegerische Arbeiten mit professioneller Seilklettertechnik oder Hubarbeitsbühne für schwer zugängliche Bereiche.',
-      longDescription: 'Mit unserer fortschrittlichen Seilklettertechnik können wir auch schwer zugängliche Bereiche in Bäumen sicher erreichen. Diese Methode ist besonders schonend für den Baum und die umgebende Landschaft und ermöglicht präzise Arbeiten in großen Höhen.',
+      title: 'Rope Access Technique',
+      description: 'Tree care work using professional rope access techniques or aerial platforms for hard-to-reach areas.',
+      longDescription: 'With our advanced rope access technique, we can safely reach even hard-to-reach areas in trees. This method is particularly gentle on the tree and surrounding landscape and enables precise work at great heights.',
       icon: (
         <Image 
           src="/icons/10seilkletter.svg .svg" 
-          alt="Seilklettertechnik" 
+          alt="Rope Access Technique" 
           width={32} 
           height={32}
           className="object-contain"
@@ -180,13 +180,13 @@ const AllServices = () => {
       category: 'safety'
     },
     {
-      title: 'Baumfällung',
-      description: 'Kontrollierte und sichere Fällung von Bäumen unter Berücksichtigung gesetzlicher Vorgaben und Umweltschutz.',
-      longDescription: 'Wenn ein Baum krank, beschädigt oder gefährlich geworden ist, bieten wir professionelle Fällungsdienste an. Unsere erfahrenen Arboristen führen kontrollierte Fällungen durch, wobei die Sicherheit und der Schutz umliegender Strukturen und Vegetation oberste Priorität haben.',
+      title: 'Tree Felling',
+      description: 'Controlled and safe felling of trees considering legal requirements and environmental protection.',
+      longDescription: 'When a tree has become sick, damaged or dangerous, we offer professional felling services. Our experienced arborists perform controlled felling, with safety and protection of surrounding structures and vegetation being the top priority.',
       icon: (
         <Image 
           src="/icons/12baumfallung.svg .svg" 
-          alt="Baumfällung" 
+          alt="Tree Felling" 
           width={32} 
           height={32}
           className="object-contain"
@@ -195,13 +195,13 @@ const AllServices = () => {
       category: 'tree-care'
     },
     {
-      title: 'Totholzentfernung',
-      description: 'Sichere Beseitigung von abgestorbenem Holz zur Vermeidung von Gefahren und zur Förderung der Baumgesundheit.',
-      longDescription: 'Abgestorbene Äste und Holz können ein Sicherheitsrisiko darstellen und die Gesundheit des Baumes beeinträchtigen. Wir entfernen Totholz fachgerecht, um die Sicherheit zu erhöhen und die allgemeine Gesundheit und Ästhetik des Baumes zu verbessern.',
+      title: 'Deadwood Removal',
+      description: 'Safe removal of dead wood to prevent hazards and promote tree health.',
+      longDescription: 'Dead branches and wood can pose a safety risk and affect the health of the tree. We remove deadwood professionally to increase safety and improve the overall health and aesthetics of the tree.',
       icon: (
         <Image 
           src="/icons/4.totholz.svg .svg" 
-          alt="Totholzentfernung" 
+          alt="Deadwood Removal" 
           width={32} 
           height={32}
           className="object-contain"
@@ -210,13 +210,13 @@ const AllServices = () => {
       category: 'tree-care'
     },
     {
-      title: 'Kronenpflege',
-      description: 'Pflege der Baumkrone durch Entfernung von Totholz, sich kreuzenden Ästen und tief hängenden Zweigen zur Einhaltung gesetzlicher Vorschriften an Straßen und Gebäuden.',
-      longDescription: 'Durch fachgerechte Kroneneinkürzung können wir die Größe und Form eines Baumes kontrollieren, seine Stabilität verbessern und das Risiko von Astbrüchen reduzieren. Diese Technik ist besonders wichtig für Bäume in beengten Räumen oder in der Nähe von Gebäuden.',
+      title: 'Crown Care',
+      description: 'Crown maintenance through removal of deadwood, crossing branches and low-hanging branches to comply with legal requirements on roads and buildings.',
+      longDescription: 'Through professional crown reduction, we can control the size and shape of a tree, improve its stability and reduce the risk of branch breakage. This technique is particularly important for trees in confined spaces or near buildings.',
       icon: (
         <Image 
           src="/icons/5kronenpflege.svg .svg" 
-          alt="Kronenpflege" 
+          alt="Crown Care" 
           width={32} 
           height={32}
           className="object-contain"
@@ -225,13 +225,13 @@ const AllServices = () => {
       category: 'tree-care'
     },
     {
-      title: 'Sturmschaden',
-      description: 'Schnelle und sichere Entfernung von umgestürzten oder beschädigten Bäumen nach Unwettern.',
-      longDescription: 'Unser Fassadenschnitt-Service sorgt dafür, dass Bäume und Sträucher in der Nähe von Gebäuden ordentlich und kontrolliert wachsen. Dies verbessert nicht nur das Erscheinungsbild, sondern verhindert auch potenzielle Schäden an der Fassade und erhält den Lichteinfall in Gebäude.',
+      title: 'Storm Damage',
+      description: 'Quick and safe removal of fallen or damaged trees after storms.',
+      longDescription: 'Our facade pruning service ensures that trees and shrubs near buildings grow neatly and in a controlled manner. This not only improves the appearance, but also prevents potential damage to the facade and maintains light penetration into buildings.',
       icon: (
         <Image 
           src="/icons/15.stormschade.svg.svg" 
-          alt="Sturmschaden" 
+          alt="Storm Damage" 
           width={32} 
           height={32}
           className="object-contain"
@@ -240,13 +240,13 @@ const AllServices = () => {
       category: 'tree-care'
     },
     {
-      title: 'Kronensicherungen',
-      description: 'Installation von Sicherungssystemen zur Stabilisierung von Bäumen und Vermeidung von Astbrüchen.',
-      longDescription: 'Für Bäume mit strukturellen Schwächen oder wertvollen historischen Bäumen bieten wir professionelle Kronensicherungssysteme an. Diese nicht-invasiven Systeme reduzieren das Risiko von Astbrüchen und verlängern die Lebensdauer des Baumes, während seine natürliche Schönheit erhalten bleibt.',
+      title: 'Crown Bracing',
+      description: 'Installation of bracing systems to stabilize trees and prevent branch failure.',
+      longDescription: 'For trees with structural weaknesses or valuable historic trees, we offer professional crown bracing systems. These non-invasive systems reduce the risk of branch failure and extend the life of the tree while preserving its natural beauty.',
       icon: (
         <Image 
           src="/icons/11kronensicher.svg.svg" 
-          alt="Kronensicherungen" 
+          alt="Crown Bracing" 
           width={32} 
           height={32}
           className="object-contain"
@@ -255,13 +255,13 @@ const AllServices = () => {
       category: 'safety'
     },
     {
-      title: 'Grünschnittentsorgung',
-      description: 'Umweltgerechte Entsorgung von Grünschnitt nach allen Baumpflegearbeiten.',
-      longDescription: 'Nach Abschluss unserer Baumpflegearbeiten bieten wir eine umweltfreundliche Entsorgung des anfallenden Grünschnitts an. Je nach Material und Ihren Wünschen kann der Schnitt zu Mulch verarbeitet, kompostiert oder ordnungsgemäß entsorgt werden.',
+      title: 'Green Waste Disposal',
+      description: 'Environmentally friendly disposal of green waste after all tree care work.',
+      longDescription: 'After completing our tree care work, we offer environmentally friendly disposal of the resulting green waste. Depending on the material and your wishes, the cuttings can be processed into mulch, composted or properly disposed of.',
       icon: (
         <Image 
           src="/icons/13.grunschnitt.svg .svg" 
-          alt="Grünschnittentsorgung" 
+          alt="Green Waste Disposal" 
           width={32} 
           height={32}
           className="object-contain"
@@ -270,13 +270,13 @@ const AllServices = () => {
       category: 'removal'
     },
     {
-      title: 'Baumstumpfentfernung',
-      description: 'Professionelle Entfernung von Baumstümpfen und Wurzeln für eine saubere Fläche.',
-      longDescription: 'Nach einer Baumfällung kann der zurückbleibende Stumpf unattraktiv sein und die Nutzung des Grundstücks einschränken. Unsere Baumstumpfentfernung beseitigt den Stumpf und die Hauptwurzeln vollständig, sodass Sie den Bereich neu gestalten oder bepflanzen können.',
+      title: 'Stump Removal',
+      description: 'Professional removal of tree stumps and roots for a clean area.',
+      longDescription: 'After tree felling, the remaining stump can be unsightly and limit the use of the property. Our stump removal completely eliminates the stump and main roots, allowing you to redesign or replant the area.',
       icon: (
         <Image 
           src="/icons/14stumpp.svg.svg" 
-          alt="Baumstumpfentfernung" 
+          alt="Stump Removal" 
           width={32} 
           height={32}
           className="object-contain"
@@ -285,13 +285,13 @@ const AllServices = () => {
       category: 'removal'
     },
     {
-      title: 'Neupflanzungen',
-      description: 'Fachkundige Beratung und Durchführung von Neu- und Ersatzpflanzungen mit geeigneten Baumarten.',
-      longDescription: 'Wir beraten Sie bei der Auswahl geeigneter Baumarten für Ihren Standort und führen professionelle Pflanzungen durch. Unser Service umfasst die richtige Pflanzlochvorbereitung, Pflanzung und Erstpflege, um einen optimalen Start für Ihren neuen Baum zu gewährleisten.',
+      title: 'New Plantings',
+      description: 'Expert advice and implementation of new and replacement plantings with suitable tree species.',
+      longDescription: 'We advise you on selecting suitable tree species for your location and carry out professional plantings. Our service includes proper planting hole preparation, planting and initial care to ensure an optimal start for your new tree.',
       icon: (
         <Image 
           src="/icons/9neuebam.svg.svg" 
-          alt="Neupflanzungen" 
+          alt="New Plantings" 
           width={32} 
           height={32}
           className="object-contain"
@@ -361,15 +361,15 @@ const AllServices = () => {
             
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-neutral mb-4">Bereit für professionelle Baumpflege?</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-neutral mb-4">Ready for professional tree care?</h3>
                 <p className="text-neutral/80 mb-8">
-                  Unsere Experten stehen Ihnen mit Rat und Tat zur Seite. Kontaktieren Sie uns noch heute für ein unverbindliches Angebot.
+                  Our experts are here to help you with advice and action. Contact us today for a non-binding quote.
                 </p>
                 <a 
-                  href="/kontakt" 
+                  href="/contact" 
                   className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-md text-white bg-primary hover:bg-primary-dark transition-colors duration-300"
                 >
-                  Kontaktieren Sie uns
+                  Contact us
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>

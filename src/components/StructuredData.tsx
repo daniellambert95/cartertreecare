@@ -49,28 +49,28 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
           "@type": "SiteNavigationElement",
           "name": "Leistungen",
           "description": "Alle unsere professionellen Baumpflege-Dienstleistungen",
-          "url": "https://www.baumpflegeberlin-brandenburg.de/leistungen"
+          "url": "https://www.cartertreecare.ie/leistungen"
         },
         {
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement", 
           "name": "Über uns",
           "description": "Lernen Sie unser erfahrenes Team kennen",
-          "url": "https://www.baumpflegeberlin-brandenburg.de/ueber-uns"
+          "url": "https://www.cartertreecare.ie/ueber-uns"
         },
         {
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement",
           "name": "Kontakt", 
           "description": "Kontaktieren Sie uns für eine kostenlose Beratung",
-          "url": "https://www.baumpflegeberlin-brandenburg.de/kontakt"
+          "url": "https://www.cartertreecare.ie/kontakt"
         },
         {
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement",
           "name": "Blog",
           "description": "Tipps und Neuigkeiten rund um Baumpflege", 
-          "url": "https://www.baumpflegeberlin-brandenburg.de/blog"
+          "url": "https://www.cartertreecare.ie/blog"
         }
       ];
     }
@@ -82,17 +82,17 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
         "name": "Der Baumchirurg",
         "alternateName": "Der Baumchirurg",
         "description": "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
-        "url": "https://www.baumpflegeberlin-brandenburg.de",
+        "url": "https://www.cartertreecare.ie",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.baumpflegeberlin-brandenburg.de/logo.webp",
+          "url": "https://www.cartertreecare.ie/logo.webp",
           "width": "400",
           "height": "400",
-          "contentUrl": "https://www.baumpflegeberlin-brandenburg.de/logo.webp"
+          "contentUrl": "https://www.cartertreecare.ie/logo.webp"
         },
-        "image": "https://www.baumpflegeberlin-brandenburg.de/logo.png",
+        "image": "https://www.cartertreecare.ie/logo.png",
         "telephone": "+49174 5225935",
-        "email": "derbaumchirurg@gmail.com",
+        "email": "jcartertreecare@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Berlin",
@@ -128,17 +128,17 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
           "Sa 09:00-16:00"
         ],
         "sameAs": [
-          "https://www.facebook.com/derbaumchirurg", // Add actual social media URLs
-          "https://www.instagram.com/derbaumchirurg",
-          "https://www.linkedin.com/company/derbaumchirurg"
+          "https://www.facebook.com/blackslopes", // Add actual social media URLs
+          "https://www.instagram.com/blackslopes",
+          "https://www.linkedin.com/company/blackslopes"
         ],
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://www.baumpflegeberlin-brandenburg.de"
+          "@id": "https://www.cartertreecare.ie"
         },
         "potentialAction": {
           "@type": "ContactAction",
-          "@id": "https://www.baumpflegeberlin-brandenburg.de"
+          "@id": "https://www.cartertreecare.ie"
         },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -171,10 +171,10 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
           ]
         },
         "actionableFeedbackPolicy": {
-          "target": "https://www.baumpflegeberlin-brandenburg.de/leistungen",
+          "target": "https://www.cartertreecare.ie/leistungen",
           "image": {
             "@type": "ImageObject",
-            "url": "https://www.baumpflegeberlin-brandenburg.de/og-image.png"
+            "url": "https://www.cartertreecare.ie/og-image.png"
           }
         }
       };
@@ -196,7 +196,7 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
           "name": "Der Baumchirurg",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.baumpflegeberlin-brandenburg.de/og-image.png"
+            "url": "https://www.cartertreecare.ie/og-image.png"
           }
         },
         "datePublished": data.datePublished,

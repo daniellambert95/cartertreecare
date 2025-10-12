@@ -21,15 +21,15 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-neutral mb-4">Entdecken Sie unsere Expertise</h2>
+            <h2 className="text-3xl font-bold text-neutral mb-4">Discover Our Expertise</h2>
             <p className="text-lg text-neutral/70 max-w-2xl mx-auto">
-              Erfahren Sie mehr über professionelle Baumpflege und lesen Sie unsere wertvollen Tipps für die Pflege Ihrer Bäume.
+              Learn more about professional tree care and read our valuable tips for maintaining your trees.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Link to Services */}
-            <Link href="/leistungen" className="group block">
+            <Link href="/services" className="group block">
               <div className="bg-secondary rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   <svg className="h-6 w-6 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -37,16 +37,16 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-neutral mb-2 group-hover:text-primary transition-colors duration-300">
-                  Alle Leistungen
+                  All Services
                 </h3>
                 <p className="text-neutral/70">
-                  Von Baumfällung bis Kronenpflege - entdecken Sie unser komplettes Leistungsspektrum für Ihre Bäume.
+                  From tree removal to crown care - discover our complete range of services for your trees.
                 </p>
               </div>
             </Link>
 
             {/* Link to Featured Blog Post */}
-            <Link href="/blog/wie-man-bäume-schneidet" className="group block">
+            <Link href="/blog/how-to-prune-trees" className="group block">
               <div className="bg-secondary rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   <svg className="h-6 w-6 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,16 +54,16 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-neutral mb-2 group-hover:text-primary transition-colors duration-300">
-                  Baumschnitt Guide
+                  Tree Pruning Guide
                 </h3>
                 <p className="text-neutral/70">
-                  Lernen Sie wann und wie man Bäume richtig schneidet - unser kompletter Leitfaden für professionelle Ergebnisse.
+                  Learn when and how to properly prune trees - our complete guide for professional results.
                 </p>
               </div>
             </Link>
 
             {/* Link to About Us */}
-            <Link href="/ueber-uns" className="group block">
+            <Link href="/about-us" className="group block">
               <div className="bg-secondary rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   <svg className="h-6 w-6 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,10 +71,10 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-neutral mb-2 group-hover:text-primary transition-colors duration-300">
-                  Über uns
+                  About Us
                 </h3>
                 <p className="text-neutral/70">
-                  Lernen Sie unser erfahrenes Team kennen und erfahren Sie mehr über unsere jahrelange Expertise in der Baumpflege.
+                  Meet our experienced team and learn more about our years of expertise in tree care.
                 </p>
               </div>
             </Link>
@@ -82,19 +82,19 @@ export default function Home() {
 
           {/* Additional internal links for important blog posts */}
           <div className="mt-12 text-center">
-            <h3 className="text-2xl font-bold text-neutral mb-6">Beliebte Ratgeber</h3>
+            <h3 className="text-2xl font-bold text-neutral mb-6">Popular Guides</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/blog/baumkrankheiten-erkennen" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg transition-colors duration-300">
-                Baumkrankheiten erkennen
+              <Link href="/blog/tree-diseases-identification" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg transition-colors duration-300">
+                Tree Disease Identification
               </Link>
-              <Link href="/blog/baumpflege-ratgeber" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg transition-colors duration-300">
-                Baumpflege Ratgeber
+              <Link href="/blog/tree-care-guide" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg transition-colors duration-300">
+                Tree Care Guide
               </Link>
-              <Link href="/blog/baumschnitt-winter" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg transition-colors duration-300">
-                Winterschnitt Guide
+              <Link href="/blog/winter-pruning" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg transition-colors duration-300">
+                Winter Pruning Guide
               </Link>
               <Link href="/blog" className="inline-flex items-center px-4 py-2 bg-neutral/10 text-neutral hover:bg-neutral hover:text-white rounded-lg transition-colors duration-300">
-                Alle Artikel →
+                All Articles →
               </Link>
             </div>
           </div>

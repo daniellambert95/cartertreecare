@@ -31,86 +31,86 @@ Für solche Maßnahmen außerhalb der Saison benötigen Sie eine Genehmigung der
 
 Detaillierte Informationen zu den gesetzlichen Regelungen finden Sie in unserem Artikel über den [optimalen Baumschnitt-Zeitpunkt in Berlin](/blog/baumschnitt-zeitpunkt-berlin).
 
-## Wann ist der richtige Zeitpunkt für den Baumschnitt?
+## When is the Right Time for Tree Pruning?
 
-Der ideale Zeitpunkt für den Baumschnitt in Berlin richtet sich nach Baumart und Zweck des Schnitts.
+The ideal time for tree pruning in Dublin depends on the tree species and purpose of the cut.
 
-- **Winter bis Vorfrühling**: bester Zeitraum für Struktur- und Erhaltungsschnitte
-- **Ganzjährig**: kleinere Pflegearbeiten
-- **Obstbäume**: im Winter schneiden, für Ernte im Sommer
+- **Winter to early spring**: best period for structural and maintenance pruning
+- **Year-round**: minor care work
+- **Fruit trees**: prune in winter for summer harvest
 
-**Wichtig**: Nicht bei Frost schneiden! Dies kann Krankheiten fördern und die Wundheilung des Baumes stören. Mehr über [Baumkrankheiten erkennen](/blog/baumkrankheiten-erkennen) erfahren Sie in unserem ausführlichen Ratgeber.
+**Important**: Don't prune during frost! This can promote diseases and disrupt the tree's wound healing. Learn more about [identifying tree diseases](/blog/identifying-tree-diseases) in our comprehensive guide.
 
-Der [Baumschnitt im Winter](/blog/baumschnitt-winter) bietet besondere Vorteile für die Baumgesundheit und das Wachstum im Frühjahr.
+[Winter tree pruning](/blog/winter-tree-pruning) offers special benefits for tree health and spring growth.
 
-## Professionelle Baumpflege: Werkzeuge und Sicherheit
+## Professional Tree Care: Tools and Safety
 
-Für eine sichere und effektive Baumpflege Berlin benötigen Sie folgende Werkzeuge:
+For safe and effective tree care in Dublin you need the following tools:
 
-- Scharfe Gartenschere / Astschere
-- Baumsäge für dickere Äste
-- Teleskopschneider (bei hohen Bäumen)
-- Reinigungstücher (zum Desinfizieren)
+- Sharp garden shears / pruning shears
+- Tree saw for thicker branches
+- Telescopic pruner (for tall trees)
+- Cleaning cloths (for disinfecting)
 
-Achten Sie darauf, die Werkzeuge nach jedem Baum mit Alkohol zu reinigen – das verhindert die Übertragung von Krankheiten. Zudem empfehlen wir Schutzausrüstung wie Helm, Handschuhe und Schutzbrille.
+Make sure to clean tools after each tree with alcohol - this prevents the transmission of diseases. We also recommend protective equipment such as helmet, gloves and safety glasses.
 
-## So planen Sie den perfekten Baumschnitt
+## How to Plan the Perfect Tree Pruning
 
-Bevor Sie loslegen, analysieren Sie die Struktur des Baumes. Entfernen Sie zuerst:
+Before you start, analyze the structure of the tree. Remove first:
 
-- Kranke oder tote Äste
-- Reibende oder quer wachsende Zweige
-- Äste, die das natürliche Wachstum behindern
+- Diseased or dead branches
+- Rubbing or cross-growing branches
+- Branches that hinder natural growth
 
-Ziel ist es, den Baum zu entlasten, die Krone zu lichten und gleichzeitig die natürliche Form zu erhalten. Ein gut durchdachter Formschnitt kann Wunder wirken – besonders bei stark gewachsenen Stadtbäumen in Berlin und Brandenburg.
+The goal is to relieve the tree, thin the crown and at the same time maintain the natural form. A well-thought-out formative pruning can work wonders - especially with overgrown urban trees in Dublin and throughout Ireland.
 
-Weitere Grundlagen der Baumpflege finden Sie in unserem umfassenden [Baumpflege-Ratgeber](/blog/baumpflege-ratgeber).
+More fundamentals of tree care can be found in our comprehensive [Tree Care Guide](/blog/tree-care-guide-dublin).
 
-## Richtig schneiden: Techniken für gesunde Bäume
+## Proper Cutting: Techniques for Healthy Trees
 
-Falscher Schnitt kann dem Baum mehr schaden als nützen. Beachten Sie folgende Grundregeln:
+Incorrect pruning can do more harm than good to the tree. Follow these basic rules:
 
-- Schneiden Sie immer an einer Verzweigung, Knospe oder dem Stamm
-- Vermeiden Sie Stummel – sie begünstigen Pilzbefall
-- Schräger Schnitt statt gerader – das verbessert die Heilung
+- Always cut at a branch junction, bud or trunk
+- Avoid stubs - they promote fungal infection
+- Angled cut instead of straight - this improves healing
 
-### Die Drei-Schnitt-Methode – ideal für größere Äste
+### The Three-Cut Method - Ideal for Larger Branches
 
-Diese Technik vermeidet das gefährliche Einreißen der Rinde. So geht's:
+This technique avoids dangerous bark tearing. Here's how:
 
-1. **Unterschnitt** ca. 20–30 cm vom Stamm entfernt – ein Drittel tief
-2. **Oberschnitt** 3–4 cm weiter außen – bis der Ast abbricht
-3. **Stumpf entfernen** – sauber, ohne den Astkragen zu verletzen
+1. **Undercut** about 20-30 cm from the trunk - one third deep
+2. **Top cut** 3-4 cm further out - until the branch breaks off
+3. **Remove stub** - cleanly, without injuring the branch collar
 
-Diese Methode wird besonders bei der professionellen Baumpflege in Brandenburg bei Altbäumen und stark gewachsenen Arten verwendet.
+This method is particularly used in professional tree care in Ireland for mature trees and overgrown species.
 
-## Kontrolle und Nachpflege nach dem Schnitt
+## Monitoring and Aftercare Following Pruning
 
-Auch nach einem erfolgreichen Baumschnitt in Berlin sollten Sie Ihre Bäume regelmäßig kontrollieren. Achten Sie auf:
+Even after successful tree pruning in Dublin, you should regularly check your trees. Watch for:
 
-- Austretenden Saft
-- Pilzbefall an Schnittstellen
-- Absterbende Triebe
+- Leaking sap
+- Fungal infection at cut sites
+- Dying shoots
 
-Sollten Sie Anzeichen einer Erkrankung entdecken oder unsicher sein, kontaktieren Sie unsere [Baumpflege-Experten](/kontakt) in Berlin und Brandenburg. Wir stehen Ihnen mit Rat und Tat zur Seite.
+Should you discover signs of disease or be unsure, contact our [tree care experts](/contact) in Dublin and throughout Ireland. We are here to help with advice and action.
 
-Ein fachgerechter Baumschnitt trägt auch dazu bei, Ihre Bäume [sturmsicherer](/blog/sturmsichere-baeume) zu machen und sie vor extremen Wetterbedingungen zu schützen.
+Professional tree pruning also helps make your trees more [storm-resistant](/blog/storm-resistant-trees) and protects them from Ireland's extreme weather conditions.
 
-## Unsere Leistungen – Baumpflege Berlin & Baumfällung Brandenburg
+## Our Services - Tree Care Dublin & Tree Removal Ireland
 
-Wir bieten ein breites Spektrum an professionellen [Baumpflege-Dienstleistungen](/leistungen) an, darunter:
+We offer a wide range of professional [tree care services](/services), including:
 
-- Kronenrückschnitt und Formschnitt
-- Baumfällung in Brandenburg bei Gefahrenbäumen oder Bauvorhaben
-- Sturmschädenbeseitigung
-- Obstbaumschnitt & Pflege alter Bäume
+- Crown reduction and formative pruning
+- Tree removal in Ireland for dangerous trees or construction projects
+- Storm damage clearance
+- Fruit tree pruning & care of mature trees
 
-Mit über 2.000 gepflegten Bäumen verfügen wir über umfassende Erfahrung in Stadt- und Privatgärten. Vertrauen Sie auf unser Know-how für eine sichere, gesunde und schöne Baumlandschaft – von Berlin bis Brandenburg.
+With over 2,000 maintained trees, we have extensive experience in urban and private gardens. Trust our expertise for a safe, healthy and beautiful tree landscape throughout Dublin and Ireland.
 
-**Weitere hilfreiche Artikel:**
+**Other helpful articles:**
 
-- [Baumpflege Ratgeber](/blog/baumpflege-ratgeber) - Grundlagen der professionellen Baumpflege
-- [Baumschnitt im Winter](/blog/baumschnitt-winter) - Spezielle Tipps für die kalte Jahreszeit
-- [Baumschnitt Zeitpunkt Berlin](/blog/baumschnitt-zeitpunkt-berlin) - Wann ist der beste Zeitpunkt für den Baumschnitt?
-- [Baumkrankheiten erkennen](/blog/baumkrankheiten-erkennen) - Früherkennung und Behandlung von Baumkrankheiten
-- [Sturmsichere Bäume](/blog/sturmsichere-baeume) - Wie Sie Ihre Bäume vor Sturmschäden schützen
+- [Tree Care Guide Dublin](/blog/tree-care-guide-dublin) - Fundamentals of professional tree care
+- [Winter Tree Pruning](/blog/winter-tree-pruning) - Special tips for the cold season
+- [Tree Pruning Timing Dublin](/blog/tree-pruning-timing-dublin) - When is the best time for tree pruning?
+- [Identifying Tree Diseases](/blog/identifying-tree-diseases) - Early detection and treatment of tree diseases
+- [Storm-Resistant Trees](/blog/storm-resistant-trees) - How to protect your trees from storm damage

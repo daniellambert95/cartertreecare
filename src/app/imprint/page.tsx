@@ -7,9 +7,9 @@ const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: true });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 
 export const metadata = {
-  title: 'Impressum | Der Baumchirurg',
-  description: 'Impressum und rechtliche Angaben der Der Baumchirurg - Professionelle Baumpflege.',
-  keywords: 'impressum, rechtliche angaben, baumpflege, kontakt',
+  title: 'Imprint | Carter Tree Care',
+  description: 'Imprint and legal information of Carter Tree Care - Professional Tree Care.',
+  keywords: 'imprint, legal information, tree care, contact',
 };
 
 export default function ImpressumPage() {
@@ -49,7 +49,7 @@ export default function ImpressumPage() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-neutral/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                  <span className="ml-2 text-neutral text-sm font-medium">Impressum</span>
+                  <span className="ml-2 text-neutral text-sm font-medium">Imprint</span>
                 </li>
               </ol>
             </nav>
@@ -60,7 +60,7 @@ export default function ImpressumPage() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.5 3A1.5 1.5 0 006 4.5v.793c0 .026.01.052.025.072L8.5 8.5l2.475-3.135A.125.125 0 0111 5.293V4.5A1.5 1.5 0 009.5 3h-2z" />
                 </svg>
-                Rechtlich erforderlich
+                Legally required
               </div>
               
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-neutral mb-4 lg:mb-6 leading-tight">
@@ -73,7 +73,7 @@ export default function ImpressumPage() {
               </h1>
               
               <p className="text-base sm:text-lg lg:text-xl text-neutral/80 mb-6 lg:mb-8 leading-relaxed max-w-3xl mx-auto">
-                Rechtliche Angaben gemäß § 5 TMG (Telemediengesetz)
+                Legal information according to § 5 TMG (Telemedia Act)
               </p>
             </div>
           </div>
@@ -86,38 +86,38 @@ export default function ImpressumPage() {
           
           {/* Business Information */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-neutral mb-6">Angaben gemäß § 5 TMG</h2>
+            <h2 className="text-2xl font-bold text-neutral mb-6">Information according to § 5 TMG</h2>
             
             <div className="bg-white border border-neutral/10 rounded-xl p-6 shadow-sm">
               <div className="space-y-6">
                 <div>
                   <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
                     <span className="text-primary mr-2">🏢</span>
-                    Unternehmen
+                    Company
                   </h3>
                   <div className="space-y-2 text-neutral/80">
-                    <div><strong>Firmenname:</strong> Der Baumchirurg</div>
-                    <div><strong>Inhaber:</strong> James Carter</div>
-                    <div><strong>Rechtsform:</strong> Einzelunternehmen</div>
+                    <div><strong>Company name:</strong> Carter Tree Care</div>
+                    <div><strong>Owner:</strong> James Carter</div>
+                    <div><strong>Legal form:</strong> Sole proprietorship</div>
                   </div>
                 </div>
                 
                 <div>
                   <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
                     <span className="text-primary mr-2">📍</span>
-                    Anschrift
+                    Address
                   </h3>
                   <div className="space-y-2 text-neutral/80">
-                    <div><strong>Straße:</strong> Sorauer Str. 12</div>
-                    <div><strong>PLZ/Ort:</strong> 10997 Berlin</div>
-                    <div><strong>Land:</strong> Deutschland</div>
+                    <div><strong>Street:</strong> Sorauer Str. 12</div>
+                    <div><strong>Postal code/City:</strong> 10997 Berlin</div>
+                    <div><strong>Country:</strong> Germany</div>
                   </div>
                 </div>
 
                 <div>
                   <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
                     <span className="text-primary mr-2">📧</span>
-                    Kontakt
+                    Contact
                   </h3>
                   <div className="space-y-2 text-neutral/80">
                     <div className="flex items-center">
@@ -180,22 +180,22 @@ export default function ImpressumPage() {
 
           {/* Contact CTA */}
           <div className="bg-primary/5 rounded-xl p-8 text-center">
-            <h3 className="text-xl font-bold text-neutral mb-4">Rechtliche Fragen?</h3>
+            <h3 className="text-xl font-bold text-neutral mb-4">Legal Questions?</h3>
             <p className="text-neutral/80 mb-6">
-              Bei rechtlichen Fragen oder Anmerkungen zu diesem Impressum kontaktieren Sie uns gerne.
+              If you have legal questions or comments about this imprint, please feel free to contact us.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/kontakt"
                 className="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary-dark text-white hover:text-white font-medium rounded-md transition-colors duration-300"
               >
-                <span className="text-white">Jetzt kontaktieren</span>
+                <span className="text-white">Contact now</span>
               </Link>
               <Link 
                 href="/datenschutz"
                 className="inline-flex items-center px-6 py-3 border border-primary text-primary hover:text-primary font-medium rounded-md hover:bg-primary/5 transition-colors duration-300"
               >
-                <span className="text-primary">Datenschutzerklärung</span>
+                <span className="text-primary">Privacy Policy</span>
               </Link>
             </div>
           </div>

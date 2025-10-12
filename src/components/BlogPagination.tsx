@@ -60,7 +60,7 @@ export default function BlogPagination({ posts, postsPerPage }: BlogPaginationPr
                 <div className="flex items-center text-sm text-neutral/60 mb-2">
                   <span>{post.date}</span>
                   <span className="mx-2">•</span>
-                  <span>{post.readTime} Lesezeit</span>
+                  <span>{post.readTime} reading time</span>
                 </div>
                 <Link href={`/blog/${post.slug}`} className="block">
                   <h2 className="text-xl font-bold text-neutral mb-3 hover:text-primary transition-colors">
@@ -74,7 +74,7 @@ export default function BlogPagination({ posts, postsPerPage }: BlogPaginationPr
                   href={`/blog/${post.slug}`}
                   className="inline-flex items-center text-primary font-medium hover:text-primary-dark transition-colors"
                 >
-                  Weiterlesen
+                  Read more
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
@@ -139,7 +139,7 @@ export default function BlogPagination({ posts, postsPerPage }: BlogPaginationPr
         {/* Results info */}
         <div className="mt-6 text-center">
           <p className="text-sm text-neutral/60">
-            Zeige {startIndex + 1}-{Math.min(endIndex, posts.length)} von {posts.length} Artikel{posts.length !== 1 ? 'n' : ''}
+            Showing {startIndex + 1}-{Math.min(endIndex, posts.length)} of {posts.length} article{posts.length !== 1 ? 's' : ''}
           </p>
         </div>
       </div>

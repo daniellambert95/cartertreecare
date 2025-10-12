@@ -87,12 +87,12 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
-                  Baumpflege Expertise
+                  Tree Care Expertise
                 </div>
                 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-neutral mb-4 lg:mb-6 leading-tight">
-                  Unser <span className="text-primary relative">
-                    Baumpflege
+                  Our <span className="text-primary relative">
+                    Tree Care
                     <svg className="absolute -bottom-2 left-0 w-full h-2 text-primary/30" viewBox="0 0 100 10" preserveAspectRatio="none">
                       <path d="M0,8 Q50,0 100,8" stroke="currentColor" strokeWidth="2" fill="none"/>
                     </svg>
@@ -100,8 +100,8 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                 </h1>
                 
                 <p className="text-base sm:text-lg lg:text-xl text-neutral/80 mb-6 lg:mb-8 leading-relaxed max-w-2xl">
-                  Aktuelle Tipps, Fachwissen und Inspiration rund um Baumpflege, Baumfällung
-                  und Gartengestaltung in Berlin und Brandenburg.
+                  Current tips, expertise and inspiration about tree care, tree removal
+                  and garden design in Berlin and Brandenburg.
                 </p>
                 
                 {/* Feature Highlights */}
@@ -112,7 +112,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                       </svg>
                     </div>
-                    <span className="text-sm lg:text-base text-neutral font-medium">Expertenwissen</span>
+                    <span className="text-sm lg:text-base text-neutral font-medium">Expert Knowledge</span>
                   </div>
                   
                   <div className="flex items-center group">
@@ -121,7 +121,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                       </svg>
                     </div>
-                    <span className="text-sm lg:text-base text-neutral font-medium">Praktische Tipps</span>
+                    <span className="text-sm lg:text-base text-neutral font-medium">Practical Tips</span>
                   </div>
                   
                   <div className="flex items-center group">
@@ -130,7 +130,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
-                    <span className="text-sm lg:text-base text-neutral font-medium">Aktuelle Themen</span>
+                    <span className="text-sm lg:text-base text-neutral font-medium">Current Topics</span>
                   </div>
                   
                   <div className="flex items-center group">
@@ -139,7 +139,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       </svg>
                     </div>
-                    <span className="text-sm lg:text-base text-neutral font-medium">Regionale Insights</span>
+                    <span className="text-sm lg:text-base text-neutral font-medium">Regional Insights</span>
                   </div>
                 </div>
                 
@@ -149,7 +149,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                     href="#articles" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-xl shadow-sm text-white bg-primary hover:bg-primary-dark hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
                   >
-                    Artikel lesen
+                    Read Articles
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
@@ -158,7 +158,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                     onClick={openCalendly}
                     className="inline-flex items-center justify-center px-6 py-3 border border-neutral/20 text-base font-medium rounded-xl text-neutral bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
                   >
-                    Beratung anfragen
+                    Request Consultation
                   </button>
                 </div>
               </div>
@@ -181,8 +181,8 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                       <div className="absolute top-1/3 right-1/4 w-2 h-2 sm:w-3 sm:h-3 bg-primary/20 rounded-full animate-bounce" style={{animationDelay: '0.5s'}}></div>
                       <div className="absolute bottom-1/3 left-1/3 w-4 h-4 sm:w-5 sm:h-5 bg-primary/25 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
                       
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-neutral/80 mb-2">Wissen & Expertise</h3>
-                      <p className="text-sm sm:text-base text-neutral/60">Praktisches Wissen für Ihre Bäume</p>
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-neutral/80 mb-2">Knowledge & Expertise</h3>
+                      <p className="text-sm sm:text-base text-neutral/60">Practical knowledge for your trees</p>
                     </div>
                   </div>
                   
@@ -190,7 +190,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                   <div className="absolute bottom-4 left-4 z-20 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg  hidden sm:block">
                     <div className="flex items-center space-x-2">
                       <div className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></div>
-                      <span className="text-sm font-medium text-gray-800">Regelmäßig neue Artikel</span>
+                      <span className="text-sm font-medium text-gray-800">Regular new articles</span>
                     </div>
                   </div>
                 </div>
@@ -209,13 +209,13 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-neutral mb-4">
-              Unser Blog
+              Our Blog
             </h2>
             <p className="text-lg text-neutral/70 max-w-2xl mx-auto mb-8">
-              Entdecken Sie wertvolle Tipps und Einblicke rund um Baumpflege, Gartenarbeit und nachhaltige Grünflächenpflege.
+              Discover valuable tips and insights about tree care, gardening and sustainable green space management.
             </p>
             <div className="inline-flex items-center justify-center space-x-2 text-primary">
-              <span className="font-medium">Regelmäßig neue Artikel</span>
+              <span className="font-medium">Regular new articles</span>
             </div>
           </div>
         </div>
@@ -229,16 +229,16 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-neutral mb-4">Haben Sie Fragen zu Ihren Bäumen?</h2>
+              <h2 className="text-3xl font-bold text-neutral mb-4">Do you have questions about your trees?</h2>
               <p className="text-lg text-neutral/70">
-                Kontaktieren Sie unsere Experten für eine kostenlose Beratung oder stellen Sie Ihre Fragen direkt über WhatsApp.
+                Contact our experts for free consultation or ask your questions directly via WhatsApp.
               </p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
               {/* WhatsApp Contact */}
               <a
-                href="https://wa.me/4917612345678?text=Hallo, ich habe eine Frage zu meinen Bäumen..."
+                href="https://wa.me/491745225935?text=Hello, I have a question about my trees..."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-300 rounded-xl p-6 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
@@ -250,9 +250,9 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-green-700 mb-2">WhatsApp</h3>
-                  <p className="text-green-600 mb-4">Schnelle Antworten auf Ihre Fragen</p>
+                  <p className="text-green-600 mb-4">Quick answers to your questions</p>
                   <div className="inline-flex items-center text-green-700 font-medium">
-                    Jetzt schreiben
+                    Write now
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
@@ -271,10 +271,10 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-primary mb-2">Beratungstermin</h3>
-                  <p className="text-primary/70 mb-4">Kostenlose Erstberatung vor Ort</p>
+                  <h3 className="text-xl font-bold text-primary mb-2">Consultation Appointment</h3>
+                  <p className="text-primary/70 mb-4">Free initial consultation on-site</p>
                   <div className="inline-flex items-center text-primary font-medium">
-                    Termin buchen
+                    Book appointment
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
@@ -286,7 +286,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
             {/* Additional Contact Info */}
             <div className="mt-8 text-center">
               <p className="text-sm text-neutral/60 mb-4">
-                Oder rufen Sie uns direkt an:
+                Or call us directly:
               </p>
               <a 
                 href="tel:+491745225935"
@@ -298,7 +298,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                 +49 1745 225 935
               </a>
               <p className="text-xs text-neutral/50 mt-2">
-                Mo - Fr: 8:00 - 18:00 Uhr | Sa: 9:00 - 16:00 Uhr
+                Mon - Fri: 8:00 - 18:00 | Sat: 9:00 - 16:00
               </p>
             </div>
           </div>
@@ -320,7 +320,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
               {/* Header */}
               <div className="flex items-center justify-between p-4 border-b border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900">
-                  Termin buchen
+                  Book Appointment
                 </h3>
                 <button
                   onClick={closeCalendly}

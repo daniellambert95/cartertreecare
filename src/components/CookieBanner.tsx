@@ -145,12 +145,12 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                   </div>
                   <div className="flex-1">
                     <h3 className="text-base sm:text-lg font-bold text-neutral mb-1 sm:mb-2">
-                      🍪 Wir respektieren Ihre Privatsphäre
+                      🍪 We respect your privacy
                     </h3>
                     <p className="text-xs sm:text-sm text-neutral/80 leading-relaxed">
-                      Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern, 
-                      den Website-Traffic zu analysieren und zu verstehen, woher unsere Besucher kommen. 
-                      Sie können selbst entscheiden, welche Kategorien von Cookies Sie zulassen möchten.
+                      We use cookies to improve your experience on our website, 
+                      analyze website traffic and understand where our visitors come from. 
+                      You can decide for yourself which categories of cookies you want to allow.
                     </p>
                   </div>
                 </div>
@@ -163,31 +163,31 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                     onClick={handleRejectAll}
                     className="flex-1 px-3 py-2 sm:px-4 sm:py-3 border border-neutral/20 text-neutral font-medium rounded-md hover:bg-neutral/5 transition-colors duration-300 text-xs sm:text-sm"
                   >
-                    Nur notwendige Cookies
+                    Essential cookies only
                   </button>
                   <button
                     onClick={() => setShowDetails(true)}
                     className="flex-1 px-3 py-2 sm:px-4 sm:py-3 border border-primary text-primary font-medium rounded-md hover:bg-primary/5 transition-colors duration-300 text-xs sm:text-sm"
                   >
-                    Einstellungen anpassen
+                    Customize settings
                   </button>
                   <button
                     onClick={handleAcceptAll}
                     className="flex-1 px-3 py-2 sm:px-4 sm:py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors duration-300 text-xs sm:text-sm"
                   >
-                    Alle akzeptieren
+                    Accept all
                   </button>
                 </div>
 
                 {/* Legal Links */}
                 <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-neutral/10 text-xs text-neutral/60 text-center">
-                  Weitere Informationen finden Sie in unserer{' '}
-                  <Link href="/datenschutz" className="text-primary hover:underline font-medium">
-                    Datenschutzerklärung
+                  For more information, please see our{' '}
+                  <Link href="/privacy" className="text-primary hover:underline font-medium">
+                    Privacy Policy
                   </Link>
-                  {' '}und{' '}
-                  <Link href="/cookie-richtlinie" className="text-primary hover:underline font-medium">
-                    Cookie-Richtlinie
+                  {' '}and{' '}
+                  <Link href="/cookie-policy" className="text-primary hover:underline font-medium">
+                    Cookie Policy
                   </Link>
                 </div>
               </div>
@@ -195,7 +195,7 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
               // Detailed Settings
               <div className="p-4 sm:p-6 md:p-8 flex flex-col h-full">
                 <div className="flex items-center justify-between mb-4 sm:mb-6 flex-shrink-0">
-                  <h3 className="text-base sm:text-lg font-bold text-neutral">Cookie-Einstellungen</h3>
+                  <h3 className="text-base sm:text-lg font-bold text-neutral">Cookie Settings</h3>
                   <button
                     onClick={() => setShowDetails(false)}
                     className="h-7 w-7 sm:h-8 sm:w-8 rounded-full bg-neutral/10 flex items-center justify-center text-neutral/60 hover:bg-neutral/20 transition-colors"
@@ -212,19 +212,19 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center">
                         <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full mr-2 sm:mr-3"></div>
-                        <h4 className="font-semibold text-neutral text-sm sm:text-base">Notwendige Cookies</h4>
+                        <h4 className="font-semibold text-neutral text-sm sm:text-base">Essential Cookies</h4>
                       </div>
                       <div className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-medium">
-                        Immer aktiv
+                        Always active
                       </div>
                     </div>
                     <p className="text-xs sm:text-sm text-neutral/70 mb-2 sm:mb-3">
-                      Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich und können nicht deaktiviert werden.
+                      These cookies are required for the proper functioning of the website and cannot be disabled.
                     </p>
                     <div className="text-xs text-neutral/60">
                       <strong>Zweck:</strong> Session-Management, Sicherheit, Kontaktformular-Funktionalität<br/>
-                      <strong>Anbieter:</strong> Der Baumchirurg (First-Party)<br/>
-                      <strong>Speicherdauer:</strong> Session / 30 Tage
+                      <strong>Provider:</strong> Carter Tree Care (First-Party)<br/>
+                      <strong>Storage duration:</strong> Session / 30 days
                     </div>
                   </div>
 
@@ -233,7 +233,7 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center">
                         <div className="w-2 h-2 sm:w-3 sm:h-3 bg-blue-500 rounded-full mr-2 sm:mr-3"></div>
-                        <h4 className="font-semibold text-neutral text-sm sm:text-base">Funktionale Cookies</h4>
+                        <h4 className="font-semibold text-neutral text-sm sm:text-base">Functional Cookies</h4>
                       </div>
                       <label className="relative inline-flex items-center cursor-pointer">
                         <input
@@ -246,12 +246,12 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                       </label>
                     </div>
                     <p className="text-xs sm:text-sm text-neutral/70 mb-2 sm:mb-3">
-                      Diese Cookies ermöglichen erweiterte Funktionalitäten und Personalisierungen, wie Spracheinstellungen und Benutzerpräferenzen.
+                      These cookies enable advanced functionalities and personalizations, such as language settings and user preferences.
                     </p>
                     <div className="text-xs text-neutral/60">
-                      <strong>Zweck:</strong> Sprachpräferenzen, Benutzererfahrung<br/>
-                      <strong>Anbieter:</strong> Der Baumchirurg (First-Party)<br/>
-                      <strong>Speicherdauer:</strong> 12 Monate
+                      <strong>Purpose:</strong> Language preferences, user experience<br/>
+                      <strong>Provider:</strong> Carter Tree Care (First-Party)<br/>
+                      <strong>Storage duration:</strong> 12 months
                     </div>
                   </div>
 
@@ -260,7 +260,7 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center">
                         <div className="w-2 h-2 sm:w-3 sm:h-3 bg-purple-500 rounded-full mr-2 sm:mr-3"></div>
-                        <h4 className="font-semibold text-neutral text-sm sm:text-base">Analytik-Cookies</h4>
+                        <h4 className="font-semibold text-neutral text-sm sm:text-base">Analytics Cookies</h4>
                       </div>
                       <label className="relative inline-flex items-center cursor-pointer">
                         <input
@@ -273,13 +273,13 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                       </label>
                     </div>
                     <p className="text-xs sm:text-sm text-neutral/70 mb-2 sm:mb-3">
-                      Diese Cookies helfen uns dabei zu verstehen, wie Besucher mit unserer Website interagieren, damit wir sie verbessern können.
+                      These cookies help us understand how visitors interact with our website so we can improve it.
                     </p>
                     <div className="text-xs text-neutral/60">
-                      <strong>Zweck:</strong> Website-Analyse, Besucherstatistiken, Performance-Überwachung<br/>
-                      <strong>Anbieter:</strong> Google Analytics (Third-Party)<br/>
-                      <strong>Speicherdauer:</strong> 26 Monate<br/>
-                      <strong>Datenübertragung:</strong> USA (angemessenes Schutzniveau)
+                      <strong>Purpose:</strong> Website analysis, visitor statistics, performance monitoring<br/>
+                      <strong>Provider:</strong> Google Analytics (Third-Party)<br/>
+                      <strong>Storage duration:</strong> 26 months<br/>
+                      <strong>Data transfer:</strong> USA (adequate level of protection)
                     </div>
                   </div>
                 </div>
@@ -290,19 +290,19 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                     onClick={handleRejectAll}
                     className="flex-1 px-3 py-2 sm:px-4 sm:py-3 border border-neutral/20 text-neutral font-medium rounded-md hover:bg-neutral/5 transition-colors duration-300 text-xs sm:text-sm"
                   >
-                    Alle ablehnen
+                    Reject all
                   </button>
                   <button
                     onClick={handleSavePreferences}
                     className="flex-1 px-3 py-2 sm:px-4 sm:py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors duration-300 text-xs sm:text-sm"
                   >
-                    Einstellungen speichern
+                    Save settings
                   </button>
                   <button
                     onClick={handleAcceptAll}
                     className="flex-1 px-3 py-2 sm:px-4 sm:py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors duration-300 text-xs sm:text-sm"
                   >
-                    Alle akzeptieren
+                    Accept all
                   </button>
                 </div>
               </div>

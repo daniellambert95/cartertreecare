@@ -10,10 +10,10 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <div className="flex items-center mb-4">
               <Image src="/logo-light.svg" alt="Der Baumchirurg Logo" width={40} height={40} className="mr-2" />
-              <span className="text-xl font-bold text-primary">Der Baumchirurg</span>
+              <span className="text-xl font-bold text-primary">Carter Tree Care</span>
             </div>
             <p className="text-white/70 max-w-sm mb-6">
-              Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise.
+              Professional tree care and tree removal with the highest care and expertise.
             </p>
             
             {/* Social Media Buttons */}
@@ -54,33 +54,33 @@ const Footer = () => {
 
           {/* Quick links */}
           <div>
-           <h3 className="text-lg font-semibold mb-4 text-white">Schnelllinks</h3>
+           <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
              <ul className="space-y-2">
                <li><Link href="/" className="text-white/70 hover:text-primary transition">Home</Link></li>
-               <li><Link href="/leistungen" className="text-white/70 hover:text-primary transition">Leistungen</Link></li>
+               <li><Link href="/services" className="text-white/70 hover:text-primary transition">Services</Link></li>
                <li><Link href="/blog" className="text-white/70 hover:text-primary transition">Blog</Link></li>
                <li><Link href="/faq" className="text-white/70 hover:text-primary transition">FAQ</Link></li>
-               <li><Link href="/ueber-uns" className="text-white/70 hover:text-primary transition">Über uns</Link></li>
-               <li><Link href="/kontakt" className="text-white/70 hover:text-primary transition">Kontakt</Link></li>
+               <li><Link href="/about-us" className="text-white/70 hover:text-primary transition">About Us</Link></li>
+               <li><Link href="/contact" className="text-white/70 hover:text-primary transition">Contact</Link></li>
              </ul>
            </div>
 
           {/* Blog Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Ratgeber</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Guides</h3>
             <ul className="space-y-2">
-              <li><Link href="/blog/wie-man-bäume-schneidet" className="text-white/70 hover:text-primary transition">Baumschnitt Guide</Link></li>
-              <li><Link href="/blog/baumkrankheiten-erkennen" className="text-white/70 hover:text-primary transition">Baumkrankheiten</Link></li>
-              <li><Link href="/blog/baumpflege-ratgeber" className="text-white/70 hover:text-primary transition">Baumpflege Tipps</Link></li>
-              <li><Link href="/blog/baumschnitt-winter" className="text-white/70 hover:text-primary transition">Winterschnitt</Link></li>
-              <li><Link href="/blog/sturmsichere-baeume" className="text-white/70 hover:text-primary transition">Sturmsicherheit</Link></li>
-              <li><Link href="/blog" className="text-white/70 hover:text-primary transition font-medium">Alle Artikel →</Link></li>
+              <li><Link href="/blog/how-to-prune-trees" className="text-white/70 hover:text-primary transition">Tree Pruning Guide</Link></li>
+              <li><Link href="/blog/tree-diseases-identification" className="text-white/70 hover:text-primary transition">Tree Diseases</Link></li>
+              <li><Link href="/blog/tree-care-guide" className="text-white/70 hover:text-primary transition">Tree Care Tips</Link></li>
+              <li><Link href="/blog/winter-pruning" className="text-white/70 hover:text-primary transition">Winter Pruning</Link></li>
+              <li><Link href="/blog/storm-safe-trees" className="text-white/70 hover:text-primary transition">Storm Safety</Link></li>
+              <li><Link href="/blog" className="text-white/70 hover:text-primary transition font-medium">All Articles →</Link></li>
             </ul>
           </div>
 
           {/* Contact info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Kontakt</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Contact</h3>
             <ul className="space-y-4">
               <li>
                 <a 
@@ -103,7 +103,7 @@ const Footer = () => {
 
               <li>
                 <a 
-                  href="mailto:derbaumchirurg@gmail.com" 
+                  href="mailto:jcartertreecare@gmail.com" 
                   className="group flex items-center hover:text-primary transition-all duration-300"
                 >
                   <div className="bg-blue-500 p-2 rounded-lg mr-3 group-hover:scale-110 transition-transform">
@@ -112,7 +112,7 @@ const Footer = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">derbaumchirurg@gmail.com</p>
+                    <p className="text-white font-medium">jcartertreecare@gmail.com</p>
                     <p className="text-white/70 text-sm">E-Mail</p>
                   </div>
                 </a>
@@ -122,7 +122,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/50 text-sm">&copy; {new Date().getFullYear()} Der Baumchirurg. Alle Rechte vorbehalten.</p>
+          <p className="text-white/50 text-sm">&copy; {new Date().getFullYear()} Carter Tree Care. All rights reserved.</p>
           <a href="https://www.siteandsight.com" className="text-sm text-white/50 hover:text-primary transition">
             Webdesign by 
             <span className="text-primary hover:text-primary"> Site</span> 
@@ -130,9 +130,9 @@ const Footer = () => {
             <span className="text-primary hover:text-primary">Sight</span>
           </a>
           <div className="mt-4 md:mt-0 flex space-x-4 text-xs sm:text-sm">
-            <Link href="/datenschutz" className="text-white/50 hover:text-primary transition">Datenschutz</Link>
-            <Link href="/cookie-richtlinie" className="text-white/50 hover:text-primary transition">Cookies</Link>
-            <Link href="/impressum" className="text-white/50 hover:text-primary transition">Impressum</Link>
+            <Link href="/privacy" className="text-white/50 hover:text-primary transition">Privacy</Link>
+            <Link href="/cookie-policy" className="text-white/50 hover:text-primary transition">Cookies</Link>
+            <Link href="/imprint" className="text-white/50 hover:text-primary transition">Imprint</Link>
           </div>
         </div>
       </div>

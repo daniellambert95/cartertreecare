@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.baumpflegeberlin-brandenburg.de'),
+  metadataBase: new URL('https://www.cartertreecare.ie'),
   alternates: {
-    canonical: 'https://www.baumpflegeberlin-brandenburg.de',
+    canonical: 'https://www.cartertreecare.ie',
   },
   openGraph: {
     title: "Der Baumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
     description: "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
-    url: 'https://www.baumpflegeberlin-brandenburg.de',
+    url: 'https://www.cartertreecare.ie',
     siteName: 'Der Baumchirurg',
     images: [
       {

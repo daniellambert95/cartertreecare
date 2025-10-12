@@ -19,21 +19,21 @@ const Navbar = () => {
               <Link href="/" className="flex items-center min-w-0">
                 <Image 
                   src="/logo-light.svg" 
-                  alt="DerBaumchirurg Logo" 
+                  alt="Carter Tree Care Logo" 
                   width={32} 
                   height={32} 
                   className="mr-2 w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" 
                 />
                 <span className="text-lg sm:text-xl font-bold text-black truncate">
-                  Der Baumchirurg
+                  Carter Tree Care
                 </span>
               </Link>
             </div>
 
             {/* Desktop navigation */}
             <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-              <Link href="/leistungen" className="text-black font-semibold hover:text-primary-dark transition duration-150">
-                Leistungen
+              <Link href="/services" className="text-black font-semibold hover:text-primary-dark transition duration-150">
+                Services
               </Link>
               <Link href="/blog" className="text-black font-semibold hover:text-primary-dark transition duration-150">
                 Blog
@@ -41,17 +41,17 @@ const Navbar = () => {
               <Link href="/faq" className="text-black font-semibold hover:text-primary-dark transition duration-150">
                 FAQ
               </Link>
-              <Link href="/ueber-uns" className="text-black font-semibold hover:text-primary-dark transition duration-150">
-                Über uns
+              <Link href="/about-us" className="text-black font-semibold hover:text-primary-dark transition duration-150">
+                About Us
               </Link>
-              <Link href="/kontakt" className="text-black font-semibold hover:text-primary-dark transition duration-150">
-                Kontakt
+              <Link href="/contact" className="text-black font-semibold hover:text-primary-dark transition duration-150">
+                Contact
               </Link>
               <button 
                 onClick={() => setIsModalOpen(true)}
                 className="px-4 py-2 rounded-md font-semibold shadow-md transition duration-150 whitespace-nowrap bg-primary-dark text-white hover:bg-primary"
               >
-                Kostenloses Angebot
+                Free Quote
               </button>
             </div>
 
@@ -95,11 +95,11 @@ const Navbar = () => {
         <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden bg-white border-t border-primary/10`}>
           <div className="px-3 pt-2 pb-3 space-y-1 sm:px-4 bg-white shadow-lg max-w-full overflow-hidden">
             <Link 
-              href="/leistungen" 
+              href="/services" 
               className="block px-3 py-2 rounded-md text-base font-semibold text-gray-800 hover:text-primary-dark hover:bg-secondary-light transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Leistungen
+              Services
             </Link>
             <Link 
               href="/blog" 
@@ -116,18 +116,18 @@ const Navbar = () => {
               FAQ
             </Link>
             <Link 
-              href="/ueber-uns" 
+              href="/about-us" 
               className="block px-3 py-2 rounded-md text-base font-semibold text-gray-800 hover:text-primary-dark hover:bg-secondary-light transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Über uns
+              About Us
             </Link>
             <Link 
-              href="/kontakt" 
+              href="/contact" 
               className="block px-3 py-2 rounded-md text-base font-semibold text-gray-800 hover:text-primary-dark hover:bg-secondary-light transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Kontakt
+              Contact
             </Link>
             <button 
               onClick={() => {
@@ -137,7 +137,7 @@ const Navbar = () => {
               className="block px-3 py-2 mx-3 mt-2 rounded-md text-base font-semibold transition-colors text-center bg-primary-dark text-white hover:bg-primary"
               style={{ width: 'calc(100% - 1.5rem)' }}
             >
-              Kostenloses Angebot
+              Free Quote
             </button>
           </div>
         </div>

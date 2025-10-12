@@ -10,11 +10,11 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 const AllServices = dynamic(() => import('@/components/AllServices'), { ssr: true });
 
 export const metadata: Metadata = {
-  title: 'All Services | Der Baumchirurg - Professional Tree Care Berlin, Brandenburg, Potsdam',
-  description: 'Overview of all tree care and garden work services from Der Baumchirurg - Professional tree care with the highest safety standards in Berlin and Brandenburg.',
+  title: 'All Services | Carter Tree Care - Professional Tree Care Berlin, Brandenburg, Potsdam',
+  description: 'Overview of all tree care and garden work services from Carter Tree Care - Professional tree care with the highest safety standards in Berlin and Brandenburg.',
   keywords: 'Tree care services, Tree removal, Tree pruning, Crown care, Tree assessment, Berlin, Brandenburg, Arborist',
   openGraph: {
-    title: 'All Services | Der Baumchirurg - Professional Tree Care',
+    title: 'All Services | Carter Tree Care - Professional Tree Care',
     description: 'Discover our comprehensive range of tree care and garden work services. With over 2000 trees of experience.',
     url: 'https://www.cartertreecare.ie/services',
     images: [
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Der Baumchirurg Services - Professional Tree Care',
+        alt: 'Carter Tree Care Services - Professional Tree Care',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'All Services | Der Baumchirurg - Professional Tree Care',
+    title: 'All Services | Carter Tree Care - Professional Tree Care',
     description: 'Discover our comprehensive range of tree care and garden work services.',
     images: ['/twitter-image.png'],
   },
@@ -131,7 +131,7 @@ export default function ServicesPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                       </svg>
                     </div>
-                    <span className="text-sm lg:text-base text-neutral font-medium">Environmentally Friendly Methods</span>
+                    <span className="text-sm lg:text-base text-neutral font-medium">Environmentally friendly methods</span>
                   </div>
                   
                   <div className="flex items-center group">
@@ -140,14 +140,14 @@ export default function ServicesPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                     </div>
-                    <span className="text-sm lg:text-base text-neutral font-medium">Fast Response Time</span>
+                    <span className="text-sm lg:text-base text-neutral font-medium">Fast response time</span>
                   </div>
                 </div>
                 
                 {/* CTA Button */}
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link 
-                    href="/kontakt" 
+                    href="/contact" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-xl shadow-sm text-white bg-primary hover:bg-primary-dark hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
                   >
                     Free Quote

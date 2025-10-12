@@ -29,11 +29,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${post.title} | Baumpflege Berlin-Brandenburg`,
+    title: `${post.title} | Tree Care Berlin-Brandenburg`,
     description: post.excerpt,
     keywords: post.keywords || '',
     alternates: {
-      canonical: `https://www.baumpflegeberlin-brandenburg.de/blog/${post.slug}`,
+      canonical: `https://www.cartertreecare.ie/blog/${post.slug}`,
     },
     openGraph: {
       title: post.title,
@@ -122,13 +122,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              {article.readTime} Lesezeit
+              {article.readTime} reading time
             </div>
           </div>
 
           {/* Social Share */}
           <div className="flex items-center gap-3 mb-8">
-            <span className="text-sm font-medium text-neutral/70">Teilen:</span>
+            <span className="text-sm font-medium text-neutral/70">Share:</span>
             <button className="flex items-center justify-center w-8 h-8 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
@@ -181,9 +181,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   <div>
                     <h3 className="text-xl font-bold text-neutral mb-2">{article.author}</h3>
                     <p className="text-neutral/70 mb-3">
-                      Unser erfahrenes Team von Baumpflegern bringt jahrelange Expertise in der professionellen 
-                      Baumpflege mit. Wir sind zertifizierte Fachbetriebe und sorgen für die Gesundheit und 
-                      Sicherheit Ihrer Bäume in Berlin und Brandenburg.
+                      Our experienced team of tree care professionals brings years of expertise in professional 
+                      tree care. We are certified specialists dedicated to the health and 
+                      safety of your trees in Dublin and throughout Ireland.
                     </p>
                     <div className="flex space-x-3">
                       <a href="#" className="text-primary hover:text-primary-dark">
@@ -212,13 +212,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
               {/* Contact CTA */}
               <div className="bg-primary rounded-xl p-6 text-white mb-8">
-                <h3 className="text-lg font-bold mb-3">Brauchen Sie professionelle Hilfe?</h3>
+                <h3 className="text-lg font-bold mb-3">Need professional help?</h3>
                 <p className="text-sm mb-4 opacity-90">
-                  Lassen Sie Ihre Bäume von unseren Experten schneiden. 
-                  Kostenlose Beratung und Angebotserstellung.
+                  Have your trees pruned by our experts. 
+                  Free consultation and quotation.
                 </p>
                 <button className="w-full bg-white text-primary font-medium py-2 px-4 rounded-md hover:bg-neutral/10 transition-colors">
-                  Jetzt kontaktieren
+                  Contact now
                 </button>
               </div>
             </div>
@@ -231,9 +231,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <section className="py-16 bg-secondary">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-neutral mb-4">Ähnliche Artikel</h2>
+              <h2 className="text-3xl font-bold text-neutral mb-4">Similar Articles</h2>
               <p className="text-lg text-neutral/70">
-                Entdecken Sie weitere hilfreiche Tipps zur Baumpflege
+                Discover more helpful tree care tips
               </p>
             </div>
             
@@ -256,7 +256,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   </Link>
                   <div className="p-6">
                     <div className="flex items-center text-sm text-neutral/60 mb-2">
-                      <span>{relatedArticle.readTime} Lesezeit</span>
+                      <span>{relatedArticle.readTime} reading time</span>
                     </div>
                     <Link href={`/blog/${relatedArticle.slug}`} className="block">
                       <h3 className="text-xl font-bold text-neutral mb-3 hover:text-primary transition-colors">
@@ -267,7 +267,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                       href={`/blog/${relatedArticle.slug}`}
                       className="inline-flex items-center text-primary font-medium hover:text-primary-dark transition-colors"
                     >
-                      Weiterlesen
+                      Read more
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>

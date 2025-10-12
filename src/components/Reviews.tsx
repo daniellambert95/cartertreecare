@@ -65,27 +65,27 @@ const Reviews = () => {
       name: "Sebastian Hüthwohl",
       location: "Berlin-Mitte", 
       rating: 5,
-      comment: "James hat bei mir 5 Bäume im Februar gekürzt. Bin sehr zufrieden mit dem Ergebnis. Die Absprache und Terminierungen war problemlos und zuverlässig. Der gesamte Abschnitt wurde entsorgt und die Bäume von getrockneten Efeu befreit. James und sein Team kann ich nur schwer empfehlen.",
-      service: "Baumpflege",
-      date: "Mai 2025"
+      comment: "James pruned 5 trees for me in February. I am very satisfied with the result. The coordination and scheduling was smooth and reliable. All debris was disposed of and the trees were freed from dried ivy. I can highly recommend James and his team.",
+      service: "Tree Care",
+      date: "May 2025"
     },
     {
       id: 2,
       name: "Regina Bock",
       location: "Brandenburg",
       rating: 5,
-      comment: "Der Baumchiurg James ist sehr zu empfehlen, arbeiten sauber und korrekt,entsorgen auf Wunsch auch den Abfall vom Baumschnitt Ich war sehr zufrieden mit den Leuten.👍🤗macht weiter so",
-      service: "Baumfällung", 
-      date: "Mai 2025"
+      comment: "Tree surgeon James is highly recommended, works cleanly and correctly, also disposes of tree pruning waste upon request. I was very satisfied with the people.👍🤗keep it up",
+      service: "Tree Removal", 
+      date: "May 2025"
     },
     {
       id: 3,
       name: "Frau Haueis",
       location: "Berlin",
       rating: 5,
-      comment: "Wir haben mehrere Eichen beschneiden lassen. Der Baumchirurg ist sehr zuverlässig, arbeitet super sauber und ist dabei noch super günstig.",
-      service: "Baumpflege",
-      date: "Mai 2025"
+      comment: "We had several oak trees pruned. The tree surgeon is very reliable, works super cleanly and is still very affordable.",
+      service: "Tree Care",
+      date: "May 2025"
     },
     // {
     //   id: 4,
@@ -117,14 +117,14 @@ const Reviews = () => {
   ];
 
   const stats = [
-    { number: "240+", label: "Zufriedene Kunden" },
-    { number: "5+", label: "Jahre Erfahrung" },
-    { number: "5", label: "⭐ Bewertung" },
-    { number: "100%", label: "Professionell" }
+    { number: "240+", label: "Satisfied Customers" },
+    { number: "5+", label: "Years Experience" },
+    { number: "5", label: "⭐ Rating" },
+    { number: "100%", label: "Professional" }
   ];
 
   return (
-    <section className="py-16 bg-white relative overflow-hidden" id="bewertungen">
+    <section className="py-16 bg-white relative overflow-hidden" id="reviews">
       {/* Background decorations */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full transform translate-x-32 -translate-y-32"></div>
       <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/30 rounded-full transform -translate-x-24 translate-y-24"></div>
@@ -138,10 +138,10 @@ const Reviews = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-neutral mb-6">
-            Was unsere Kunden sagen
+            What our customers say
           </h2>
           <p className="text-xl text-neutral/70 max-w-3xl mx-auto">
-            Überzeugen Sie sich von der Qualität unserer Arbeit durch die Bewertungen unserer zufriedenen Kunden aus Berlin, Brandenburg und Umgebung.
+            See the quality of our work through reviews from our satisfied customers in Berlin, Brandenburg and surrounding areas.
           </p>
         </motion.div>
 
@@ -180,17 +180,17 @@ const Reviews = () => {
         >
           <div className="bg-primary/10 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-neutral mb-4">
-              Werden Sie unser nächster zufriedener Kunde!
+              Become our next satisfied customer!
             </h3>
             <p className="text-lg text-neutral/70 mb-8">
-              Kontaktieren Sie uns für eine kostenlose Beratung und ein unverbindliches Angebot.
+              Contact us for free consultation and a non-binding quote.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/kontakt"
+                href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-md bg-primary text-white font-medium text-lg shadow-lg hover:bg-primary-dark transform hover:-translate-y-1 transition duration-300"
               >
-                Kostenlose Beratung
+                Free Consultation
               </a>
               <a
                 href="https://wa.me/491745225935"
@@ -201,7 +201,7 @@ const Reviews = () => {
                 <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
                 </svg>
-                WhatsApp schreiben
+                WhatsApp Chat
               </a>
             </div>
           </div>

@@ -8,11 +8,11 @@ const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: true });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 
 export const metadata = {
-  title: 'Blog | Baumpflege Berlin-Brandenburg',
-  description: 'Fachbeiträge und Expertentipps zu Baumpflege, Baumfällung und Gartenpflege in Berlin und Brandenburg. Erfahren Sie mehr über professionelle Baumpflege.',
-  keywords: 'baumpflege blog, baumfällung tipps, gartenpflege berlin, baumschnitt brandenburg, baumpflege ratgeber',
+  title: 'Blog | Tree Care Berlin-Brandenburg',
+  description: 'Professional articles and expert tips on tree care, tree removal and garden care in Berlin and Brandenburg. Learn more about professional tree care.',
+  keywords: 'tree care blog, tree removal tips, garden care berlin, tree pruning brandenburg, tree care guide',
   alternates: {
-    canonical: 'https://www.baumpflegeberlin-brandenburg.de/blog',
+    canonical: 'https://www.cartertreecare.ie/blog',
   },
 };
 

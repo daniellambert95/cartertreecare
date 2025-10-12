@@ -20,21 +20,21 @@ const ContactForm = () => {
     const newErrors: Record<string, string> = {};
     
     if (!formData.name.trim()) {
-      newErrors.name = 'Name ist erforderlich';
+      newErrors.name = 'Name is required';
     }
     
     if (!formData.email.trim()) {
-      newErrors.email = 'E-Mail ist erforderlich';
+      newErrors.email = 'Email is required';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Ungültige E-Mail-Adresse';
+      newErrors.email = 'Invalid email address';
     }
     
     if (!formData.message.trim()) {
-      newErrors.message = 'Nachricht ist erforderlich';
+      newErrors.message = 'Message is required';
     }
     
     if (!formData.consent) {
-      newErrors.consent = 'Bitte stimmen Sie der Datenschutzerklärung zu';
+      newErrors.consent = 'Please agree to the privacy policy';
     }
     
     setErrors(newErrors);
@@ -94,10 +94,10 @@ const ContactForm = () => {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
-          subject: formData.subject || "Kontaktanfrage von der Website",
+          subject: formData.subject || "Contact inquiry from website",
           message: formData.message,
-          from_name: "Der Baumchirurg Website",
-          to_name: "Der Baumchirurg Team",
+          from_name: "Carter Tree Care Website",
+          to_name: "Carter Tree Care Team",
         }),
       });
       
@@ -107,7 +107,7 @@ const ContactForm = () => {
         // Success
         setSubmitStatus({
           success: true,
-          message: 'Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.'
+          message: 'Thank you for your message! We will get back to you shortly.'
         });
         
         // Reset form
@@ -123,7 +123,7 @@ const ContactForm = () => {
         // Web3Forms returned an error
         setSubmitStatus({
           success: false,
-          message: 'Es ist ein Fehler beim Senden aufgetreten. Bitte versuchen Sie es später noch einmal.'
+          message: 'An error occurred while sending. Please try again later.'
         });
       }
       
@@ -132,7 +132,7 @@ const ContactForm = () => {
       console.error('Form submission error:', error);
       setSubmitStatus({
         success: false,
-        message: 'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal oder kontaktieren Sie uns direkt.'
+        message: 'An error occurred. Please try again later or contact us directly.'
       });
     } finally {
       setIsSubmitting(false);
@@ -159,7 +159,7 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             className={`w-full px-4 py-2 rounded-md border ${errors.name ? 'border-red-500' : 'border-neutral/20'} focus:outline-none focus:ring-2 focus:ring-primary/50 placeholder-gray-500 text-gray-700`}
-            placeholder="Ihr Name"
+            placeholder="Your Name"
           />
           {errors.name && <p className="mt-1 text-sm text-red-500">{errors.name}</p>}
         </div>
@@ -175,7 +175,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             className={`w-full px-4 py-2 rounded-md border ${errors.email ? 'border-red-500' : 'border-neutral/20'} focus:outline-none focus:ring-2 focus:ring-primary/50 placeholder-gray-500 text-gray-700`}
-            placeholder="Ihre E-Mail-Adresse"
+            placeholder="Your Email Address"
           />
           {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email}</p>}
         </div>
@@ -184,7 +184,7 @@ const ContactForm = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-neutral mb-1">
-            Telefon
+            Phone
           </label>
           <input
             type="tel"
@@ -193,13 +193,13 @@ const ContactForm = () => {
             value={formData.phone}
             onChange={handleChange}
             className="w-full px-4 py-2 rounded-md border border-neutral/20 focus:outline-none focus:ring-2 focus:ring-primary/50 placeholder-gray-500 text-gray-700"
-            placeholder="Ihre Telefonnummer (freiwillig)"
+            placeholder="Your Phone Number (optional)"
           />
         </div>
         
         <div>
           <label htmlFor="subject" className="block text-sm font-medium text-neutral mb-1">
-            Betreff
+            Subject
           </label>
           <select
             id="subject"
@@ -208,19 +208,19 @@ const ContactForm = () => {
             onChange={handleChange}
             className="w-full px-4 py-2 rounded-md border border-neutral/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-gray-700"
           >
-            <option value="" className="text-gray-500">Bitte wählen</option>
-            <option value="Baumpflege">Baumpflege</option>
-            <option value="Baumfällung">Baumfällung</option>
-            <option value="Gartenarbeit">Gartenarbeit</option>
-            <option value="Beratung">Beratung</option>
-            <option value="Sonstiges">Sonstiges</option>
+            <option value="" className="text-gray-500">Please select</option>
+            <option value="Tree Care">Tree Care</option>
+            <option value="Tree Removal">Tree Removal</option>
+            <option value="Garden Work">Garden Work</option>
+            <option value="Consultation">Consultation</option>
+            <option value="Other">Other</option>
           </select>
         </div>
       </div>
       
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-neutral mb-1">
-          Nachricht <span className="text-red-500">*</span>
+          Message <span className="text-red-500">*</span>
         </label>
         <textarea
           id="message"
@@ -229,7 +229,7 @@ const ContactForm = () => {
           onChange={handleChange}
           rows={5}
           className={`w-full px-4 py-2 rounded-md border ${errors.message ? 'border-red-500' : 'border-neutral/20'} focus:outline-none focus:ring-2 focus:ring-primary/50 placeholder-gray-500 text-gray-700`}
-          placeholder="Ihre Nachricht"
+          placeholder="Your Message"
         ></textarea>
         {errors.message && <p className="mt-1 text-sm text-red-500">{errors.message}</p>}
       </div>
@@ -247,7 +247,7 @@ const ContactForm = () => {
         </div>
         <div className="ml-3 text-sm">
           <label htmlFor="consent" className={`font-medium ${errors.consent ? 'text-red-500' : 'text-neutral/80'}`}>
-            Ich stimme der <a href="#" className="text-primary hover:underline">Datenschutzerklärung</a> zu <span className="text-red-500">*</span>
+            I agree to the <a href="/privacy" className="text-primary hover:underline">Privacy Policy</a> <span className="text-red-500">*</span>
           </label>
           {errors.consent && <p className="mt-1 text-sm text-red-500">{errors.consent}</p>}
         </div>
@@ -265,16 +265,16 @@ const ContactForm = () => {
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
               </svg>
-              Wird gesendet...
+              Sending...
             </>
           ) : (
-            'Nachricht senden'
+            'Send Message'
           )}
         </button>
       </div>
       
       <p className="text-xs text-neutral/60 text-center mt-4">
-        Felder mit <span className="text-red-500">*</span> sind Pflichtfelder
+        Fields with <span className="text-red-500">*</span> are required fields
       </p>
     </form>
   );

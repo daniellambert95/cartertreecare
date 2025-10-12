@@ -122,12 +122,12 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl pt-10">Der Baumchirurg</span>
-            <span className="block max-w-2xl text-3xl md:text-5xl mt-2 text-primary-light">Professioneller Baumpfleger und Gärtner</span>
+            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl pt-10">Carter Tree Care</span>
+            <span className="block max-w-2xl text-3xl md:text-5xl mt-2 text-primary-light">Professional Arborist and Gardener</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl">
-          Verlässliche Erfahrung. Garantierte Sicherheit. Toller Preis.
+          Reliable Experience. Guaranteed Safety. Great Price.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -135,7 +135,7 @@ const Hero = () => {
               onClick={() => setIsModalOpen(true)}
               className="px-8 py-4 rounded-md bg-primary text-white font-medium text-lg shadow-lg hover:bg-primary-dark transform hover:-translate-y-1 transition duration-300 text-center"
             >
-              Kostenloses Angebot
+              Get a Quote now
             </button>
             <Link 
               href="https://wa.me/+491745225935" 
@@ -158,7 +158,7 @@ const Hero = () => {
                 </div>
                 <div className="text-white">
                   <div className="font-bold text-xl">2000+</div>
-                  <div className="text-white/80 text-sm">Bäume gepflegt</div>
+                  <div className="text-white/80 text-sm">Trees Maintained</div>
                 </div>
               </div>
               
@@ -173,8 +173,8 @@ const Hero = () => {
                   />
                 </div>
                 <div className="text-white">
-                  <div className="font-bold text-xl">Saubere</div>
-                  <div className="text-white/80 text-sm">Schnitte</div>
+                  <div className="font-bold text-xl">Clean</div>
+                  <div className="text-white/80 text-sm">Cuts</div>
                 </div>
               </div>
               
@@ -185,8 +185,8 @@ const Hero = () => {
                   </svg>
                 </div>
                 <div className="text-white">
-                  <div className="font-bold text-xl">4.9/5</div>
-                  <div className="text-white/80 text-sm">Kundenbewertung</div>
+                  <div className="font-bold text-xl">5/5</div>
+                  <div className="text-white/80 text-sm">Customer Rating</div>
                 </div>
               </div>
             </div>
