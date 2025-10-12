@@ -15,12 +15,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Der Baumchirurg | Baumpflege Berlin, Brandenburg",
-  description: "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
-  keywords: "Baumpflege, Baumfällung, Baumschnitt, Berlin, Brandenburg, Baumpfleger, Fällarbeiten, Baumklettern, Kronenpflege, Baumgutachten",
-  authors: [{ name: "Der Baumchirurg Team" }],
-  creator: "Der Baumchirurg",
-  publisher: "Der Baumchirurg",
+  title: "Carter Tree Care | Professional Tree Services Dublin, Ireland",
+  description: "Professional tree care and tree removal services with the highest level of care and expertise. Certified arborists serving Dublin and all of Ireland.",
+  keywords: "tree care, tree removal, tree pruning, Dublin, Ireland, arborist, tree felling, tree climbing, crown care, tree survey",
+  authors: [{ name: "Carter Tree Care Team" }],
+  creator: "Carter Tree Care",
+  publisher: "Carter Tree Care",
   formatDetection: {
     email: false,
     address: false,
@@ -31,27 +31,27 @@ export const metadata: Metadata = {
     canonical: 'https://www.cartertreecare.ie',
   },
   openGraph: {
-    title: "Der Baumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
-    description: "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
+    title: "Carter Tree Care | Professional Tree Services Dublin, Ireland",
+    description: "Professional tree care and tree removal services with the highest level of care and expertise. Because we love and live trees. Certified arborists serving Dublin and all of Ireland.",
     url: 'https://www.cartertreecare.ie',
-    siteName: 'Der Baumchirurg',
+    siteName: 'Carter Tree Care',
     images: [
       {
         url: '/social-image.webp',
         width: 1200,
         height: 630,
-        alt: 'Der Baumchirurg - Professionelle Baumpflege Berlin-Brandenburg',
+        alt: 'Carter Tree Care - Professional Tree Services Dublin, Ireland',
       }
     ],
-    locale: 'de_DE',
+    locale: 'en_IE',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Der Baumchirurg | Professionelle Baumpflege Berlin-Brandenburg",
-    description: "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben.",
+    title: "Carter Tree Care | Professional Tree Services Dublin, Ireland",
+    description: "Professional tree care and tree removal services with the highest level of care and expertise. Because we love and live trees.",
     images: ['/social-image.webp'],
-    creator: '@der baumchirurg',
+    creator: '@cartertreecare',
   },
   robots: {
     index: true,
@@ -89,7 +89,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={`${inter.variable} scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="shortcut icon" href="/favicon.ico" />

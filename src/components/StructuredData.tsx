@@ -47,29 +47,29 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
         {
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement",
-          "name": "Leistungen",
-          "description": "Alle unsere professionellen Baumpflege-Dienstleistungen",
-          "url": "https://www.cartertreecare.ie/leistungen"
+          "name": "Services",
+          "description": "All our professional tree care services",
+          "url": "https://www.cartertreecare.ie/services"
         },
         {
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement", 
-          "name": "Über uns",
-          "description": "Lernen Sie unser erfahrenes Team kennen",
-          "url": "https://www.cartertreecare.ie/ueber-uns"
+          "name": "About Us",
+          "description": "Meet our experienced team",
+          "url": "https://www.cartertreecare.ie/about-us"
         },
         {
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement",
-          "name": "Kontakt", 
-          "description": "Kontaktieren Sie uns für eine kostenlose Beratung",
-          "url": "https://www.cartertreecare.ie/kontakt"
+          "name": "Contact", 
+          "description": "Contact us for a free consultation",
+          "url": "https://www.cartertreecare.ie/contact"
         },
         {
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement",
           "name": "Blog",
-          "description": "Tipps und Neuigkeiten rund um Baumpflege", 
+          "description": "Tips and news about tree care", 
           "url": "https://www.cartertreecare.ie/blog"
         }
       ];
@@ -79,9 +79,9 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
       return {
         ...baseData,
         "@type": "LocalBusiness",
-        "name": "Der Baumchirurg",
-        "alternateName": "Der Baumchirurg",
-        "description": "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben. Zertifizierte Baumpfleger in Berlin und Brandenburg.",
+        "name": "Carter Tree Care",
+        "alternateName": "Carter Tree Care",
+        "description": "Professional tree care and tree removal with the highest level of care and expertise. Because we love and live trees. Certified arborists serving Dublin and all of Ireland.",
         "url": "https://www.cartertreecare.ie",
         "logo": {
           "@type": "ImageObject",
@@ -91,36 +91,36 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
           "contentUrl": "https://www.cartertreecare.ie/logo.webp"
         },
         "image": "https://www.cartertreecare.ie/logo.png",
-        "telephone": "+49174 5225935",
+        "telephone": "+353 174 522 5935",
         "email": "jcartertreecare@gmail.com",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Berlin",
-          "addressRegion": "Berlin",
-          "addressCountry": "DE"
+          "addressLocality": "Dublin",
+          "addressRegion": "Dublin",
+          "addressCountry": "IE"
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "52.5200", 
-          "longitude": "13.4050"
+          "latitude": "53.3498", 
+          "longitude": "-6.2603"
         },
         "areaServed": [
           {
             "@type": "City",
-            "name": "Berlin"
+            "name": "Dublin"
           },
           {
-            "@type": "State",
-            "name": "Brandenburg"
+            "@type": "Country",
+            "name": "Ireland"
           }
         ],
         "serviceType": [
-          "Baumpflege",
-          "Baumfällung",
-          "Baumschnitt",
-          "Kronenpflege",
-          "Baumgutachten",
-          "Fällarbeiten"
+          "Tree care",
+          "Tree removal",
+          "Tree pruning",
+          "Crown care",
+          "Tree survey",
+          "Tree felling"
         ],
         "priceRange": "€€",
         "openingHours": [
@@ -142,36 +142,36 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
         },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Baumpflege Services",
+          "name": "Tree Care Services",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Professionelle Baumpflege",
-                "description": "Fachgerechte Pflege und Erhaltung von Bäumen"
+                "name": "Professional Tree Care",
+                "description": "Expert care and maintenance of trees"
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Baumfällung",
-                "description": "Sichere und professionelle Baumfällung"
+                "name": "Tree Removal",
+                "description": "Safe and professional tree removal"
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Kronenpflege",
-                "description": "Fachgerechte Kronenpflege und Baumschnitt"
+                "name": "Crown Care",
+                "description": "Expert crown care and tree pruning"
               }
             }
           ]
         },
         "actionableFeedbackPolicy": {
-          "target": "https://www.cartertreecare.ie/leistungen",
+          "target": "https://www.cartertreecare.ie/services",
           "image": {
             "@type": "ImageObject",
             "url": "https://www.cartertreecare.ie/og-image.png"
@@ -189,11 +189,11 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
         "image": data.image,
         "author": {
           "@type": "Organization",
-          "name": "Der Baumchirurg"
+          "name": "Carter Tree Care"
         },
         "publisher": {
           "@type": "Organization",
-          "name": "Der Baumchirurg",
+          "name": "Carter Tree Care",
           "logo": {
             "@type": "ImageObject",
             "url": "https://www.cartertreecare.ie/og-image.png"

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${post.title} | Tree Care Berlin-Brandenburg`,
+    title: `${post.title} | Tree Care Dublin, Ireland`,
     description: post.excerpt,
     keywords: post.keywords || '',
     alternates: {

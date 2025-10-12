@@ -1,14 +1,14 @@
 {
-  "name": "Der Baumchirurg - Professionelle Baumpflege Berlin, Brandenburg, Potsdam",
-  "short_name": "Der Baumchirurg",
-  "description": "Professionelle Baumpflege und Baumfällung mit höchster Sorgfalt und Expertise. Weil wir Bäume lieben und leben.",
+  "name": "Carter Tree Care - Professional Tree Services Dublin, Ireland",
+  "short_name": "Carter Tree Care",
+  "description": "Professional tree care and tree removal with the highest level of care and expertise. Because we love and live trees.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#22c55e",
   "orientation": "portrait-primary",
   "scope": "/",
-  "lang": "de",
+  "lang": "en",
   "categories": ["business", "lifestyle"],
   "icons": [
     {

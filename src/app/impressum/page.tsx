@@ -7,8 +7,8 @@ const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: true });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 
 export const metadata = {
-  title: 'Impressum | Der Baumchirurg',
-  description: 'Impressum und rechtliche Angaben der Der Baumchirurg - Professionelle Baumpflege.',
+  title: 'Impressum | Carter Tree Care',
+  description: 'Impressum und rechtliche Angaben der Carter Tree Care - Professionelle Baumpflege.',
   keywords: 'impressum, rechtliche angaben, baumpflege, kontakt',
 };
 
@@ -96,7 +96,7 @@ export default function ImpressumPage() {
                     Unternehmen
                   </h3>
                   <div className="space-y-2 text-neutral/80">
-                    <div><strong>Firmenname:</strong> Der Baumchirurg</div>
+                    <div><strong>Firmenname:</strong> Carter Tree Care</div>
                     <div><strong>Inhaber:</strong> James Carter</div>
                     <div><strong>Rechtsform:</strong> Einzelunternehmen</div>
                   </div>
@@ -108,9 +108,9 @@ export default function ImpressumPage() {
                     Anschrift
                   </h3>
                   <div className="space-y-2 text-neutral/80">
-                    <div><strong>Straße:</strong> Sorauer Str. 12</div>
-                    <div><strong>PLZ/Ort:</strong> 10997 Berlin</div>
-                    <div><strong>Land:</strong> Deutschland</div>
+                    <div><strong>Straße:</strong> 123 Dublin Street</div>
+                    <div><strong>PLZ/Ort:</strong> D02 Dublin</div>
+                    <div><strong>Land:</strong> Irland</div>
                   </div>
                 </div>
 

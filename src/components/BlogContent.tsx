@@ -101,7 +101,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                 
                 <p className="text-base sm:text-lg lg:text-xl text-neutral/80 mb-6 lg:mb-8 leading-relaxed max-w-2xl">
                   Current tips, expertise and inspiration about tree care, tree removal
-                  and garden design in Berlin and Brandenburg.
+                  and garden design in Dublin and Ireland.
                 </p>
                 
                 {/* Feature Highlights */}
@@ -238,7 +238,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
             <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
               {/* WhatsApp Contact */}
               <a
-                href="https://wa.me/491745225935?text=Hello, I have a question about my trees..."
+                href="https://wa.me/3531745225935?text=Hello, I have a question about my trees..."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-300 rounded-xl p-6 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
@@ -289,13 +289,13 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                 Or call us directly:
               </p>
               <a 
-                href="tel:+491745225935"
+                href="tel:+3531745225935"
                 className="inline-flex items-center text-primary font-semibold hover:text-primary-dark transition-colors"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                +49 1745 225 935
+                +353 174 522 5935
               </a>
               <p className="text-xs text-neutral/50 mt-2">
                 Mon - Fri: 8:00 - 18:00 | Sat: 9:00 - 16:00

@@ -108,9 +108,9 @@ export default function ImpressumPage() {
                     Address
                   </h3>
                   <div className="space-y-2 text-neutral/80">
-                    <div><strong>Street:</strong> Sorauer Str. 12</div>
-                    <div><strong>Postal code/City:</strong> 10997 Berlin</div>
-                    <div><strong>Country:</strong> Germany</div>
+                    <div><strong>Street:</strong> 123 Dublin Street</div>
+                    <div><strong>Postal code/City:</strong> D02 Dublin</div>
+                    <div><strong>Country:</strong> Ireland</div>
                   </div>
                 </div>
 

@@ -8,9 +8,9 @@ const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: true });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 
 export const metadata = {
-  title: 'Blog | Tree Care Berlin-Brandenburg',
-  description: 'Professional articles and expert tips on tree care, tree removal and garden care in Berlin and Brandenburg. Learn more about professional tree care.',
-  keywords: 'tree care blog, tree removal tips, garden care berlin, tree pruning brandenburg, tree care guide',
+  title: 'Blog | Tree Care Dublin, Ireland',
+  description: 'Professional articles and expert tips on tree care, tree removal and garden care in Dublin and Ireland. Learn more about professional tree care.',
+  keywords: 'tree care blog, tree removal tips, garden care dublin, tree pruning ireland, tree care guide',
   alternates: {
     canonical: 'https://www.cartertreecare.ie/blog',
   },

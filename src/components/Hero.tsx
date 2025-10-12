@@ -138,7 +138,7 @@ const Hero = () => {
               Get a Quote
             </button>
             <Link 
-              href="https://wa.me/+491745225935" 
+              href="https://wa.me/+3531745225935" 
               className="px-8 py-4 rounded-md bg-[#25D366] text-white font-medium text-lg shadow-lg hover:bg-[#128C7E] transform hover:-translate-y-1 transition duration-300 text-center flex items-center justify-center gap-2"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

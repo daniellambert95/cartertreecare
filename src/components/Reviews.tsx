@@ -63,7 +63,7 @@ const Reviews = () => {
     {
       id: 1,
       name: "Sebastian Hüthwohl",
-      location: "Berlin-Mitte", 
+      location: "Dublin City", 
       rating: 5,
       comment: "James pruned 5 trees for me in February. I am very satisfied with the result. The coordination and scheduling was smooth and reliable. All debris was disposed of and the trees were freed from dried ivy. I can highly recommend James and his team.",
       service: "Tree Care",
@@ -72,7 +72,7 @@ const Reviews = () => {
     {
       id: 2,
       name: "Regina Bock",
-      location: "Brandenburg",
+      location: "Cork",
       rating: 5,
       comment: "Tree surgeon James is highly recommended, works cleanly and correctly, also disposes of tree pruning waste upon request. I was very satisfied with the people.👍🤗keep it up",
       service: "Tree Removal", 
@@ -81,7 +81,7 @@ const Reviews = () => {
     {
       id: 3,
       name: "Frau Haueis",
-      location: "Berlin",
+      location: "Galway",
       rating: 5,
       comment: "We had several oak trees pruned. The tree surgeon is very reliable, works super cleanly and is still very affordable.",
       service: "Tree Care",
@@ -141,7 +141,7 @@ const Reviews = () => {
             What our customers say
           </h2>
           <p className="text-xl text-neutral/70 max-w-3xl mx-auto">
-            See the quality of our work through reviews from our satisfied customers in Berlin, Brandenburg and surrounding areas.
+            See the quality of our work through reviews from our satisfied customers in Dublin, Cork, Galway and surrounding areas.
           </p>
         </motion.div>
 
@@ -193,7 +193,7 @@ const Reviews = () => {
                 Free Consultation
               </a>
               <a
-                href="https://wa.me/491745225935"
+                href="https://wa.me/3531745225935"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-md bg-white text-primary-dark border-2 border-primary font-medium text-lg shadow-lg hover:bg-primary hover:text-white transform hover:-translate-y-1 transition duration-300"

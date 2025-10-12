@@ -104,7 +104,7 @@ export default function ContactPage() {
               <h3 className="text-xl font-semibold text-neutral mb-2">WhatsApp Chat</h3>
               <p className="text-neutral/70 mb-4">Immediate response possible</p>
               <a 
-                href="https://wa.me/491745225935"
+                href="https://wa.me/3531745225935"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors font-medium"

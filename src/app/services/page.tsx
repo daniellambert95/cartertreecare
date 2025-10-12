@@ -10,12 +10,12 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 const AllServices = dynamic(() => import('@/components/AllServices'), { ssr: true });
 
 export const metadata: Metadata = {
-  title: 'All Services | Carter Tree Care - Professional Tree Care Berlin, Brandenburg, Potsdam',
-  description: 'Overview of all tree care and garden work services from Carter Tree Care - Professional tree care with the highest safety standards in Berlin and Brandenburg.',
-  keywords: 'Tree care services, Tree removal, Tree pruning, Crown care, Tree assessment, Berlin, Brandenburg, Arborist',
+  title: 'All Services | Carter Tree Care - Professional Tree Care Dublin, Ireland',
+  description: 'Overview of all tree care and garden work services from Carter Tree Care - Professional tree care with the highest safety standards in Dublin and all of Ireland.',
+  keywords: 'Tree care services, Tree removal, Tree pruning, Crown care, Tree assessment, Dublin, Ireland, Arborist',
   openGraph: {
     title: 'All Services | Carter Tree Care - Professional Tree Care',
-    description: 'Discover our comprehensive range of tree care and garden work services. With over 2000 trees of experience.',
+    description: 'Discover our comprehensive range of tree care and garden work services. With over 2000 trees of experience in Dublin and Ireland.',
     url: 'https://www.cartertreecare.ie/services',
     images: [
       {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'All Services | Carter Tree Care - Professional Tree Care',
-    description: 'Discover our comprehensive range of tree care and garden work services.',
+    description: 'Discover our comprehensive range of tree care and garden work services in Dublin and Ireland.',
     images: ['/twitter-image.png'],
   },
   alternates: {
@@ -102,7 +102,7 @@ export default function ServicesPage() {
                 
                 <p className="text-base sm:text-lg lg:text-xl text-neutral/80 mb-6 lg:mb-8 leading-relaxed max-w-2xl">
                   Discover our comprehensive range of tree care and garden work services. 
-                  With over 2000 trees of experience, we offer you professional solutions for all your tree and garden requirements.
+                  With over 2000 trees of experience in Dublin and Ireland, we offer you professional solutions for all your tree and garden requirements.
                 </p>
                 
                 {/* Feature Highlights */}
@@ -131,7 +131,7 @@ export default function ServicesPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                       </svg>
                     </div>
-                    <span className="text-sm lg:text-base text-neutral font-medium">Environmentally friendly methods</span>
+                    <span className="text-sm lg:text-base text-neutral font-medium">Environmentally Friendly Methods</span>
                   </div>
                   
                   <div className="flex items-center group">
@@ -140,7 +140,7 @@ export default function ServicesPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                     </div>
-                    <span className="text-sm lg:text-base text-neutral font-medium">Fast response time</span>
+                    <span className="text-sm lg:text-base text-neutral font-medium">Fast Response Time</span>
                   </div>
                 </div>
                 

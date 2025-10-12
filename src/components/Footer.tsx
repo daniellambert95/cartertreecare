@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo and company info */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <div className="flex items-center mb-4">
-              <Image src="/logo-light.svg" alt="Der Baumchirurg Logo" width={40} height={40} className="mr-2" />
+              <Image src="/logo-light.svg" alt="Carter Tree Care Logo" width={40} height={40} className="mr-2" />
               <span className="text-xl font-bold text-primary">Carter Tree Care</span>
             </div>
             <p className="text-white/70 max-w-sm mb-6">
@@ -39,7 +39,7 @@ const Footer = () => {
               </a>
               
               <a 
-                href="https://wa.me/491745225935" 
+                href="https://wa.me/3531745225935" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group bg-green-500 hover:bg-green-600 p-3 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -84,7 +84,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a 
-                  href="https://wa.me/491745225935" 
+                  href="https://wa.me/3531745225935" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group flex items-center hover:text-primary transition-all duration-300"
@@ -95,7 +95,7 @@ const Footer = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">+49 174 522 5935</p>
+                    <p className="text-white font-medium">+353 174 522 5935</p>
                     <p className="text-white/70 text-sm">WhatsApp</p>
                   </div>
                 </a>

@@ -8,8 +8,8 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 const ContactFormWrapper = dynamic(() => import('@/components/ContactFormWrapper'), { ssr: true });
 
 export const metadata = {
-  title: 'Kontakt | Der Baumchirurg',
-  description: 'Kontaktieren Sie Der Baumchirurg für professionelle Baumpflege und Gartenarbeit. Wir freuen uns auf Ihre Anfrage.',
+  title: 'Contact | Carter Tree Care',
+  description: 'Contact Carter Tree Care for professional tree care and garden work. We look forward to your inquiry.',
 };
 
 export default function ContactPage() {
@@ -46,7 +46,7 @@ export default function ContactPage() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-neutral/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                  <span className="ml-2 text-neutral text-sm font-medium">Kontakt</span>
+                  <span className="ml-2 text-neutral text-sm font-medium">Contact</span>
                 </li>
               </ol>
             </nav>
@@ -61,17 +61,17 @@ export default function ContactPage() {
               </div>
               
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral mb-6 leading-tight">
-                Nehmen Sie <span className="text-primary relative">
-                  Kontakt
+                Get in <span className="text-primary relative">
+                  Touch
                   <svg className="absolute -bottom-2 left-0 w-full h-2 text-primary/30" viewBox="0 0 100 10" preserveAspectRatio="none">
                     <path d="M0,8 Q50,0 100,8" stroke="currentColor" strokeWidth="2" fill="none"/>
                   </svg>
-                </span> mit uns auf
+                </span> with us
               </h1>
               
               <p className="text-lg text-neutral/80 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Füllen Sie unser Kontaktformular aus und erhalten Sie eine kostenlose Beratung für Ihre Baumpflege-Bedürfnisse. 
-                Unser Team meldet sich innerhalb von 12 Stunden bei Ihnen zurück.
+                Fill out our contact form and receive a free consultation for your tree care needs. 
+                Our team will get back to you within 12 hours.
               </p>
             </div>
 
@@ -87,9 +87,9 @@ export default function ContactPage() {
       <section className="py-10 md:py-16 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-neutral mb-4">Alternative Kontaktmöglichkeiten</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-neutral mb-4">Alternative Contact Options</h2>
             <p className="text-neutral/70 max-w-2xl mx-auto">
-              Bevorzugen Sie einen direkten Kontakt? Nutzen Sie eine unserer alternativen Kontaktmöglichkeiten.
+              Prefer direct contact? Use one of our alternative contact options.
             </p>
           </div>
           
@@ -104,7 +104,7 @@ export default function ContactPage() {
               <h3 className="text-xl font-semibold text-neutral mb-2">WhatsApp Chat</h3>
               <p className="text-neutral/70 mb-4">Sofortige Antwort möglich</p>
               <a 
-                href="https://wa.me/491745225935"
+                href="https://wa.me/3531745225935"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors font-medium"
@@ -121,7 +121,7 @@ export default function ContactPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-neutral mb-2">E-Mail</h3>
-              <p className="text-neutral/70 mb-4">Antwort innerhalb von 24h</p>
+              <p className="text-neutral/70 mb-4">Response within 24h</p>
               <a 
                 href="mailto:jcartertreecare@gmail.com"
                 className="inline-flex items-center justify-center w-full px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors font-medium"
@@ -133,7 +133,7 @@ export default function ContactPage() {
           
           {/* Feature Highlights */}
           <div className="mt-12 bg-secondary rounded-xl p-6 sm:p-8">
-            <h3 className="text-xl font-semibold text-neutral mb-10 text-center">Warum Der Baumchirurg wählen?</h3>
+            <h3 className="text-xl font-semibold text-neutral mb-10 text-center">Why Choose Carter Tree Care?</h3>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="text-center">
                 <div className="h-12 w-12 rounded-xl bg-primary/15 flex items-center justify-center text-primary mx-auto mb-3">
@@ -141,7 +141,7 @@ export default function ContactPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <span className="text-sm font-medium text-neutral">Schnelle Antwort</span>
+                <span className="text-sm font-medium text-neutral">Quick Response</span>
               </div>
               
               <div className="text-center">
@@ -150,7 +150,7 @@ export default function ContactPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <span className="text-sm font-medium text-neutral">Flexible Termine</span>
+                <span className="text-sm font-medium text-neutral">Flexible Appointments</span>
               </div>
               
               <div className="text-center">
@@ -159,7 +159,7 @@ export default function ContactPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <span className="text-sm font-medium text-neutral">Kostenlose Beratung</span>
+                <span className="text-sm font-medium text-neutral">Free Consultation</span>
               </div>
               
               <div className="text-center">
@@ -168,7 +168,7 @@ export default function ContactPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   </svg>
                 </div>
-                <span className="text-sm font-medium text-neutral">Vor-Ort-Service</span>
+                <span className="text-sm font-medium text-neutral">On-Site Service</span>
               </div>
             </div>
           </div>

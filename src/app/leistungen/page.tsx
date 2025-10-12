@@ -10,11 +10,11 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 const AllServices = dynamic(() => import('@/components/AllServices'), { ssr: true });
 
 export const metadata: Metadata = {
-  title: 'All Services | Der Baumchirurg - Professional Tree Care Berlin, Brandenburg, Potsdam',
-  description: 'Overview of all tree care and garden work services from Der Baumchirurg - Professional tree care with the highest safety standards in Berlin and Brandenburg.',
-  keywords: 'Tree care services, Tree removal, Tree pruning, Crown care, Tree assessment, Berlin, Brandenburg, Arborist',
+  title: 'All Services | Carter Tree Care - Professional Tree Care Dublin, Ireland',
+  description: 'Overview of all tree care and garden work services from Carter Tree Care - Professional tree care with the highest safety standards in Dublin and all of Ireland.',
+  keywords: 'Tree care services, Tree removal, Tree pruning, Crown care, Tree assessment, Dublin, Ireland, Arborist',
   openGraph: {
-    title: 'All Services | Der Baumchirurg - Professional Tree Care',
+    title: 'All Services | Carter Tree Care - Professional Tree Care',
     description: 'Discover our comprehensive range of tree care and garden work services. With over 2000 trees of experience.',
     url: 'https://www.cartertreecare.ie/services',
     images: [
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Der Baumchirurg Services - Professional Tree Care',
+        alt: 'Carter Tree Care Services - Professional Tree Care',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'All Services | Der Baumchirurg - Professional Tree Care',
+    title: 'All Services | Carter Tree Care - Professional Tree Care',
     description: 'Discover our comprehensive range of tree care and garden work services.',
     images: ['/twitter-image.png'],
   },
