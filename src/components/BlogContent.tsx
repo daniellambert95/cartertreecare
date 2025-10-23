@@ -231,7 +231,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-neutral mb-4">Do you have questions about your trees?</h2>
               <p className="text-lg text-neutral/70">
-                Contact our experts for free consultation or ask your questions directly via WhatsApp.
+                Contact our experts for a consultation or ask your questions directly via WhatsApp.
               </p>
             </div>
             

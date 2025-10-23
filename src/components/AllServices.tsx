@@ -137,7 +137,7 @@ const AllServices = () => {
     {
       title: 'Tree Removal',
       description: 'Safe and controlled tree removal by experienced experts with consideration for the environment.',
-      longDescription: 'When a tree has become sick, damaged or dangerous, we offer professional felling services. Our experienced arborists perform controlled felling, with safety and protection of surrounding structures and vegetation being the top priority.',
+      longDescription: 'When a tree has become sick, damaged or dangerous, we offer professional removal services. Our experienced arborists perform controlled felling/removal, with safety and protection of surrounding structures and vegetation being the top priority.',
       icon: (
         <Image 
           src="/icons/3baumfallung.svg .svg" 
@@ -180,13 +180,13 @@ const AllServices = () => {
       category: 'safety'
     },
     {
-      title: 'Tree Felling',
-      description: 'Controlled and safe felling of trees considering legal requirements and environmental protection.',
-      longDescription: 'When a tree has become sick, damaged or dangerous, we offer professional felling services. Our experienced arborists perform controlled felling, with safety and protection of surrounding structures and vegetation being the top priority.',
+      title: 'Tree Removal',
+      description: 'Controlled and safe removal of trees considering legal requirements and environmental protection.',
+      longDescription: 'When a tree has become sick, damaged or dangerous, we offer professional removal services. Our experienced arborists perform controlled removal, with safety and protection of surrounding structures and vegetation being the top priority.',
       icon: (
         <Image 
           src="/icons/12baumfallung.svg .svg" 
-          alt="Tree Felling" 
+          alt="Tree Removal" 
           width={32} 
           height={32}
           className="object-contain"
@@ -272,7 +272,7 @@ const AllServices = () => {
     {
       title: 'Stump Removal',
       description: 'Professional removal of tree stumps and roots for a clean area.',
-      longDescription: 'After tree felling, the remaining stump can be unsightly and limit the use of the property. Our stump removal completely eliminates the stump and main roots, allowing you to redesign or replant the area.',
+      longDescription: 'After tree removal, the remaining stump can be unsightly and limit the use of the property. Our stump removal completely eliminates the stump and main roots, allowing you to redesign or replant the area.',
       icon: (
         <Image 
           src="/icons/14stumpp.svg.svg" 

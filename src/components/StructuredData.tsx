@@ -62,7 +62,7 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement",
           "name": "Contact", 
-          "description": "Contact us for a free consultation",
+          "description": "Contact us for a consultation",
           "url": "https://www.cartertreecare.ie/contact"
         },
         {
@@ -120,7 +120,7 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
           "Tree pruning",
           "Crown care",
           "Tree survey",
-          "Tree felling"
+          "Tree removal"
         ],
         "priceRange": "€€",
         "openingHours": [

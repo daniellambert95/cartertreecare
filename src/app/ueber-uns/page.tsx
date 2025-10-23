@@ -76,7 +76,7 @@ export default function AboutPage() {
                 </h1>
                 
                 <p className="text-base sm:text-lg lg:text-xl text-neutral/80 mb-6 lg:mb-8 leading-relaxed max-w-2xl">
-                  The team at Carter Tree Care sets new standards in tree felling and tree care. 
+                  The team at Carter Tree Care sets new standards in tree removal and tree care. 
                   We don&apos;t settle for mediocre performance, but constantly strive to 
                   maintain and further improve our quality so that you as a customer are completely satisfied.
                 </p>
@@ -126,7 +126,7 @@ export default function AboutPage() {
                     href="/kontakt" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-xl shadow-sm text-white bg-primary hover:bg-primary-dark hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
                   >
-                    Free Consultation
+                    Book Consultation
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
@@ -275,7 +275,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-neutral mb-4 md:mb-6">Ready to work with us?</h2>
           <p className="text-base sm:text-lg text-neutral/80 mb-6 md:mb-8 max-w-2xl mx-auto">
-            Contact us today for a free consultation and find out 
+            Contact us today for a consultation and find out 
             how we can help you with our professional tree care services.
           </p>
           <Link 

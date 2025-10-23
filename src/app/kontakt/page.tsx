@@ -70,7 +70,7 @@ export default function ContactPage() {
               </h1>
               
               <p className="text-lg text-neutral/80 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Fill out our contact form and receive a free consultation for your tree care needs. 
+                Fill out our contact form and receive a consultation for your tree care needs. 
                 Our team will get back to you within 12 hours.
               </p>
             </div>
@@ -104,7 +104,7 @@ export default function ContactPage() {
               <h3 className="text-xl font-semibold text-neutral mb-2">WhatsApp Chat</h3>
               <p className="text-neutral/70 mb-4">Sofortige Antwort möglich</p>
               <a 
-                href="https://wa.me/3531745225935"
+                href="https://wa.me/353872522604"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors font-medium"
@@ -159,7 +159,7 @@ export default function ContactPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <span className="text-sm font-medium text-neutral">Free Consultation</span>
+                <span className="text-sm font-medium text-neutral">Book Consultation</span>
               </div>
               
               <div className="text-center">

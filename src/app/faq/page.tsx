@@ -55,7 +55,7 @@ const faqData = [
   },
   {
     question: "Do you offer free consultations or estimates?",
-    answer: "Yes."
+    answer: "Over the phone, yes."
   },
   {
     question: "What payment methods do you accept?",

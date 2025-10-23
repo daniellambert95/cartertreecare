@@ -62,30 +62,30 @@ const Reviews = () => {
   const reviews: Review[] = [
     {
       id: 1,
-      name: "Sebastian Hüthwohl",
-      location: "Dublin City", 
+      name: "Helen Mara",
+      location: "Maynooth", 
       rating: 5,
-      comment: "James pruned 5 trees for me in February. I am very satisfied with the result. The coordination and scheduling was smooth and reliable. All debris was disposed of and the trees were freed from dried ivy. I can highly recommend James and his team.",
+      comment: "James did an amazing job on the front of my parents large garden - cutting down trees and removing large brambled hedges. A very clean job and finished on schedule. We asked him to remove a line of fir/ pine trees in the back garden as his work was so good. He cleared the area and it looks amazing now. James is a lovely friendly man who cares greatly about his work and the people he's doing it for. I would 100% recommend him.",
       service: "Tree Care",
-      date: "May 2025"
+      date: "Sep 2025"
     },
     {
       id: 2,
-      name: "Regina Bock",
+      name: "Kim Mahon",
       location: "Cork",
       rating: 5,
-      comment: "Tree surgeon James is highly recommended, works cleanly and correctly, also disposes of tree pruning waste upon request. I was very satisfied with the people.👍🤗keep it up",
+      comment: "James came at short notice, did a great job sorting out my unruly birch tree and tidied up afterwards. Knowledgeable and friendly, it's so nice to deal with someone that takes pride in his work. Happy to recommend Carter Tree Care.",
       service: "Tree Removal", 
-      date: "May 2025"
+      date: "Sep 2025"
     },
     {
       id: 3,
-      name: "Frau Haueis",
-      location: "Galway",
+      name: "Ciaran Dalton",
+      location: "Dublin",
       rating: 5,
-      comment: "We had several oak trees pruned. The tree surgeon is very reliable, works super cleanly and is still very affordable.",
+      comment: "Absolute gent and a magnificent worker. Wouldn't ever use anyone else. Prompt, efficient and clean. Left the place spotless. Couldn't recommend more and absolutely delighted with the work. Thanks again James.",
       service: "Tree Care",
-      date: "May 2025"
+      date: "Oct 2025"
     },
     // {
     //   id: 4,
@@ -183,14 +183,14 @@ const Reviews = () => {
               Become our next satisfied customer!
             </h3>
             <p className="text-lg text-neutral/70 mb-8">
-              Contact us for free consultation and a non-binding quote.
+              Contact us for a consultation and a non-binding quote.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-md bg-primary text-white font-medium text-lg shadow-lg hover:bg-primary-dark transform hover:-translate-y-1 transition duration-300"
               >
-                Free Consultation
+                Book Consultation
               </a>
               <a
                 href="https://wa.me/3531745225935"

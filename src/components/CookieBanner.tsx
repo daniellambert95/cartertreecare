@@ -148,8 +148,8 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                       🍪 We respect your privacy
                     </h3>
                     <p className="text-xs sm:text-sm text-neutral/80 leading-relaxed">
-                      We use cookies to improve your experience on our website, 
-                      analyze website traffic and understand where our visitors come from. 
+                      We use cookies to improve your experience on our website,
+                      analyze website traffic and understand where our visitors come from.
                       You can decide for yourself which categories of cookies you want to allow.
                     </p>
                   </div>
@@ -222,7 +222,7 @@ const CookieBanner = ({ onClose, forceShow = false, hideBackdrop = false }: Cook
                       These cookies are required for the proper functioning of the website and cannot be disabled.
                     </p>
                     <div className="text-xs text-neutral/60">
-                      <strong>Zweck:</strong> Session-Management, Sicherheit, Kontaktformular-Funktionalität<br/>
+                      <strong>Purpose:</strong> Session management, security, contact form functionality<br/>
                       <strong>Provider:</strong> Carter Tree Care (First-Party)<br/>
                       <strong>Storage duration:</strong> Session / 30 days
                     </div>

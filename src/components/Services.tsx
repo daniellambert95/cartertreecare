@@ -147,8 +147,8 @@ const Services = () => {
       category: 'safety'
     },
     {
-      title: 'Tree Felling',
-      description: 'Controlled and safe felling of trees considering legal requirements and environmental protection.',
+      title: 'Tree Removal',
+      description: 'Controlled and safe removal of trees considering legal requirements and environmental protection.',
       icon: (
         <Image 
           src="/icons/12baumfallung.svg .svg" 

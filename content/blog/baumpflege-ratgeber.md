@@ -47,7 +47,7 @@ After completing our entire five-point plan, are you still having problems? Don'
 
 Especially with storm problems, you should read our article on [Storm-Resistant Trees](/blog/storm-resistant-trees) to understand preventive measures. Dublin's Atlantic climate can bring severe weather, making storm preparation crucial.
 
-Read about what we stand for, and when you're ready, contact us for a free consultation where we can help bring your tree back to life!
+Read about what we stand for, and when you're ready, contact us to book a consultation where we can help bring your tree back to life!
 
 **Other helpful articles:**
 

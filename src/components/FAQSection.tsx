@@ -21,7 +21,7 @@ const faqData = [
     answer: "We have comprehensive first-class insurance coverage for tree work worldwide."
   },
   {
-    question: "How long do typical services take (tree felling, pruning, etc.)?",
+    question: "How long do typical services take (tree removal, pruning, etc.)?",
     answer: "This depends entirely on the tree and possible obstacles, distance from the road, etc."
   },
   {
@@ -46,7 +46,7 @@ const faqData = [
   },
   {
     question: "Do you offer free consultations or estimates?",
-    answer: "Yes."
+    answer: "Over the phone, yes."
   },
   {
     question: "What payment methods do you accept?",

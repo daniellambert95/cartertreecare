@@ -215,7 +215,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <h3 className="text-lg font-bold mb-3">Need professional help?</h3>
                 <p className="text-sm mb-4 opacity-90">
                   Have your trees pruned by our experts. 
-                  Free consultation and quotation.
+                  Book a consultation and quotation.
                 </p>
                 <button className="w-full bg-white text-primary font-medium py-2 px-4 rounded-md hover:bg-neutral/10 transition-colors">
                   Contact now

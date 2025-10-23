@@ -32,7 +32,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
 
   const services = [
     { id: 'baumpflege', name: 'Tree Care', icon: '/icons/2baumpflege.svg .svg' },
-    { id: 'baumfaellung', name: 'Tree Felling', icon: '/icons/3baumfallung.svg .svg' },
+    { id: 'baumfaellung', name: 'Tree Removal', icon: '/icons/3baumfallung.svg .svg' },
     { id: 'kroneneinkuerzung', name: 'Crown Reduction', icon: '/icons/6einkurzung.svg .svg' },
     { id: 'baumstumpfentfernung', name: 'Stump Removal', icon: '/icons/14stumpp.svg.svg' },
     { id: 'gartenarbeit', name: 'Garden Work', icon: '/icons/8gartenarbeit.svg .svg' },
@@ -71,9 +71,9 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
-          subject: `Free Consultation - ${selectedService?.name || 'Unknown Service'}`,
+          subject: `Book Consultation - ${selectedService?.name || 'Unknown Service'}`,
           message: `Service: ${selectedService?.name || 'Unknown'}\n\nDescription:\n${formData.description}`,
-          from_name: "Carter Tree Care Website - Free Consultation",
+          from_name: "Carter Tree Care Website - Book Consultation",
           to_name: "Carter Tree Care Team",
         }),
       });
@@ -154,7 +154,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, onClose }
                 </svg>
               </div>
               <div>
-                <h2 className="text-xl font-bold text-neutral">Free Consultation</h2>
+                <h2 className="text-xl font-bold text-neutral">Book Consultation</h2>
                 <p className="text-sm text-neutral/60">Step {currentStep} of 3</p>
               </div>
             </div>

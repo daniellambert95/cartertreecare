@@ -19,7 +19,7 @@ const Footer = () => {
             {/* Social Media Buttons */}
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="www.instagram.com/blackslopes" 
                 className="group bg-blue-600 hover:bg-blue-700 p-3 rounded-lg transition-all duration-300 transform hover:scale-105"
                 aria-label="Facebook"
               >
@@ -29,7 +29,7 @@ const Footer = () => {
               </a>
               
               <a 
-                href="#" 
+                href="www.instagram.com/blackslopes" 
                 className="group bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 p-3 rounded-lg transition-all duration-300 transform hover:scale-105"
                 aria-label="Instagram"
               >
@@ -39,7 +39,7 @@ const Footer = () => {
               </a>
               
               <a 
-                href="https://wa.me/3531745225935" 
+                href="https://wa.me/+353872522604" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group bg-green-500 hover:bg-green-600 p-3 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -95,7 +95,7 @@ const Footer = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">+353 174 522 5935</p>
+                    <p className="text-white font-medium">+353 872 5226 04</p>
                     <p className="text-white/70 text-sm">WhatsApp</p>
                   </div>
                 </a>

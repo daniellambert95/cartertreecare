@@ -17,7 +17,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Carter Tree Care | Professional Tree Services Dublin, Ireland",
   description: "Professional tree care and tree removal services with the highest level of care and expertise. Certified arborists serving Dublin and all of Ireland.",
-  keywords: "tree care, tree removal, tree pruning, Dublin, Ireland, arborist, tree felling, tree climbing, crown care, tree survey",
+  keywords: "tree care, tree removal, tree pruning, Dublin, Ireland, arborist, tree removal, tree climbing, crown care, tree survey",
   authors: [{ name: "Carter Tree Care Team" }],
   creator: "Carter Tree Care",
   publisher: "Carter Tree Care",

@@ -6,8 +6,8 @@ import Image from 'next/image';
 const images = [
   {
     src: '/images/home-2.webp',
-    alt: 'Tree felling and cutting work with specialized equipment',
-    title: 'Professional Tree Felling'
+    alt: 'Tree removal and cutting work with specialized equipment',
+    title: 'Professional Tree Removal'
   },
   {
     src: '/images/home-3.webp',
@@ -67,7 +67,7 @@ export default function ImageGallery() {
             Our Work in Action
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            See our professional tree surgeons at work. From precise cuts to safe felling - 
+            See our professional tree surgeons at work. From precise cuts to safe removal - 
             we complete every job with expertise and care.
           </p>
         </div>
