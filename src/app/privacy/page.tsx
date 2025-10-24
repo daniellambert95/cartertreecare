@@ -268,60 +268,60 @@ export default function PrivacyPolicyPage() {
                 <div className="bg-white border border-neutral/10 rounded-lg p-4">
                   <h4 className="font-semibold text-neutral mb-2 flex items-center">
                     <span className="text-primary mr-2">📋</span>
-                    Auskunftsrecht
+                    Right to Information
                   </h4>
                   <p className="text-sm text-neutral/70">
-                    Sie können jederzeit Auskunft über die über Sie gespeicherten Daten verlangen.
+                    You can request information about the data stored about you at any time.
                   </p>
                 </div>
-                
+
                 <div className="bg-white border border-neutral/10 rounded-lg p-4">
                   <h4 className="font-semibold text-neutral mb-2 flex items-center">
                     <span className="text-primary mr-2">✏️</span>
-                    Berichtigungsrecht
+                    Right to Rectification
                   </h4>
                   <p className="text-sm text-neutral/70">
-                    Unrichtige oder unvollständige Daten können Sie korrigieren lassen.
+                    You can have incorrect or incomplete data corrected.
                   </p>
                 </div>
-                
+
                 <div className="bg-white border border-neutral/10 rounded-lg p-4">
                   <h4 className="font-semibold text-neutral mb-2 flex items-center">
                     <span className="text-primary mr-2">🗑️</span>
-                    Löschungsrecht
+                    Right to Erasure
                   </h4>
                   <p className="text-sm text-neutral/70">
-                    Sie können die Löschung Ihrer Daten verlangen, wenn kein Grund für die Speicherung besteht.
+                    You can request the deletion of your data if there is no reason for storage.
                   </p>
                 </div>
-                
+
                 <div className="bg-white border border-neutral/10 rounded-lg p-4">
                   <h4 className="font-semibold text-neutral mb-2 flex items-center">
                     <span className="text-primary mr-2">⛔</span>
-                    Widerspruchsrecht
+                    Right to Object
                   </h4>
                   <p className="text-sm text-neutral/70">
-                    Sie können der Verarbeitung Ihrer Daten widersprechen.
+                    You can object to the processing of your data.
                   </p>
                 </div>
-                
+
                 <div className="bg-white border border-neutral/10 rounded-lg p-4">
                   <h4 className="font-semibold text-neutral mb-2 flex items-center">
                     <span className="text-primary mr-2">📦</span>
-                    Datenportabilität
+                    Data Portability
                   </h4>
                   <p className="text-sm text-neutral/70">
-                    Sie können Ihre Daten in einem strukturierten Format erhalten.
+                    You can receive your data in a structured format.
                   </p>
                 </div>
-                
+
                 <div className="bg-white border border-neutral/10 rounded-lg p-4">
                   <h4 className="font-semibold text-neutral mb-2 flex items-center">
                     <span className="text-primary mr-2">🚫</span>
-                    Einwilligung widerrufen
+                    Withdraw Consent
                   </h4>
                   <p className="text-sm text-neutral/70">
-                    Erteilte Einwilligungen können Sie jederzeit widerrufen.
+                    You can withdraw granted consents at any time.
                   </p>
                 </div>
               </div>
@@ -329,30 +329,30 @@ export default function PrivacyPolicyPage() {
 
             {/* Data Security */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-neutral mb-4">Datensicherheit</h2>
+              <h2 className="text-2xl font-bold text-neutral mb-4">Data Security</h2>
               <div className="bg-neutral/5 rounded-lg p-6">
                 <p className="text-neutral/80 mb-4">
-                  Wir treffen alle notwendigen technischen und organisatorischen Maßnahmen, um Ihre Daten zu schützen:
+                  We take all necessary technical and organizational measures to protect your data:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <div className="flex items-start">
                       <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-sm text-neutral/70">SSL-Verschlüsselung der Website</span>
+                      <span className="text-sm text-neutral/70">SSL encryption of the website</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-sm text-neutral/70">Sichere Server-Infrastruktur</span>
+                      <span className="text-sm text-neutral/70">Secure server infrastructure</span>
                     </div>
                   </div>
                   <div className="space-y-2">
                     <div className="flex items-start">
                       <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-sm text-neutral/70">Regelmäßige Sicherheitsupdates</span>
+                      <span className="text-sm text-neutral/70">Regular security updates</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-sm text-neutral/70">Zugriffsbeschränkungen</span>
+                      <span className="text-sm text-neutral/70">Access restrictions</span>
                     </div>
                   </div>
                 </div>
