@@ -7,9 +7,9 @@ const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: true });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 
 export const metadata = {
-  title: 'Datenschutzerklärung | Carter Tree Care',
-  description: 'Datenschutzerklärung von Carter Tree Care. Erfahren Sie, wie wir Ihre Daten schützen und verarbeiten.',
-  keywords: 'Datenschutz, DSGVO, Baumpflege, Daten, Schutz',
+  title: 'Privacy Policy | Carter Tree Care',
+  description: 'Privacy policy of Carter Tree Care. Learn how we protect and process your data.',
+  keywords: 'privacy, gdpr, tree care, data, protection',
 };
 
 export default function PrivacyPolicyPage() {
@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-neutral/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                  <span className="ml-2 text-neutral text-sm font-medium">Datenschutzerklärung</span>
+                  <span className="ml-2 text-neutral text-sm font-medium">Privacy Policy</span>
                 </li>
               </ol>
             </nav>
@@ -60,12 +60,12 @@ export default function PrivacyPolicyPage() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
-                GDPR-compliant
+                GDPR Compliant
               </div>
               
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-neutral mb-4 lg:mb-6 leading-tight">
-                Datenschutz<span className="text-primary relative">
-                  erklärung
+                Privacy <span className="text-primary relative">
+                  Policy
                   <svg className="absolute -bottom-2 left-0 w-full h-2 text-primary/30" viewBox="0 0 100 10" preserveAspectRatio="none">
                     <path d="M0,8 Q50,0 100,8" stroke="currentColor" strokeWidth="2" fill="none"/>
                   </svg>
@@ -73,7 +73,7 @@ export default function PrivacyPolicyPage() {
               </h1>
 
               <p className="text-base sm:text-lg lg:text-xl text-neutral/80 mb-6 lg:mb-8 leading-relaxed max-w-3xl mx-auto">
-                Ihre Privatsphäre ist uns wichtig. Hier erfahren Sie, wie wir Ihre Daten schützen und verarbeiten.
+                Your privacy is important to us. Here you can learn how we protect and process your data.
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
             {/* Last Updated */}
             <div className="bg-secondary rounded-lg p-4 mb-8">
               <p className="text-sm text-neutral/70 mb-0">
-                <strong>Stand:</strong> {new Date().toLocaleDateString('de-DE', {
+                <strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric'
@@ -99,21 +99,21 @@ export default function PrivacyPolicyPage() {
 
             {/* Responsible Party */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-neutral mb-4">Verantwortlicher</h2>
+              <h2 className="text-2xl font-bold text-neutral mb-4">Data Controller</h2>
               <div className="bg-neutral/5 rounded-lg p-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <h3 className="font-semibold text-neutral mb-2">Unternehmen</h3>
+                    <h3 className="font-semibold text-neutral mb-2">Company</h3>
                     <div className="text-neutral/80 space-y-1">
                       <div>Carter Tree Care</div>
-                      <div>Professionelle Baumpflege</div>
+                      <div>Professional Tree Services</div>
                       <div>Grants Park, Greenoge</div>
-                      <div>Co. Dublin, Irland</div>
+                      <div>Co. Dublin, Ireland</div>
                       <div>Eircode D24 FA40</div>
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral mb-2">Kontakt</h3>
+                    <h3 className="font-semibold text-neutral mb-2">Contact</h3>
                     <div className="text-neutral/80 space-y-1">
                       <div>📧 jcartertreecare@gmail.com</div>
                       <div>📞 +353 87 2522 604</div>
@@ -125,20 +125,20 @@ export default function PrivacyPolicyPage() {
 
             {/* Data Collection */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-neutral mb-4">Welche Daten sammeln wir?</h2>
+              <h2 className="text-2xl font-bold text-neutral mb-4">What Data Do We Collect?</h2>
               
               {/* Contact Form Data */}
               <div className="bg-white border border-neutral/10 rounded-xl p-6 mb-6 shadow-sm">
                 <div className="flex items-center mb-4">
                   <div className="w-4 h-4 bg-blue-500 rounded-full mr-3"></div>
-                  <h3 className="text-xl font-semibold text-neutral">Kontaktformular</h3>
+                  <h3 className="text-xl font-semibold text-neutral">Contact Form</h3>
                 </div>
                 <p className="text-neutral/80 mb-4">
-                  Wenn Sie uns über unser Kontaktformular eine Nachricht senden, sammeln wir die folgenden Daten:
+                  When you send us a message via our contact form, we collect the following data:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                   <div>
-                    <strong className="text-neutral">Erfasste Daten:</strong>
+                    <strong className="text-neutral">Collected Data:</strong>
                     <div className="mt-1 text-neutral/70 space-y-1">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -146,25 +146,25 @@ export default function PrivacyPolicyPage() {
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>E-Mail-Adresse</span>
+                        <span>Email Address</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>Telefonnummer (freiwillig)</span>
+                        <span>Phone Number (optional)</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>Nachrichteninhalt</span>
+                        <span>Message Content</span>
                       </div>
                     </div>
                   </div>
                   <div>
                     <strong className="text-neutral">Details:</strong>
                     <div className="mt-1 text-neutral/70 space-y-1">
-                      <div><strong>Zweck:</strong> Bearbeitung Ihrer Anfrage</div>
-                      <div><strong>Rechtsgrundlage:</strong> Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO)</div>
-                      <div><strong>Speicherdauer:</strong> 3 Jahre nach Projektabschluss</div>
-                      <div><strong>Löschung:</strong> Auf Anfrage oder automatisch</div>
+                      <div><strong>Purpose:</strong> Processing your inquiry</div>
+                      <div><strong>Legal Basis:</strong> Legitimate Interest (Art. 6 Para. 1 lit. f GDPR)</div>
+                      <div><strong>Storage Duration:</strong> 3 years after project completion</div>
+                      <div><strong>Deletion:</strong> On request or automatically</div>
                     </div>
                   </div>
                 </div>
@@ -174,40 +174,40 @@ export default function PrivacyPolicyPage() {
               <div className="bg-white border border-neutral/10 rounded-xl p-6 mb-6 shadow-sm">
                 <div className="flex items-center mb-4">
                   <div className="w-4 h-4 bg-purple-500 rounded-full mr-3"></div>
-                  <h3 className="text-xl font-semibold text-neutral">Website-Analyse</h3>
+                  <h3 className="text-xl font-semibold text-neutral">Website Analytics</h3>
                 </div>
                 <p className="text-neutral/80 mb-4">
-                  Zur Verbesserung unserer Website verwenden wir Google Analytics (nur mit Ihrer Einwilligung):
+                  To improve our website, we use Google Analytics (only with your consent):
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                   <div>
-                    <strong className="text-neutral">Erfasste Daten:</strong>
+                    <strong className="text-neutral">Collected Data:</strong>
                     <div className="mt-1 text-neutral/70 space-y-1">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>Gekürzte IP-Adresse</span>
+                        <span>Shortened IP Address</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>Besuchte Seiten</span>
+                        <span>Visited Pages</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>Verweildauer</span>
+                        <span>Time Spent</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>Browser-Informationen</span>
+                        <span>Browser Information</span>
                       </div>
                     </div>
                   </div>
                   <div>
                     <strong className="text-neutral">Details:</strong>
                     <div className="mt-1 text-neutral/70 space-y-1">
-                      <div><strong>Zweck:</strong> Website-Optimierung</div>
-                      <div><strong>Rechtsgrundlage:</strong> Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</div>
-                      <div><strong>Anbieter:</strong> Google LLC, USA</div>
-                      <div><strong>Speicherdauer:</strong> 26 Monate</div>
+                      <div><strong>Purpose:</strong> Website Optimization</div>
+                      <div><strong>Legal Basis:</strong> Consent (Art. 6 Para. 1 lit. a GDPR)</div>
+                      <div><strong>Provider:</strong> Google LLC, USA</div>
+                      <div><strong>Storage Duration:</strong> 26 months</div>
                     </div>
                   </div>
                 </div>
@@ -217,40 +217,40 @@ export default function PrivacyPolicyPage() {
               <div className="bg-white border border-neutral/10 rounded-xl p-6 shadow-sm">
                 <div className="flex items-center mb-4">
                   <div className="w-4 h-4 bg-green-500 rounded-full mr-3"></div>
-                  <h3 className="text-xl font-semibold text-neutral">Technische Daten</h3>
+                  <h3 className="text-xl font-semibold text-neutral">Technical Data</h3>
                 </div>
                 <p className="text-neutral/80 mb-4">
-                  Automatisch beim Besuch unserer Website erfasste technische Informationen:
+                  Technical information automatically collected when visiting our website:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                   <div>
-                    <strong className="text-neutral">Erfasste Daten:</strong>
+                    <strong className="text-neutral">Collected Data:</strong>
                     <div className="mt-1 text-neutral/70 space-y-1">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>IP-Adresse</span>
+                        <span>IP Address</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>Browser-Typ und Version</span>
+                        <span>Browser Type and Version</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>Betriebssystem</span>
+                        <span>Operating System</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span>Zugriffszeitpunkt</span>
+                        <span>Access Time</span>
                       </div>
                     </div>
                   </div>
                   <div>
                     <strong className="text-neutral">Details:</strong>
                     <div className="mt-1 text-neutral/70 space-y-1">
-                      <div><strong>Zweck:</strong> Website-Sicherheit und Funktionalität</div>
-                      <div><strong>Rechtsgrundlage:</strong> Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO)</div>
-                      <div><strong>Speicherdauer:</strong> 7 Tage</div>
-                      <div><strong>Löschung:</strong> Automatisch</div>
+                      <div><strong>Purpose:</strong> Website Security and Functionality</div>
+                      <div><strong>Legal Basis:</strong> Legitimate Interest (Art. 6 Para. 1 lit. f GDPR)</div>
+                      <div><strong>Storage Duration:</strong> 7 days</div>
+                      <div><strong>Deletion:</strong> Automatically</div>
                     </div>
                   </div>
                 </div>
@@ -259,9 +259,9 @@ export default function PrivacyPolicyPage() {
 
             {/* User Rights */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-neutral mb-4">Ihre Rechte</h2>
+              <h2 className="text-2xl font-bold text-neutral mb-4">Your Rights</h2>
               <p className="text-neutral/80 leading-relaxed mb-6">
-                Nach der DSGVO haben Sie folgende Rechte bezüglich Ihrer personenbezogenen Daten:
+                Under GDPR, you have the following rights regarding your personal data:
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -361,22 +361,22 @@ export default function PrivacyPolicyPage() {
 
             {/* Contact for Privacy */}
             <div className="bg-primary/5 rounded-xl p-8 text-center">
-              <h3 className="text-xl font-bold text-neutral mb-4">Fragen zum Datenschutz?</h3>
+              <h3 className="text-xl font-bold text-neutral mb-4">Questions about Data Protection?</h3>
               <p className="text-neutral/80 mb-6">
-                Wenn Sie Fragen zur Verarbeitung Ihrer Daten oder zur Ausübung Ihrer Rechte haben, kontaktieren Sie uns gerne.
+                If you have questions about data processing or exercising your rights, please feel free to contact us.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/kontakt"
+                  href="/contact"
                   className="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary-dark text-white hover:text-white font-medium rounded-md transition-colors duration-300"
                 >
-                  <span className="text-white">Datenschutzanfrage stellen</span>
+                  <span className="text-white">Submit Privacy Request</span>
                 </Link>
                 <Link
-                  href="/cookie-richtlinie"
+                  href="/cookie-policy"
                   className="inline-flex items-center px-6 py-3 border border-primary text-primary hover:text-primary font-medium rounded-md hover:bg-primary/5 transition-colors duration-300"
                 >
-                  <span className="text-primary">Cookie-Richtlinie</span>
+                  <span className="text-primary">Cookie Policy</span>
                 </Link>
               </div>
             </div>

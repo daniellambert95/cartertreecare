@@ -56,14 +56,14 @@ export default function NotFound() {
                 >
                   Back to Home
                 </Link>
-                <Link 
-                  href="/leistungen"
+                <Link
+                  href="/services"
                   className="px-6 py-3 bg-white text-primary border-2 border-primary font-medium text-base rounded-md shadow-lg hover:bg-primary hover:text-white transform hover:-translate-y-1 transition duration-300"
                 >
                   Our Services
                 </Link>
-                <Link 
-                  href="/kontakt"
+                <Link
+                  href="/contact"
                   className="px-6 py-3 bg-neutral text-white font-medium text-base rounded-md shadow-lg hover:bg-neutral/80 transform hover:-translate-y-1 transition duration-300"
                 >
                   Get in Touch
@@ -78,8 +78,8 @@ export default function NotFound() {
                   Maybe you&apos;re looking for:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                  <Link 
-                    href="/leistungen"
+                  <Link
+                    href="/services"
                     className="p-3 bg-white rounded-md shadow-sm hover:shadow-md transition duration-300 border border-primary/10 hover:border-primary/30"
                   >
                     <div className="flex items-center gap-3">
@@ -112,8 +112,8 @@ export default function NotFound() {
                     </div>
                   </Link>
 
-                  <Link 
-                    href="/ueber-uns"
+                  <Link
+                    href="/about-us"
                     className="p-3 bg-white rounded-md shadow-sm hover:shadow-md transition duration-300 border border-primary/10 hover:border-primary/30"
                   >
                     <div className="flex items-center gap-3">
