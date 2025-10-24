@@ -285,17 +285,17 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-neutral mb-4">War dieser Artikel hilfreich?</h2>
+              <h2 className="text-3xl font-bold text-neutral mb-4">Was this article helpful?</h2>
               <p className="text-lg text-neutral/70">
-                Melden Sie sich für unseren Newsletter an und erhalten Sie regelmäßig weitere
-                Expertentipps zur Baumpflege direkt in Ihr Postfach.
+                Sign up for our newsletter and receive regular expert tips on tree care
+                directly to your inbox.
               </p>
             </div>
             <form className="max-w-md mx-auto">
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="email"
-                  placeholder="Ihre E-Mail-Adresse"
+                  placeholder="Your email address"
                   required
                   className="px-4 py-3 rounded-md bg-secondary border border-neutral/10 text-neutral flex-grow focus:outline-none focus:ring-2 focus:ring-primary"
                 />
@@ -303,11 +303,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   type="submit"
                   className="px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors whitespace-nowrap"
                 >
-                  Abonnieren
+                  Subscribe
                 </button>
               </div>
               <p className="mt-3 text-xs text-center text-neutral/60">
-                Wir respektieren Ihre Privatsphäre. Abmeldung jederzeit möglich.
+                We respect your privacy. Unsubscribe at any time.
               </p>
             </form>
           </div>
