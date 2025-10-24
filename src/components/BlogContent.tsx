@@ -272,7 +272,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-primary mb-2">Consultation Appointment</h3>
-                  <p className="text-primary/70 mb-4">Free initial consultation on-site</p>
+                  <p className="text-primary/70 mb-4">Initial consultation on-site</p>
                   <div className="inline-flex items-center text-primary font-medium">
                     Book appointment
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
