@@ -27,7 +27,7 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
 
   return (
     <div className="bg-secondary rounded-xl p-6 mb-8 lg:sticky lg:top-32">
-      <h3 className="text-lg font-bold text-neutral mb-4">Inhaltsverzeichnis</h3>
+      <h3 className="text-lg font-bold text-neutral mb-4">Table of Contents</h3>
       <nav className="space-y-2">
         {headings.map((heading) => (
           <a
