@@ -84,7 +84,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a 
-                  href="https://wa.me/3531745225935" 
+                  href="https://wa.me/353872522604" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group flex items-center hover:text-primary transition-all duration-300"

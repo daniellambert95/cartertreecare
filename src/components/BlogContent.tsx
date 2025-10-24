@@ -238,7 +238,7 @@ export default function BlogContent({ posts, postsPerPage }: BlogContentProps) {
             <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
               {/* WhatsApp Contact */}
               <a
-                href="https://wa.me/3531745225935?text=Hello, I have a question about my trees..."
+                href="https://wa.me/353872522604?text=Hello, I have a question about my trees..."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-300 rounded-xl p-6 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"

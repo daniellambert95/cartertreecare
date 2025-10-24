@@ -193,7 +193,7 @@ const Reviews = () => {
                 Book Consultation
               </a>
               <a
-                href="https://wa.me/3531745225935"
+                href="https://wa.me/353872522604"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-md bg-white text-primary-dark border-2 border-primary font-medium text-lg shadow-lg hover:bg-primary hover:text-white transform hover:-translate-y-1 transition duration-300"

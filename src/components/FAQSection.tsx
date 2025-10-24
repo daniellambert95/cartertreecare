@@ -94,7 +94,7 @@ const FAQSection = () => {
         <div className="mt-12 text-center relative z-10">
           <p className="text-neutral/80 mb-6">Have more questions?</p>
           <a 
-            href="https://wa.me/3531745225935" 
+            href="https://wa.me/353872522604" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-500 hover:bg-green-600 transition-colors duration-300"
