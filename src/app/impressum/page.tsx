@@ -108,8 +108,8 @@ export default function ImpressumPage() {
                     Anschrift
                   </h3>
                   <div className="space-y-2 text-neutral/80">
-                    <div><strong>Straße:</strong> 123 Dublin Street</div>
-                    <div><strong>PLZ/Ort:</strong> D02 Dublin</div>
+                    <div><strong>Adresse:</strong> Grants Park, Greenoge, Co. Dublin</div>
+                    <div><strong>Eircode:</strong> D24 FA40</div>
                     <div><strong>Land:</strong> Irland</div>
                   </div>
                 </div>

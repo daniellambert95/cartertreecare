@@ -65,7 +65,7 @@ export default function ImpressumPage() {
               
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-neutral mb-4 lg:mb-6 leading-tight">
                 <span className="text-primary relative">
-                  Impressum
+                  Imprint
                   <svg className="absolute -bottom-2 left-0 w-full h-2 text-primary/30" viewBox="0 0 100 10" preserveAspectRatio="none">
                     <path d="M0,8 Q50,0 100,8" stroke="currentColor" strokeWidth="2" fill="none"/>
                   </svg>
@@ -108,8 +108,8 @@ export default function ImpressumPage() {
                     Address
                   </h3>
                   <div className="space-y-2 text-neutral/80">
-                    <div><strong>Street:</strong> 123 Dublin Street</div>
-                    <div><strong>Postal code/City:</strong> D02 Dublin</div>
+                    <div><strong>Address:</strong> Grants Park, Greenoge, Co. Dublin</div>
+                    <div><strong>Eircode:</strong> D24 FA40</div>
                     <div><strong>Country:</strong> Ireland</div>
                   </div>
                 </div>
@@ -134,18 +134,18 @@ export default function ImpressumPage() {
 
           {/* Legal Disclaimer */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-neutral mb-6">Haftungsausschluss</h2>
-            
+            <h2 className="text-2xl font-bold text-neutral mb-6">Liability Disclaimer</h2>
+
             <div className="space-y-8">
               {/* Content Liability */}
               <div className="bg-white border border-neutral/10 rounded-xl p-6 shadow-sm">
                 <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
                   <span className="text-primary mr-2">📄</span>
-                  Haftung für Inhalte
+                  Liability for Content
                 </h3>
                 <div className="text-neutral/80 leading-relaxed">
                   <p>
-                    Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                    The content of our pages has been created with the greatest care. However, we cannot guarantee the accuracy, completeness, and timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with § 7 paragraph 1 TMG under general law. According to §§ 8 to 10 TMG, however, we as a service provider are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general law remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific legal violation. Upon becoming aware of such legal violations, we will remove this content immediately.
                   </p>
                 </div>
               </div>
@@ -154,11 +154,11 @@ export default function ImpressumPage() {
               <div className="bg-white border border-neutral/10 rounded-xl p-6 shadow-sm">
                 <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
                   <span className="text-primary mr-2">🔗</span>
-                  Haftung für Links
+                  Liability for Links
                 </h3>
                 <div className="text-neutral/80 leading-relaxed">
                   <p>
-                    Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                    Our website contains links to external third-party websites over whose content we have no control. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. However, permanent monitoring of the content of linked pages is not reasonable without concrete evidence of a legal violation. Upon becoming aware of legal violations, we will remove such links immediately.
                   </p>
                 </div>
               </div>
@@ -167,11 +167,11 @@ export default function ImpressumPage() {
               <div className="bg-white border border-neutral/10 rounded-xl p-6 shadow-sm">
                 <h3 className="text-lg font-semibold text-neutral mb-4 flex items-center">
                   <span className="text-primary mr-2">©</span>
-                  Urheberrecht
+                  Copyright
                 </h3>
                 <div className="text-neutral/80 leading-relaxed">
                   <p>
-                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+                    The content and works created by the site operators on these pages are subject to copyright law. Reproduction, editing, distribution, and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. Upon becoming aware of legal violations, we will remove such content immediately.
                   </p>
                 </div>
               </div>
@@ -185,14 +185,14 @@ export default function ImpressumPage() {
               If you have legal questions or comments about this imprint, please feel free to contact us.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="/kontakt"
+              <Link
+                href="/contact"
                 className="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary-dark text-white hover:text-white font-medium rounded-md transition-colors duration-300"
               >
                 <span className="text-white">Contact now</span>
               </Link>
-              <Link 
-                href="/datenschutz"
+              <Link
+                href="/privacy"
                 className="inline-flex items-center px-6 py-3 border border-primary text-primary hover:text-primary font-medium rounded-md hover:bg-primary/5 transition-colors duration-300"
               >
                 <span className="text-primary">Privacy Policy</span>
