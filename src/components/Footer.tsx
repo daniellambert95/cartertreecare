@@ -39,7 +39,7 @@ const Footer = () => {
               </a>
               
               <a 
-                href="https://wa.me/+353872522604" 
+                href="https://wa.me/+353872522604"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group bg-green-500 hover:bg-green-600 p-3 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -95,7 +95,7 @@ const Footer = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">+353 872 5226 04</p>
+                    <p className="text-white font-medium">+353 87 2522 604</p>
                     <p className="text-white/70 text-sm">WhatsApp</p>
                   </div>
                 </a>

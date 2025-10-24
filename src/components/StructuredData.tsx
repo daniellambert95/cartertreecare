@@ -91,7 +91,7 @@ export default function StructuredData({ type = 'organization', data, breadcrumb
           "contentUrl": "https://www.cartertreecare.ie/logo.webp"
         },
         "image": "https://www.cartertreecare.ie/logo.png",
-        "telephone": "+353 174 522 5935",
+        "telephone": "+353 87 2522 604",
         "email": "jcartertreecare@gmail.com",
         "address": {
           "@type": "PostalAddress",

@@ -112,7 +112,7 @@ export default function PrivacyPolicyPage() {
                     <h3 className="font-semibold text-neutral mb-2">Contact</h3>
                     <div className="text-neutral/80 space-y-1">
                       <div>📧 jcartertreecare@gmail.com</div>
-                      <div>📞 +353 174 522 5935</div>
+                      <div>📞 +353 87 2522 604</div>
                     </div>
                   </div>
                 </div>
