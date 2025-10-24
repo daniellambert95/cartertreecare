@@ -212,7 +212,7 @@ export default function ServicesPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Featured Blog Articles */}
-            <Link href="/blog/wie-man-bäume-schneidet" className="group block">
+            <Link href="/blog/how-to-prune-trees" className="group block">
               <div className="bg-secondary rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   <svg className="h-6 w-6 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -228,7 +228,7 @@ export default function ServicesPage() {
               </div>
             </Link>
 
-            <Link href="/blog/baumkrankheiten-erkennen" className="group block">
+            <Link href="/blog/tree-diseases-identification" className="group block">
               <div className="bg-secondary rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   <svg className="h-6 w-6 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -244,7 +244,7 @@ export default function ServicesPage() {
               </div>
             </Link>
 
-            <Link href="/ueber-uns" className="group block">
+            <Link href="/about-us" className="group block">
               <div className="bg-secondary rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   <svg className="h-6 w-6 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -265,16 +265,16 @@ export default function ServicesPage() {
           <div className="mt-12 text-center">
             <h3 className="text-xl font-bold text-neutral mb-6">Additional Helpful Information</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/blog/baumpflege-ratgeber" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg transition-colors duration-300">
+              <Link href="/blog/tree-care-guide" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg transition-colors duration-300">
                 Tree Care Basics
               </Link>
-              <Link href="/blog/baumschnitt-winter" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg transition-colors duration-300">
+              <Link href="/blog/winter-pruning" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg transition-colors duration-300">
                 Winter Tree Pruning
               </Link>
               <Link href="/faq" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg transition-colors duration-300">
                 Frequently Asked Questions
               </Link>
-              <Link href="/kontakt" className="inline-flex items-center px-4 py-2 bg-neutral/10 text-neutral hover:bg-neutral hover:text-white rounded-lg transition-colors duration-300">
+              <Link href="/contact" className="inline-flex items-center px-4 py-2 bg-neutral/10 text-neutral hover:bg-neutral hover:text-white rounded-lg transition-colors duration-300">
                 Request Consultation →
               </Link>
             </div>
