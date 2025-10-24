@@ -90,28 +90,28 @@ const Reviews = () => {
     // {
     //   id: 4,
     //   name: "Anna Schmidt",
-    //   location: "Brandenburg an der Havel",
+    //   location: "Dublin",
     //   rating: 5,
-    //   comment: "Exzellente Gartenarbeit und Heckenschnitt. Unser Garten sieht jetzt wie neu aus. Vielen Dank für die tolle Arbeit!",
-    //   service: "Gartenarbeit",
-    //   date: "Oktober 2024"
+    //   comment: "Excellent garden work and hedge trimming. Our garden looks like new now. Thank you for the great work!",
+    //   service: "Garden Work",
+    //   date: "October 2024"
     // },
     // {
     //   id: 5,
     //   name: "Klaus Hoffmann",
-    //   location: "Berlin-Spandau",
+    //   location: "Dublin",
     //   rating: 5,
-    //   comment: "Sehr gründliche Baumprüfung mit detailliertem Bericht. Kompetente Beratung und faire Preise. Würde ich jederzeit wieder beauftragen.",
-    //   service: "Baumprüfung",
+    //   comment: "Very thorough tree inspection with detailed report. Competent advice and fair prices. Would hire again anytime.",
+    //   service: "Tree Survey",
     //   date: "August 2024"
     // },
     // {
     //   id: 6,
     //   name: "Lisa Wagner",
-    //   location: "Cottbus",
+    //   location: "Dublin",
     //   rating: 5,
-    //   comment: "Perfekte Kronensicherung für unseren alten Eichenbaum. Fachkundige Arbeit mit viel Erfahrung. Sehr zufrieden!",
-    //   service: "Kronensicherung",
+    //   comment: "Perfect crown securing for our old oak tree. Expert work with lots of experience. Very satisfied!",
+    //   service: "Crown Securing",
     //   date: "September 2024"
     // }
   ];
